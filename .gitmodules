@@ -1,0 +1,3 @@
+[submodule "theme"]
+	path = theme
+	url = https://github.com/jody-frankowski/blue-penguin/
