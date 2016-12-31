@@ -1,2 +1,3 @@
 pelican==3.7.0
 Markdown==2.6.7
+markdown-checklist==0.4.1

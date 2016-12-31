@@ -75,3 +75,12 @@
 .apidocs h4 {
     margin-top: 8px;
 }
+
+ul.checklist {
+    list-style-position: outside;
+    padding-left: 0;
+}
+
+ul.checklist > li {
+    list-style-type: none;
+}

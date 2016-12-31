@@ -37,6 +37,14 @@ DEFAULT_PAGINATION = 10
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
 
+# Markdown extensions
+MARKDOWN = {
+    'extension_configs': {
+        'markdown_checklist.extension': {},
+    },
+    'output_format': 'html5',
+}
+
 # Blue Penguin Theme config
 THEME = 'theme'
 DISPLAY_HEADER = True
