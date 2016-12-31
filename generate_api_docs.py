@@ -17,6 +17,9 @@ def visit_generic(name, data, nullable):
     if nullable:
         print('<span class="tag nullable">nullable</span>')
     print('</header>')
+    print('<details class="togglable">')
+    print('<summary>Details</summary>')
+    print('<div>')
     if 'description' in data:
         print('<p>%s</p>' % data['description'])
     if 'enum' in data:
@@ -84,6 +87,7 @@ def visit(properties):
         else:
             print('Non object: %s' % v['type'], file=sys.stderr)
             sys.exit(1)
+        print('<div></details>')
         print('</section></li>')
 
 
