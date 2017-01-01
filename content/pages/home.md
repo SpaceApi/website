@@ -7,8 +7,11 @@ The Space Directory project is a friendly fork of the
 [33c3](https://en.wikipedia.org/wiki/Chaos_Communication_Congress).
 
 The purpose of the Space API is to define a unified specification across the
-hackerspaces that can be used to expose information to web apps or any other
-application.
+hackerspaces, makerspaces, fablabs, chaostreffs and the like across the world
+that can be used to expose information to web apps or any other application.
+
+For more information about the Space API specification itself, please refer to
+[http://spaceapi.net/](http://spaceapi.net/) for now.
 
 ## The Fork
 
