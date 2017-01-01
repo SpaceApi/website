@@ -21,12 +21,19 @@ AUTHOR_FEED_RSS = None
 
 # Paths
 PAGE_PATHS = ['pages']
+STATIC_PATHS = ['img']
 
-# Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
+# Menus
+MENUITEMS = (
+    ('Directory', 'https://spaceapi.fixme.ch/'),
+    ('Github', 'https://github.com/spacedirectory'),
+)
+FOOTERITEMS = (
+    ('Github', 'https://github.com/spacedirectory'),
+)
+
+# Ordering
+PAGE_ORDER_BY = 'sortorder'
 
 # Social widget
 SOCIAL = (('You can add links in your config file', '#'),
@@ -59,10 +66,3 @@ CATEGORIES_URL = 'categories'
 CATEGORIES_SAVE_AS = 'categories/index.html'
 ARCHIVES_URL = 'archives'
 ARCHIVES_SAVE_AS = 'archives/index.html'
-MENUITEMS = (
-    ('Directory', 'https://spaceapi.fixme.ch/'),
-    ('Github', 'https://github.com/spacedirectory'),
-)
-FOOTERITEMS = (
-    ('Github', 'https://github.com/spacedirectory'),
-)
