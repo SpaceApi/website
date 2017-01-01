@@ -26,5 +26,6 @@ we're always ready to merge our efforts into the original project!
 
 - [x] Add API documentation
 - [x] Port JSON schema files to new format (IETF draft 4)
+- [x] Create updated apps page that showcases existing projects
 - [ ] Write a simple schema validator (work in progress)
 - [ ] Rewrite the directory server (planning)
