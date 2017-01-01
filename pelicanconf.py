@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'Space Directory Contributors'
-SITENAME = 'Space Directory'
+SITENAME = 'spacedirectory.org'
 SITEURL = ''
 
 PATH = 'content'
