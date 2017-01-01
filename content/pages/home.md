@@ -1,5 +1,5 @@
 Title: Space Directory
-URL:
+Status: hidden
 save_as: index.html
 
 The Space Directory project is a friendly fork of the

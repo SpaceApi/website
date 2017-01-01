@@ -60,5 +60,5 @@ CATEGORIES_SAVE_AS = 'categories/index.html'
 ARCHIVES_URL = 'archives'
 ARCHIVES_SAVE_AS = 'archives/index.html'
 MENUITEMS = (
-    ('Documentation', '/pages/docs.html'),
+    ('Github', 'https://github.com/spacedirectory'),
 )
