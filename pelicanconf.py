@@ -62,3 +62,6 @@ ARCHIVES_SAVE_AS = 'archives/index.html'
 MENUITEMS = (
     ('Github', 'https://github.com/spacedirectory'),
 )
+FOOTERITEMS = (
+    ('Github', 'https://github.com/spacedirectory'),
+)
