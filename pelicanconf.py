@@ -60,6 +60,7 @@ CATEGORIES_SAVE_AS = 'categories/index.html'
 ARCHIVES_URL = 'archives'
 ARCHIVES_SAVE_AS = 'archives/index.html'
 MENUITEMS = (
+    ('Directory', 'https://spaceapi.fixme.ch/'),
     ('Github', 'https://github.com/spacedirectory'),
 )
 FOOTERITEMS = (
