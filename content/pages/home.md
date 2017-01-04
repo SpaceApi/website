@@ -27,8 +27,8 @@ we're always ready to merge our efforts into the original project!
 ## Status
 
 - [x] Host the directory on a [reliable server](https://spaceapi.fixme.ch/)
-- [x] Add API documentation
-- [x] Port JSON schema files to new format (IETF draft 4)
-- [x] Create updated apps page that showcases existing projects
+- [x] Add [API documentation](/pages/docs.html)
+- [x] Port [JSON schema files](https://github.com/spacedirectory/schema) to new format (IETF draft 4)
+- [x] Create [updated apps page](/pages/apps.html) that showcases existing projects
 - [ ] Write a simple schema validator (work in progress)
 - [ ] Rewrite the directory server (planning)
