@@ -4,7 +4,8 @@ save_as: index.html
 
 The Space Directory project is a friendly fork of the
 [Space API](http://spaceapi.net/) project that was started during
-[33c3](https://en.wikipedia.org/wiki/Chaos_Communication_Congress).
+[33c3](https://en.wikipedia.org/wiki/Chaos_Communication_Congress) by people
+from [Coredump](https://www.coredump.ch/) and [Fixme](https://fixme.ch/).
 
 The purpose of the Space API is to define a unified specification across the
 hackerspaces, makerspaces, fablabs, chaostreffs and the like across the world
@@ -15,9 +16,10 @@ For more information about the Space API specification itself, please refer to
 
 ## The Fork
 
-The reason for the fork was that the original project at spaceapi.net wasn't
-being maintained anymore. Pull requests were waiting for multiple months or
-years and sometimes the API was down.
+The reason for the fork was that the original project at
+[spaceapi.net](http://spaceapi.net/) wasn't being maintained anymore. Pull
+requests were waiting for multiple months or years and sometimes the API was
+down or the directory response was incomplete or broken.
 
 This fork aims to revive the development activity around the Space API. But
 we're always ready to merge our efforts into the original project!
