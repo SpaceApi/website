@@ -26,6 +26,7 @@ we're always ready to merge our efforts into the original project!
 
 ## Status
 
+- [x] Host the directory on a [reliable server](https://spaceapi.fixme.ch/)
 - [x] Add API documentation
 - [x] Port JSON schema files to new format (IETF draft 4)
 - [x] Create updated apps page that showcases existing projects
