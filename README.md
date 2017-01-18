@@ -1,12 +1,22 @@
+# spacedirectory.org
 
-# Run server locally
+This are the sources for the Space Directory website.
 
-    pyvenv VENV
-    source VENV/bin/activate
-    pip install -r requirements.txt
-    make html serve
+The website is generated using Pelican, a static site generator written in
+Python. This simplifies hosting and makes the website very fast.
 
-# Change contents
+## Run server locally
+
+Prerequisites: Python 3.
+
+    $ pyvenv VENV
+    $ source VENV/bin/activate
+    $ pip install -r requirements.txt
+    $ make html serve
+
+Then visit `http://localhost:8000` in your browser to see the result.
+
+## Change contents
 
 To apply the changes of contents of `/content/pages/*` you must restart the webserver:
 
@@ -17,3 +27,7 @@ To apply the changes of contents of `/content/pages/*` you must restart the webs
 Update the file inside `schema/`. Then:
 
     python generate_api_docs.py > content/pages/docs.md
+
+## Deployment
+
+Ping [@dbrgn](https://github.com/dbrgn/) :)

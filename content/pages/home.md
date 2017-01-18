@@ -22,7 +22,8 @@ requests were waiting for multiple months or years and sometimes the API was
 down or the directory response was incomplete or broken.
 
 This fork aims to revive the development activity around the Space API. But
-we're always ready to merge our efforts into the original project!
+we're always ready to discuss joining our forces back with the original
+project!
 
 ## Status
 
@@ -31,4 +32,5 @@ we're always ready to merge our efforts into the original project!
 - [x] Port [JSON schema files](https://github.com/spacedirectory/schema) to new format (IETF draft 4)
 - [x] Create [updated apps page](/pages/apps.html) that showcases existing projects
 - [ ] Write a simple schema validator (work in progress)
+- [ ] Add a "getting started" guide to the website (planning)
 - [ ] Rewrite the directory server (planning)
