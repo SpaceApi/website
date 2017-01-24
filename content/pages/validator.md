@@ -15,7 +15,7 @@ SortOrder: 10
   </p>
 
   <p>Paste your output here:</p>
-  <textarea id="content"></textarea>
+  <textarea id="validator_content"></textarea>
   <input id="submit_validate" type="submit" value="Validate">
 </form>
 
@@ -37,5 +37,13 @@ SortOrder: 10
   <iframe src="#">This is the backup iFrame</iframe>
 </div>
 
-
+<script>
+(function() {
+var css = document.createElement('link');
+css.rel = 'stylesheet';
+css.type = 'text/css';
+css.href = '/theme/css/validator.css';
+document.head.appendChild(css);
+})();
+</script>
 <script src="/js/validator.js"></script>

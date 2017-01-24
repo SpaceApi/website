@@ -1,6 +1,7 @@
 var Validator = (function() {
+  'use strict';
   var validator_target = 'http://localhost:6767/';
-  var textarea_selector = '#content';
+  var textarea_selector = '#validator_content';
   var url_selector = '#version';
   var url_input = '#input_url';
   var submit_selector = '#submit_validate';
@@ -34,6 +35,9 @@ var Validator = (function() {
     req.send(JSON.stringify({ schema: content, }));
   }
 
+  /**
+   * Fetch from remote SpaceAPI endpoint
+   */
   function validate_url(ev) {
     banner.className = 'fetching';
     ev.preventDefault();
@@ -41,7 +45,8 @@ var Validator = (function() {
 
     var url = getValue(url_input);
     if (url.indexOf('http://') === -1 && url.indexOf('https://') === -1) {
-      appendLog('\nInvalid URL: '+url);
+      appendLog('Invalid URL: '+url);
+      setBanner('ERROR', 'Invalid URL: '+url);
     } else {
       document.querySelector(textarea_selector).innerHTML = 'Fetching ...';
 
@@ -51,18 +56,36 @@ var Validator = (function() {
         mode: 'cors',
         cache: 'no-cache',
       });
+
       fetch(req)
         .then(function(response) {
           return response.text();
         })
         .then(function(response) {
           appendLog('fetched: ' + response);
-          document.querySelector(textarea_selector).innerHTML = response;
+          // store response into the textarea, FIXME this is currently exploitable, paste a HTML page
+          document.querySelector(textarea_selector).value = response;
           validate(ev);
+        })
+        .catch(function(error) {
+          var message = error.message;
+          if (req.bodyUsed) {
+            appendLog('fetch parse fail: ' + message);
+          } else {
+            message = 'is <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS" target="_blank">CORS</a> enabled? Check the iFrame for content\n' + message;
+
+            appendLog('fetch fail: ' + message);
+
+            BackupIframe.tryUrl(url);
+          }
+          setBanner('ERROR', message);
         });
     }
   }
 
+  /**
+   * Get trimmed value of <input ...> or <textarea>
+   */
   function getValue(selector) {
     var element = document.querySelector(selector);
 
@@ -87,7 +110,7 @@ var Validator = (function() {
         } else {
           var data = JSON.parse(req.responseText);
 
-          banner.className = data.status;
+          setBanner(data.status, status.message);
         }
       }
     };
@@ -104,5 +127,36 @@ var Validator = (function() {
 
       throw "offline";
     }
+  }
+
+  function setBanner(status, message) {
+    banner.className = status;
+
+    banner.querySelector('#'+status).innerHTML = status +'\n'+ message;
+  }
+})();
+
+
+var BackupIframe = (function() {
+  'use strict';
+  var root = document.querySelector('#backup_iframe');
+  var iframe = root.querySelector('iframe');
+
+  root.style.display = 'none';
+
+  return {
+    tryUrl: tryUrl,
+  }
+
+  function tryUrl(url) {
+    root.style.display = 'block';
+
+    iframe.src = '#';
+
+    root.querySelector('pre').innerHTML = url;
+
+    setTimeout(function() {
+      iframe.src = url;
+    }, 200);
   }
 })();
