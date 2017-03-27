@@ -4,7 +4,8 @@ Summary: Cool tools and applications related to the Space API written by other p
 SortOrder: 30
 
 This page features cool tools and applications related to the Space API written
-by other people. If you want to add yours, please [create a pull
+by other people, sorted alphabetically. If you want to add yours, please
+[create a pull
 request](https://github.com/spacedirectory/spacedirectory.org/blob/master/content/pages/apps.md).
 
 ## My Hackerspace
@@ -24,16 +25,30 @@ The source code is available on
 
 ## Space API Statistics
 
+[http://spaceapi-stats.n39.eu/](http://spaceapi-stats.n39.eu/)
+
 You see a timeline of the status for each hackerspace and at what time the
 hackerspace is most propably open.
 
 This app was made by Sebastian Mai
 ([@bastinat0r](https://twitter.com/bastinat0r)) from
-[Netz39](http://www.netz39.de/) and is hosted on
-[spaceapi-stats.n39.eu](http://spaceapi-stats.n39.eu/). The source code is
-available on [Github](https://github.com/bastinat0r/Spaceapi_Visualisation).
+[Netz39](http://www.netz39.de/). The source code is available on
+[Github](https://github.com/bastinat0r/Spaceapi_Visualisation).
 
 ![Screenshot](/img/app-statistics.png)
+
+## Spacer
+
+[https://spacer.nooitaf.nl/](https://spacer.nooitaf.nl/)
+
+Displays all spaces in the Space Directory on a map. The opening status is
+visible by the color of the marker.
+
+This app was made by [@nooitaf](https://github.com/nooitaf) from
+[NURDspace](https://nurdspace.nl/). The source code is available on
+[Github](https://github.com/nooitaf/spacer).
+
+![Screenshot](/img/app-spacer.png)
 
 ## Wordpress Widget
 
