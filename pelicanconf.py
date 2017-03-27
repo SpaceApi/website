@@ -21,7 +21,7 @@ AUTHOR_FEED_RSS = None
 
 # Paths
 PAGE_PATHS = ['pages']
-STATIC_PATHS = ['img']
+STATIC_PATHS = ['img', 'js']
 
 # Menus
 MENUITEMS = (
