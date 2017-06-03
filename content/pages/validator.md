@@ -7,6 +7,8 @@ SortOrder: 10
   <h2>JavaScript required!</h2>
 </noscript>
 
+<strong>Disclaimer: This is an early development of the validator! Usability will be improved in the future =)</strong>
+
 <form>
   <p>
     Validate URL:
