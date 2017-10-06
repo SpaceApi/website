@@ -31,3 +31,7 @@ Update the file inside `schema/`. Then:
 ## Deployment
 
 Ping [@dbrgn](https://github.com/dbrgn/) :)
+
+To deploy, make sure to enable the virtualenv, then type:
+
+    make clean html rsync_upload
