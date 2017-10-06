@@ -1,7 +1,6 @@
-Title: Documentation
+Title: API Documentation
 Slug: docs
 Summary: The SpaceAPI format documentation.
-SortOrder: 20
 
 It's highly recommended to use the explicit specified fields from the
 reference. If you need other fields additionally, please make a change request.
