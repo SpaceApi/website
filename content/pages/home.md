@@ -31,6 +31,6 @@ project!
 - [x] Add [API documentation](/pages/docs.html)
 - [x] Port [JSON schema files](https://github.com/spacedirectory/schema) to new format (IETF draft 4)
 - [x] Create [updated apps page](/pages/apps.html) that showcases existing projects
-- [x] Write a simple schema validator (work in progress)
+- [x] Write a simple schema [validator](https://github.com/spacedirectory/validator) (work in progress)
 - [ ] Add a "getting started" guide to the website (planning)
 - [ ] Rewrite the directory server (planning)
