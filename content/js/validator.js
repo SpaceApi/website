@@ -1,6 +1,6 @@
 var Validator = (function() {
   'use strict';
-  var validator_target = 'http://localhost:6767/';
+  var validator_target = 'https://validator.spacedirectory.org/v1/validate/';
   var textarea_selector = '#validator_content';
   var url_selector = '#version';
   var url_input = '#input_url';
@@ -32,7 +32,7 @@ var Validator = (function() {
 
     prepareNewRequest();
 
-    req.send(JSON.stringify({ schema: content, }));
+    req.send(JSON.stringify({ data: content, }));
   }
 
   /**
