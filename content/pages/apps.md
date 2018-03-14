@@ -59,3 +59,15 @@ This app was made by Danilo Bargen ([@dbrgn](https://twitter.com/dbrgn)) from
 [Github](https://github.com/coredump-ch/spaceapi-wp-widget).
 
 ![Screenshot](/img/app-wp-widget.png)
+
+
+## Command line and Python module
+
+Get the list of *spaces from the Space Directory and get their informations on your terminal.
+Or on your Python software.
+
+This app is made by [Sébastien Gendre](https://k-7.ch/) from 
+[Post Tenebras Lab](https://www.posttenebraslab.ch/). The source code is available on
+[Framagit](https://framagit.org/SebGen/spacedirectory).
+
+![Screenshot](/img/python-spacedirectory.png)
