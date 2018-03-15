@@ -70,3 +70,16 @@ This app is made by [Sébastien Gendre](https://k-7.ch/) from
 [Framagit](https://framagit.org/SebGen/spacedirectory).
 
 ![Screenshot](/img/python-spacedirectory.png)
+
+## Rust Crate
+
+A library for the Rust programming language that can be used to create your own
+Space API endpoint. For an example, see
+[github.com/coredump-ch/status](https://github.com/coredump-ch/status).
+
+This app is made by [Danilo Bargen](https://twitter.com/dbrgn) and [Raphael
+Nestler](https://twitter.com/rnstlr) from [Coredump](https://www.coredump.ch/).
+The source code is available on
+[Github](https://github.com/spaceapi-community/spaceapi-server-rs).
+
+![Screenshot](/img/rust-crate.png)
