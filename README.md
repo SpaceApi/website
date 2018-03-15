@@ -7,12 +7,10 @@ Python. This simplifies hosting and makes the website very fast.
 
 ## Run server locally
 
-Prerequisites: Python 3.
+Prerequisites: Python 3 and [pipenv](https://docs.pipenv.org/).
 
-    $ pyvenv VENV
-    $ source VENV/bin/activate
-    $ pip install -r requirements.txt
-    $ make html serve
+    $ pipenv install
+    $ pipenv run make html serve
 
 Then visit `http://localhost:8000` in your browser to see the result.
 
