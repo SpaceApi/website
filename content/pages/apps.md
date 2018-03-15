@@ -56,7 +56,7 @@ Display your hackerspace opening status in a Wordpress widget.
 
 This app was made by Danilo Bargen ([@dbrgn](https://twitter.com/dbrgn)) from
 [Coredump](https://www.coredump.ch/). The source code is available on
-[Github](https://github.com/coredump-ch/spaceapi-wp-widget).
+[Github](https://github.com/spaceapi-community/spaceapi-wp-widget).
 
 ![Screenshot](/img/app-wp-widget.png)
 
