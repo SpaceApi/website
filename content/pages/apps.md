@@ -60,10 +60,9 @@ This app was made by Danilo Bargen ([@dbrgn](https://twitter.com/dbrgn)) from
 
 ![Screenshot](/img/app-wp-widget.png)
 
-
 ## Command line and Python module
 
-Get the list of *spaces from the Space Directory and get their informations on your terminal.
+Get the list of \*spaces from the Space Directory and get their informations on your terminal.
 Or on your Python software.
 
 This app is made by [Sébastien Gendre](https://k-7.ch/) from 
