@@ -21,9 +21,15 @@ The reason for the fork was that the original project at
 requests were waiting for multiple months or years and sometimes the API was
 down or the directory response was incomplete or broken.
 
-This fork aims to revive the development activity around the Space API. But
-we're always ready to discuss joining our forces back with the original
-project!
+This fork aims to revive the development activity around the Space API.
+
+As of October 2017 we are trying to work together with the original SpaceAPI
+developer. So far we set up some infrastructure and meet semi regularly to
+discuss our progress. Check out https://github.com/SpaceApi/meeting-notes for
+our discussions. We encurage anybody who wants to participate to join the
+disussion on GitHub, the #spaceapi IRC channel on freenode or our mattermost
+instance on https://chat.spaceapi.net!
+
 
 ## Status
 
