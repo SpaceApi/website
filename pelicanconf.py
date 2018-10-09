@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'SpaceAPI Contributors'
 SITENAME = 'SpaceAPI'
-SITEURL = 'https://spaceapi.io/'
+SITEURL = 'https://spaceapi.io'
 
 PATH = 'content'
 
