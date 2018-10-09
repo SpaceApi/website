@@ -9,36 +9,35 @@ that can be used to expose information to web apps or any other application.
 The specification is based on the JSON data interchange format. The following
 example shows how it looks like:
 
-```json
-{
-  "api": "0.13",
-  "space": "Shackspace",
-  "logo": "http://rescue.shackspace.de/images/logo_shack_brightbg_highres.png",
-  "url": "http://shackspace.de",
-  "location": {
-    "address": "Ulmer Strasse 255, 70327 Stuttgart, Germany",
-    "lon": 9.236,
-    "lat": 48.777
-  },
-  "contact": {
-    "email": "info@shackspace.de",
-    "irc": "irc://irc.freenode.net/shackspace",
-    "ml": "public@lists.shackspace.de",
-    "twitter": "@shackspace"
-  },
-  "state": {
-    "icon": {
-      "open": "http://shackspace.de/sopen.gif",
-      "closed": "http://shackspace.de/sopen.gif"
-    },
-    "open": true
-  },
-  "projects": [
-    "http://github.com/shackspace",
-    "http://shackspace.de/wiki/doku.php?id=projekte"
-  ]
-}
-```
+    :::json
+    {
+      "api": "0.13",
+      "space": "Shackspace",
+      "logo": "http://rescue.shackspace.de/images/logo_shack_brightbg_highres.png",
+      "url": "http://shackspace.de",
+      "location": {
+        "address": "Ulmer Strasse 255, 70327 Stuttgart, Germany",
+        "lon": 9.236,
+        "lat": 48.777
+      },
+      "contact": {
+        "email": "info@shackspace.de",
+        "irc": "irc://irc.freenode.net/shackspace",
+        "ml": "public@lists.shackspace.de",
+        "twitter": "@shackspace"
+      },
+      "state": {
+        "icon": {
+          "open": "http://shackspace.de/sopen.gif",
+          "closed": "http://shackspace.de/sopen.gif"
+        },
+        "open": true
+      },
+      "projects": [
+        "http://github.com/shackspace",
+        "http://shackspace.de/wiki/doku.php?id=projekte"
+      ]
+    }
 
 ## Contributing
 

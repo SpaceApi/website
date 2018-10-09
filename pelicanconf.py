@@ -47,6 +47,7 @@ RELATIVE_URLS = True
 # Markdown extensions
 MARKDOWN = {
     'extension_configs': {
+        'markdown.extensions.codehilite': {},
         'markdown_checklist.extension': {},
     },
     'output_format': 'html5',
