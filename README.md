@@ -1,5 +1,8 @@
 # spaceapi.io
 
+[![CircleCI][circle-ci-badge]][circle-ci]
+[![Docker Image][docker-image-badge]][docker-image]
+
 This are the sources for the SpaceAPI website.
 
 The website is generated using Pelican, a static site generator written in
@@ -33,3 +36,10 @@ Ping [@dbrgn](https://github.com/dbrgn/) :)
 To deploy, make sure to enable the virtualenv, then type:
 
     make clean html rsync_upload
+
+
+<!-- Badges -->
+[circle-ci]: https://circleci.com/gh/SpaceApi/website/tree/master
+[circle-ci-badge]: https://circleci.com/gh/SpaceApi/website/tree/master.svg?style=shield
+[docker-image]: https://hub.docker.com/r/spaceapi/website/
+[docker-image-badge]: https://img.shields.io/docker/pulls/spaceapi/website.svg
