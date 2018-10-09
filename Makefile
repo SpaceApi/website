@@ -12,10 +12,10 @@ FTP_HOST=localhost
 FTP_USER=anonymous
 FTP_TARGET_DIR=/
 
-SSH_HOST=spacedirectory.org
+SSH_HOST=
 SSH_PORT=22
-SSH_USER=spacedirectory
-SSH_TARGET_DIR=/srv/www/spacedirectory
+SSH_USER=
+SSH_TARGET_DIR=
 
 S3_BUCKET=my_s3_bucket
 

@@ -31,11 +31,8 @@ Update the file inside `schema/`. Then:
 
 ## Deployment
 
-Ping [@dbrgn](https://github.com/dbrgn/) :)
-
-To deploy, make sure to enable the virtualenv, then type:
-
-    make clean html rsync_upload
+The website should auto-deploy after a push to master. The update might take a
+few minutes though.
 
 
 <!-- Badges -->
