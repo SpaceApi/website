@@ -30,6 +30,8 @@ MENUITEMS = (
 )
 FOOTERITEMS = (
     ('Github', 'https://github.com/SpaceApi'),
+    ('Mastodon', 'https://chaos.social/@spaceapi'),
+    ('Twitter', 'https://twitter.com/space_api'),
 )
 
 # Ordering
