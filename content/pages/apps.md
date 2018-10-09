@@ -6,7 +6,7 @@ SortOrder: 30
 This page features cool tools and applications related to the Space API written
 by other people, sorted alphabetically. If you want to add yours, please
 [create a pull
-request](https://github.com/spacedirectory/spacedirectory.org/blob/master/content/pages/apps.md).
+request](https://github.com/spaceapi/website/blob/master/content/pages/apps.md).
 
 ## My Hackerspace
 

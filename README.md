@@ -1,6 +1,6 @@
-# spacedirectory.org
+# spaceapi.io
 
-This are the sources for the Space Directory website.
+This are the sources for the SpaceAPI website.
 
 The website is generated using Pelican, a static site generator written in
 Python. This simplifies hosting and makes the website very fast.

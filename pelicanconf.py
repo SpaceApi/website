@@ -2,9 +2,9 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = 'Space Directory Contributors'
-SITENAME = 'spacedirectory.org'
-SITEURL = ''
+AUTHOR = 'SpaceAPI Contributors'
+SITENAME = 'SpaceAPI'
+SITEURL = 'https://spaceapi.io/'
 
 PATH = 'content'
 
@@ -26,10 +26,10 @@ STATIC_PATHS = ['img', 'js']
 # Menus
 MENUITEMS = (
     ('Directory', 'https://spaceapi.fixme.ch/'),
-    ('Github', 'https://github.com/spacedirectory'),
+    ('Github', 'https://github.com/SpaceApi'),
 )
 FOOTERITEMS = (
-    ('Github', 'https://github.com/spacedirectory'),
+    ('Github', 'https://github.com/SpaceApi'),
 )
 
 # Ordering

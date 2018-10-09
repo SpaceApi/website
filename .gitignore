@@ -4,3 +4,4 @@ __pycache__
 *.pid
 output/
 VENV
+.mypy_cache/
