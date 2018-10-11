@@ -44,6 +44,9 @@ def visit_array(name, data):
     print('<h4>Nested array items</h4>')
     if items['type'] == 'string':
         print('<span>string</span>')
+        if 'enum' in items:
+            print('<h5>Valid values</h5>')
+            print('<p><code>%s</code></p>' % '</code> | <code>'.join(items['enum']))
     elif items['type'] == 'object':
         print('<ul class="group">')
         visit(items['properties'])

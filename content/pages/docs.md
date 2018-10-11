@@ -578,6 +578,8 @@ but they may be left away if they're not required.
 <p>1</p>
 <h4>Nested array items</h4>
 <span>string</span>
+<h5>Valid values</h5>
+<p><code>email</code> | <code>issue_mail</code> | <code>twitter</code> | <code>ml</code></p>
 <div></details>
 </section></li>
 <li><section class="item">
