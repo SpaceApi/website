@@ -577,7 +577,8 @@ but they may be left away if they're not required.
 <h4>Minimum number of items</h4>
 <p>1</p>
 <h4>Nested array items</h4>
-<span>string</span>
+<h4>Valid values</h4>
+<p><code>email</code> | <code>issue_mail</code> | <code>twitter</code> | <code>ml</code></p>
 <div></details>
 </section></li>
 <li><section class="item">
