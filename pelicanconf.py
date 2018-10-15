@@ -26,7 +26,7 @@ STATIC_PATHS = ['img', 'js']
 # Menus
 MENUITEMS = (
     ('Directory', 'https://spaceapi.fixme.ch/'),
-    ('Github', 'https://github.com/SpaceApi'),
+    ('Github', 'https://github.com/SpaceApi/website'),
 )
 FOOTERITEMS = (
     ('Github', 'https://github.com/SpaceApi'),
