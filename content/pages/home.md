@@ -41,6 +41,6 @@ example shows how it looks like:
 
 ## Contributing
 
-We encurage anybody who wants to participate in this project to join the
-disussion on GitHub, the #spaceapi IRC channel on freenode or our Mattermost
+We encourage anybody who wants to participate in this project to join the
+discussion on GitHub, the #spaceapi IRC channel on freenode or our Mattermost
 instance on https://chat.spaceapi.net!
