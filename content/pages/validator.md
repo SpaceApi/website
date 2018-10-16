@@ -1,7 +1,7 @@
 Title: Validator
 Slug: validator
 Summary: Validate your SpaceAPI endpoint.
-SortOrder: 10
+SortOrder: 30
 
 <noscript>
   <h2>JavaScript required!</h2>

@@ -1,7 +1,7 @@
 Title: Apps
 Slug: apps
 Summary: Cool tools and applications related to the Space API written by other people.
-SortOrder: 30
+SortOrder: 10
 
 This page features cool tools and applications related to the Space API written
 by other people, sorted alphabetically. If you want to add yours, please
