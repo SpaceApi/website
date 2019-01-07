@@ -151,7 +151,7 @@ blockquote {
 }
 
 .page {
-    margin: 0 90px;
+    margin: 0;
 }
 
 .highlight {
@@ -234,7 +234,7 @@ form.inline_edit {
 nav ul {
     float: right;
     list-style: none;
-    margin: 0 0 0 3em;
+    margin: 0;
     padding: 0;
 }
 nav li {
@@ -242,7 +242,7 @@ nav li {
 }
 nav a {
     display: block;
-    padding: 4.5em 10px 10px 10px;
+    padding: 1.0em 0.5em 0.5em;
 }
 nav a:hover {
     background-color: #d3d3d3;
@@ -340,3 +340,9 @@ footer p { margin: 0; }
 .right { float: right; }
 
 .clear { clear: both; }
+
+@media only screen and (min-width:540px){
+    .page { margin: 0 90px; }
+    nav ul { margin: 0 0 0 3em; }
+    nav a { padding: 4.5em 10px 10px 10px; }
+}
