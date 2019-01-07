@@ -43,4 +43,4 @@ example shows how it looks like:
 
 We encourage anybody who wants to participate in this project to join the
 discussion on GitHub, the #spaceapi IRC channel on freenode or our Mattermost
-instance on <https://chat.spaceapi.net>!
+instance on <https://chat.spaceapi.io>!
