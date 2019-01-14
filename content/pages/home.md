@@ -26,6 +26,9 @@ example shows how it looks like:
         "ml": "public@lists.shackspace.de",
         "twitter": "@shackspace"
       },
+      "issue_report_channels": [
+        "email"
+      ],
       "state": {
         "icon": {
           "open": "http://shackspace.de/sopen.gif",
