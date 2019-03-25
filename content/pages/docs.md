@@ -176,7 +176,7 @@ but they may be left away if they're not required.
 <ul class="group">
 <li><section class="item">
 <header>
-<h3>m4</h3><span class="type">(string)</span>
+<h3>mp4</h3><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
