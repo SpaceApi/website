@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="{{ '/static/style/reset.css' | url }}">
+    <link rel="stylesheet" href="{{ '/static/style/style.css' | url }}">
+
+    {# TODO: Download fonts instead of embedding #}
+    <link href="https://fonts.googleapis.com/css?family=Lato:700|Montserrat&amp;subset=latin-ext" rel="stylesheet">
+
+    <title>{% block title %}Welcome{% endblock %} — SpaceAPI</title>
+  </head>
+  <body>
+    <header>
+      <h1><img src="" alt="SpaceAPI"></h1>
+      <nav id="mainnav">
+        <ul class="nav navbar-nav">
+          <li{% if this._path == '/' %} class="active"{% endif %}>
+            <a href="{{ '/' | url }}">Home</a>
+          </li>
+          {% for href, title in [
+            ['/news/', 'News'],
+            ['/docs/', 'Documentation'],
+            ['/apps', 'Apps'],
+            ['/validator', 'Validator'],
+            ['/', 'Directory'],
+            ['/', 'GitHub'],
+          ] %}
+            <li{% if this.is_child_of(href) %} class="active"{% endif %}>
+              <a href="{{ href | url }}">{{ title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </header>
+    <div class="page">
+      {% block body %}{% endblock %}
+    </div>
+    <footer>
+      <div id="footerlogo">
+      </div>
+      <nav id="footernav">
+        <ul>
+          <li><a href="{{ '/' | url }}">Home</a></li>
+          <li><a href="{{ '/' | url }}">Documentation</a></li>
+          <li><a href="{{ '/' | url }}">Apps</a></li>
+          <li><a href="{{ '/' | url }}">Validator</a></li>
+          <li><a href="{{ '/' | url }}">Directory</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

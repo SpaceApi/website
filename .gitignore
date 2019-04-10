@@ -5,3 +5,4 @@ __pycache__
 output/
 VENV
 .mypy_cache/
+*.psd
