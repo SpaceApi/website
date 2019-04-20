@@ -22,7 +22,7 @@ Install dependencies:
 
 Run dev server:
 
-    lektor server
+    lektor server -f webpack
 
 Now open `http://localhost:5000/` in your browser.
 
