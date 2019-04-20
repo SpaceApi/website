@@ -1,2 +1,5 @@
 [project]
 name = SpaceAPI
+
+[packages]
+lektor-webpack-support = 0.5

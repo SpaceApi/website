@@ -1,0 +1,43 @@
+footer {
+    width: 1080px;
+    padding-top: 110px;
+    padding-bottom: 55px;
+
+    .leftcontainer {
+        grid-column: col / span 3;
+        grid-row: row;
+        width: 230px;
+
+        #reficons {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            img {
+                width: 25px;
+                height: 25px;
+                background-color: #fff;
+                border-radius: 50%;
+                padding: 5px;
+                margin: 5px;
+            }
+        }
+    }
+
+    nav {
+        grid-column: col 4 / span 8;
+        grid-row: row;
+
+        ul {
+            li {
+                padding-bottom: 20px;
+            }
+        }
+    }
+}
+
+.footerbackground {
+    width: 100%;
+    background-image: url("../../assets/static/images/footer.png");
+    background-size: cover;
+    position: center;
+}
