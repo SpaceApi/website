@@ -1,0 +1,23 @@
+<header id="header">
+  <img src="{{ '/static/images/spaceapi-logo.png' | url }}" class="logo" alt="SpaceAPI">
+  <nav>
+    <ul>
+      <li{% if this._path == '/' %} class="active"{% endif %}>
+      <a href="{{ '/' | url }}">Home</a>
+      </li>
+      {% for href, title in [
+      ['/docs/', 'Documentation'],
+      ['/apps', 'Apps'],
+      ['/validator', 'Validator'],
+      ['/directory/', 'Directory'],
+      ['https://github.com/SpaceApi', 'GitHub'],
+      ] %}
+      <li{% if this.is_child_of(href) %} class="active"{% endif %}>
+      <a href="{% if href.startswith('http') %}{{ href }}{% else %}{{ href | url }}{% endif %}">{{ title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </nav>
+  <div id="navbg">
+  </div>
+</header>

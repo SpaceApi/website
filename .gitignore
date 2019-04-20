@@ -6,3 +6,4 @@ output/
 VENV
 .mypy_cache/
 *.psd
+gen
