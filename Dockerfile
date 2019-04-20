@@ -1,20 +1,23 @@
-FROM nginx:1.15-alpine
+FROM python:3 as builder
 
 ENV LANG=en_US.utf8
 
-# Install Python
-RUN apk add --no-cache python3 make
+# Install Node/npm for webpack
+RUN curl -sL https://deb.nodesource.com/setup_11.x | bash -
+RUN apt-get update -y
+RUN apt-get install build-essential nodejs  -y
 
-# Python
-RUN pip3 install pipenv
-
-# Build HTML
+# Add sources
 COPY . /code
-RUN cd /code && pipenv install && pipenv run make html
 
-# Add code
-RUN rm /usr/share/nginx/html/* && cp -Rv /code/output/* /usr/share/nginx/html/
+# Install requirements and build the site
+RUN cd /code && \
+    pip install -U -r requirements.txt && \
+    lektor build -f webpack --output-path /code/output
 
-# Expose ports
-EXPOSE 80
-CMD ["/usr/sbin/nginx", "-g", "daemon off;"]
+
+FROM nginx:1.15-alpine
+# Remove default nginx files
+RUN rm -Rf /usr/share/nginx/html
+# Copy data from build image
+COPY --from=builder /code/output /usr/share/nginx/html
