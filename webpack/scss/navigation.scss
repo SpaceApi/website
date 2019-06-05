@@ -9,6 +9,7 @@
         width: 230px;
         padding-left: 65px;
         padding-top: 55px;
+        z-index: 1100;
     }
 
     #navbg {
@@ -18,6 +19,7 @@
         right: 0;
         height: 100%;
         width: 961px;
+        max-width: calc(100vw - 230px);
         background-repeat: no-repeat;
         z-index: 1050;
     }

@@ -55,17 +55,23 @@ code {
 
 .pagecontainer {
     background-color: white;
+    min-height: calc(100vh - 227px - 385px);
 }
 
 .gridcontainer {
     display: flex;
     width: 100%;
     justify-content: center;
+
     .page {
         margin: 100px 0;
         z-index: 1500;
         max-width: 1080px;
         min-width: 320px;
+
+        p {
+            background-color: white;
+        }
 
         ul {
             list-style-position: inside;

@@ -36,6 +36,8 @@ footer {
 }
 
 .footerbackground {
+    height: 385px;
+    overflow: hidden;
     width: 100%;
     background-image: url("../../assets/static/images/footer.png");
     background-size: cover;
