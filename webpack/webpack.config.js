@@ -3,6 +3,7 @@ var path = require('path');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
+  mode: 'production',
   entry: {
     'app': './js/main.js',
     'style': './scss/main.scss'
