@@ -26,6 +26,14 @@ Run dev server:
 
 Now open `http://localhost:5000/` in your browser.
 
+### docker
+
+To use docker you can run:
+```bash
+docker build -t website -f Dockerfile_dev .
+docker run -v $(pwd):/code -it -p5000:80 website
+```
+Then open http://localhost:5000
 
 ## Deployment
 
