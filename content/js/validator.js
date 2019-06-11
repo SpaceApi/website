@@ -72,7 +72,7 @@ var Validator = (function() {
           if (req.bodyUsed) {
             appendLog('fetch parse fail: ' + message);
           } else {
-            message = 'is <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS" target="_blank">CORS</a> enabled? Check the iFrame for content\n' + message;
+            message = 'Is <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS" target="_blank">CORS</a> enabled? Check the iFrame for content\nAre you using a HTTP link? It may not work due to <a href="https://developer.mozilla.org/en-US/docs/Web/Security/Mixed_content">mixed content security policy</a>.\nCheck the developer tools in your browser for more details.\nProblem:\n' + message;
 
             appendLog('fetch fail: ' + message);
 
