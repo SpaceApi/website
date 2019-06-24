@@ -34,7 +34,7 @@ A most minimal JSON file with just the required fields looks like that:
         "open": null
       },
       "contact": {
-        "email": "info@foospace.example.com",
+        "email": "info@foospace.example.com"
       },
       "issue_report_channels": [
         "email"
