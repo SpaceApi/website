@@ -69,4 +69,5 @@ page](./apps.html) for some examples.
 
 You can use the [SpaceAPI validator](https://spaceapi.io/pages/validator.html)
 to verify that you implement it correctly. It doesn't catch all issues and only
-works if your endpoint has
+works if your endpoint is reachable by HTTPS and sets the CORS headers
+correctly. See [Common Issues](#common-issues).
