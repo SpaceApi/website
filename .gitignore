@@ -7,3 +7,4 @@ VENV
 .mypy_cache/
 *.psd
 gen
+node_modules/
