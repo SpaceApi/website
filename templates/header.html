@@ -1,5 +1,7 @@
 <header id="header">
-  <img src="{{ '/static/images/spaceapi-logo.png' | url }}" class="logo" alt="SpaceAPI">
+  <div class="logocontainer">
+    <img src="{{ '/static/images/spaceapi-logo.png' | url }}" class="logo" alt="SpaceAPI">
+  </div>
   <nav>
     <ul>
       <li{% if this._path == '/' %} class="active"{% endif %}>

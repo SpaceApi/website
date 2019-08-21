@@ -1,3 +1,5 @@
+$width_responsive: 700px;
+
 #header {
     width: 100%;
     display: flex;
@@ -5,11 +7,20 @@
     background-color: white;
     z-index: 1000;
 
-    .logo {
-        width: 230px;
+    .logocontainer {
+        max-width: 230px;
         padding-left: 65px;
         padding-top: 55px;
         z-index: 1100;
+
+        @media (max-width: $width_responsive) {
+            padding-left: 24px;
+            padding-top: 24px;
+        }
+
+        .logo {
+            width: 100%;
+        }
     }
 
     #navbg {
@@ -29,8 +40,12 @@
         padding-right: 80px;
         z-index: 1100;
 
-        ul {
+        @media (max-width: $width_responsive) {
+            padding-top: 24px;
+            padding-right: 24px;
+        }
 
+        ul {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
