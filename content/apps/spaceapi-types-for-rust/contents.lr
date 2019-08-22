@@ -1,0 +1,15 @@
+_model: app
+---
+title: SpaceAPI Types for Rust
+---
+author: Danilo Bargen
+---
+author_url: https://twitter.com/dbrgn
+---
+category: library
+---
+description: A Rust crate with types that can be used to serialize and deserialize SpaceAPI data.
+---
+space: Coredump
+---
+space_url: https://www.coredump.ch/
