@@ -4,9 +4,14 @@ title: Directory
 ---
 body:
 
-The directory hosts a list of hackerspaces which implement the SpaceAPI. It is currently maintained by the [FIXME Hackerspace](https://fixme.ch/).
+The directory hosts a list of hackerspaces which implement the SpaceAPI. It is hosted by us and the [FIXME Hackerspace](https://fixme.ch/).
 
-  * [Spaceapi directory](https://spaceapi.fixme.ch/directory.json)
-  * Add your space to the directory by creating a pull request on [Github](https://github.com/fixme-lausanne/OpenSpaceDirectory)
+  * [Spaceapi directory](https://directory.spaceapi.io/)
+  * [Mirror by FIXME](https://spaceapi.fixme.ch/directory.json)
+  * Add your space to the directory by creating a pull request on [Github](https://github.com/SpaceApi/directory)
   *  Invalid URLs will be removed from time to time (404, 503, etc)
 
+---
+_discoverable: yes
+---
+_slug: directory
