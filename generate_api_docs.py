@@ -87,7 +87,7 @@ def visit(properties):
         else:
             print('Non object: %s' % v['type'], file=sys.stderr)
             sys.exit(1)
-        print('<div></details>')
+        print('</div></details>')
         print('</section></li>')
 
 

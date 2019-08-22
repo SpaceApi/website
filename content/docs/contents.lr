@@ -23,7 +23,7 @@ but they may be left away if they're not required.
 <p>The version of SpaceAPI your endpoint uses</p>
 <h4>Valid values</h4>
 <p><code>0.13</code></p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -33,7 +33,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>The name of your space</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -43,7 +43,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>URL to your space logo</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -53,7 +53,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>URL to your space website</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -74,7 +74,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>The postal address of your space (street, block, housenumber, zip code, city, whatever you usually need in your country, and the country itself).<br>Examples: <ul><li>Netzladen e.V., Breite Straße 74, 53111 Bonn, Germany</li></ul></p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -84,7 +84,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>Latitude of your space location, in degree with decimal places. Use positive values for locations north of the equator, negative values for locations south of equator.</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -94,10 +94,10 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>Longitude of your space location, in degree with decimal places. Use positive values for locations east of Greenwich, and negative values for locations west of Greenwich.</p>
-<div></details>
+</div></details>
 </section></li>
 </ul>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -118,7 +118,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>See the <a target="_blank" href="https://spacefed.net/wiki/index.php/Category:Howto/Spacenet">wiki</a>.</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -128,7 +128,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>See the <a target="_blank" href="https://spacefed.net/wiki/index.php/Category:Howto/Spacesaml">wiki</a>.</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -138,10 +138,10 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>See the <a target="_blank" href="https://spacefed.net/wiki/index.php/Category:Howto/Spacephone">wiki</a>.</p>
-<div></details>
+</div></details>
 </section></li>
 </ul>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -155,7 +155,7 @@ but they may be left away if they're not required.
 <p>1</p>
 <h4>Nested array items</h4>
 <span>string</span>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -175,7 +175,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>Your mpg stream URL. Example: <samp>{"mp4": "http://example.org/stream.mpg"}</samp></p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -185,7 +185,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>Your mjpeg stream URL. Example: <samp>{"mjpeg": "http://example.org/stream.mjpeg"}</samp></p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -195,10 +195,10 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>Your ustream stream URL. Example: <samp>{"ustream": "http://www.ustream.tv/channel/hackspsps"}</samp></p>
-<div></details>
+</div></details>
 </section></li>
 </ul>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -220,7 +220,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>A flag which indicates if the space is currently open or closed. The state 'undefined' can be achieved by assigning this field the value 'null' (without the quotes). In most (all?) programming languages this is evaluated to false so that no app should break</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -230,7 +230,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>The Unix timestamp when the space status changed most recently</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -240,7 +240,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>The person who lastly changed the state e.g. opened or closed the space.</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -250,7 +250,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>An additional free-form string, could be something like <samp>'open for public'</samp>, <samp>'members only'</samp> or whatever you want it to be</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -271,7 +271,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>The URL to your customized space logo showing an open space</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -281,13 +281,13 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>The URL to your customized space logo showing a closed space</p>
-<div></details>
+</div></details>
 </section></li>
 </ul>
-<div></details>
+</div></details>
 </section></li>
 </ul>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -307,7 +307,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>Name or other identity of the subject (e.g. <samp>J. Random Hacker</samp>, <samp>fridge</samp>, <samp>3D printer</samp>, …)</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -317,7 +317,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>Action (e.g. <samp>check-in</samp>, <samp>check-out</samp>, <samp>finish-print</samp>, …). Define your own actions and use them consistently, canonical actions are not (yet) specified</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -327,7 +327,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>Unix timestamp when the event occurred</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -337,10 +337,10 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>A custom text field to give more information about the event</p>
-<div></details>
+</div></details>
 </section></li>
 </ul>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -360,7 +360,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>Phone number, including country code with a leading plus sign. Example: <samp>+1 800 555 4567</samp></p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -370,7 +370,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>URI for Voice-over-IP via SIP. Example: <samp>sip:yourspace@sip.example.org</samp></p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -392,7 +392,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>Real name</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -402,7 +402,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>Contact the person with this nickname directly in irc if available. The irc channel to be used is defined in the contact/irc field.</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -412,7 +412,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>Example: <samp>['+1 800 555 4567','+1 800 555 4544']</samp></p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -422,7 +422,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>Email address which can be base64 encoded.</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -432,10 +432,10 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>Twitter username with leading <samp>@</samp>.</p>
-<div></details>
+</div></details>
 </section></li>
 </ul>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -445,7 +445,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>URL of the IRC channel, in the form <samp>irc://example.org/#channelname</samp></p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -455,7 +455,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>Twitter handle, with leading @</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -465,7 +465,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>Facebook account URL.</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -485,10 +485,10 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>Google plus URL.</p>
-<div></details>
+</div></details>
 </section></li>
 </ul>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -498,7 +498,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>Identi.ca or StatusNet account, in the form <samp>yourspace@example.org</samp></p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -508,7 +508,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>Foursquare ID, in the form <samp>4d8a9114d85f3704eab301dc</samp>.</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -518,7 +518,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>E-mail address for contacting your space. If this is a mailing list consider to use the contact/ml field.</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -528,7 +528,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>The e-mail address of your mailing list. If you use Google Groups then the e-mail looks like <samp>your-group@googlegroups.com</samp>.</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -538,7 +538,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>A public Jabber/XMPP multi-user chatroom in the form <samp>chatroom@conference.example.net</samp></p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -548,10 +548,10 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>A separate email address for issue reports (see the <em>issue_report_channels</em> field). This value can be Base64-encoded.</p>
-<div></details>
+</div></details>
 </section></li>
 </ul>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -567,7 +567,7 @@ but they may be left away if they're not required.
 <span>string</span>
 <h5>Valid values</h5>
 <p><code>email</code> | <code>issue_mail</code> | <code>twitter</code> | <code>ml</code></p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -597,7 +597,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>The sensor value</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -609,7 +609,7 @@ but they may be left away if they're not required.
 <p>The unit of the sensor value.</p>
 <h4>Valid values</h4>
 <p><code>°C</code> | <code>°F</code> | <code>K</code> | <code>°De</code> | <code>°N</code> | <code>°R</code> | <code>°Ré</code> | <code>°Rø</code></p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -619,7 +619,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>The location of your sensor such as <samp>Outside</samp>, <samp>Inside</samp>, <samp>Ceiling</samp>, <samp>Roof</samp> or <samp>Room 1</samp>.</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -629,7 +629,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>This field is an additional field to give your sensor a name. This can be useful if you have multiple sensors in the same location.</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -639,10 +639,10 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>An extra field that you can use to attach some additional information to this sensor instance.</p>
-<div></details>
+</div></details>
 </section></li>
 </ul>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -662,7 +662,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>The sensor value</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -672,7 +672,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>The location of your sensor such as <samp>front door</samp>, <samp>chill room</samp> or <samp>lab</samp>.</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -682,7 +682,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>This field is an additional field to give your sensor a name. This can be useful if you have multiple sensors in the same location.</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -692,10 +692,10 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>An extra field that you can use to attach some additional information to this sensor instance.</p>
-<div></details>
+</div></details>
 </section></li>
 </ul>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -715,7 +715,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>The sensor value</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -727,7 +727,7 @@ but they may be left away if they're not required.
 <p>The unit of the sensor value. You should always define the unit though if the sensor is a flag of a boolean type then you can of course omit it.</p>
 <h4>Valid values</h4>
 <p><code>hPA</code></p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -737,7 +737,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>The location of your sensor such as <samp>Outside</samp>, <samp>Inside</samp>, <samp>Ceiling</samp>, <samp>Roof</samp> or <samp>Room 1</samp>.</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -747,7 +747,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>This field is an additional field to give your sensor a name. This can be useful if you have multiple sensors in the same location.</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -757,10 +757,10 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>An extra field that you can use to attach some additional information to this sensor instance.</p>
-<div></details>
+</div></details>
 </section></li>
 </ul>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -790,7 +790,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>Observed counts per minute (ocpm) or actual radiation value. If the value are the observed counts then the dead_time and conversion_factor fields must be defined as well. CPM formula: <div>cpm = ocpm ( 1 + 1 / (1 - ocpm x dead_time) )</div> Conversion formula: <div>µSv/h = cpm x conversion_factor</div></p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -802,7 +802,7 @@ but they may be left away if they're not required.
 <p>Choose the appropriate unit for your radiation sensor instance.</p>
 <h4>Valid values</h4>
 <p><code>cpm</code> | <code>r/h</code> | <code>µSv/h</code> | <code>mSv/a</code> | <code>µSv/a</code></p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -812,7 +812,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>The dead time in µs. See the description of the value field to see how to use the dead time.</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -822,7 +822,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>The conversion from the <em>cpm</em> unit to another unit hardly depends on your tube type. See the description of the value field to see how to use the conversion factor. <strong>Note:</strong> only trust your manufacturer if it comes to the actual factor value. The internet seems <a rel="nofollow" href="http://sapporohibaku.wordpress.com/2011/10/15/conversion-factor/" target="_blank">full of wrong copy & pastes</a>, don't even trust your neighbour hackerspace. If in doubt ask the tube manufacturer.</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -832,7 +832,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>The location of your sensor such as <samp>Outside</samp>, <samp>Inside</samp>, <samp>Ceiling</samp>, <samp>Roof</samp> or <samp>Room 1</samp>.</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -842,7 +842,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>This field is an additional field to give your sensor a name. This can be useful if you have multiple sensors in the same location.</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -852,10 +852,10 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>An extra field that you can use to attach some additional information to this sensor instance.</p>
-<div></details>
+</div></details>
 </section></li>
 </ul>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -875,7 +875,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>Observed counts per minute (ocpm) or actual radiation value. If the value are the observed counts then the dead_time and conversion_factor fields must be defined as well. CPM formula: <div>cpm = ocpm ( 1 + 1 / (1 - ocpm x dead_time) )</div> Conversion formula: <div>µSv/h = cpm x conversion_factor</div></p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -887,7 +887,7 @@ but they may be left away if they're not required.
 <p>Choose the appropriate unit for your radiation sensor instance.</p>
 <h4>Valid values</h4>
 <p><code>cpm</code> | <code>r/h</code> | <code>µSv/h</code> | <code>mSv/a</code> | <code>µSv/a</code></p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -897,7 +897,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>The dead time in µs. See the description of the value field to see how to use the dead time.</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -907,7 +907,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>The conversion from the <em>cpm</em> unit to another unit hardly depends on your tube type. See the description of the value field to see how to use the conversion factor. <strong>Note:</strong> only trust your manufacturer if it comes to the actual factor value. The internet seems <a rel="nofollow" href="http://sapporohibaku.wordpress.com/2011/10/15/conversion-factor/" target="_blank">full of wrong copy & pastes</a>, don't even trust your neighbour hackerspace. If in doubt ask the tube manufacturer.</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -917,7 +917,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>The location of your sensor such as <samp>Outside</samp>, <samp>Inside</samp>, <samp>Ceiling</samp>, <samp>Roof</samp> or <samp>Room 1</samp>.</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -927,7 +927,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>This field is an additional field to give your sensor a name. This can be useful if you have multiple sensors in the same location.</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -937,10 +937,10 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>An extra field that you can use to attach some additional information to this sensor instance.</p>
-<div></details>
+</div></details>
 </section></li>
 </ul>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -960,7 +960,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>Observed counts per minute (ocpm) or actual radiation value. If the value are the observed counts then the dead_time and conversion_factor fields must be defined as well. CPM formula: <div>cpm = ocpm ( 1 + 1 / (1 - ocpm x dead_time) )</div> Conversion formula: <div>µSv/h = cpm x conversion_factor</div></p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -972,7 +972,7 @@ but they may be left away if they're not required.
 <p>Choose the appropriate unit for your radiation sensor instance.</p>
 <h4>Valid values</h4>
 <p><code>cpm</code> | <code>r/h</code> | <code>µSv/h</code> | <code>mSv/a</code> | <code>µSv/a</code></p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -982,7 +982,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>The dead time in µs. See the description of the value field to see how to use the dead time.</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -992,7 +992,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>The conversion from the <em>cpm</em> unit to another unit hardly depends on your tube type. See the description of the value field to see how to use the conversion factor. <strong>Note:</strong> only trust your manufacturer if it comes to the actual factor value. The internet seems <a rel="nofollow" href="http://sapporohibaku.wordpress.com/2011/10/15/conversion-factor/" target="_blank">full of wrong copy & pastes</a>, don't even trust your neighbour hackerspace. If in doubt ask the tube manufacturer.</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -1002,7 +1002,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>The location of your sensor such as <samp>Outside</samp>, <samp>Inside</samp>, <samp>Ceiling</samp>, <samp>Roof</samp> or <samp>Room 1</samp>.</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -1012,7 +1012,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>This field is an additional field to give your sensor a name. This can be useful if you have multiple sensors in the same location.</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -1022,10 +1022,10 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>An extra field that you can use to attach some additional information to this sensor instance.</p>
-<div></details>
+</div></details>
 </section></li>
 </ul>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -1045,7 +1045,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>Observed counts per minute (ocpm) or actual radiation value. If the value are the observed counts then the dead_time and conversion_factor fields must be defined as well. CPM formula: <div>cpm = ocpm ( 1 + 1 / (1 - ocpm x dead_time) )</div> Conversion formula: <div>µSv/h = cpm x conversion_factor</div></p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -1057,7 +1057,7 @@ but they may be left away if they're not required.
 <p>Choose the appropriate unit for your radiation sensor instance.</p>
 <h4>Valid values</h4>
 <p><code>cpm</code> | <code>r/h</code> | <code>µSv/h</code> | <code>mSv/a</code> | <code>µSv/a</code></p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -1067,7 +1067,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>The dead time in µs. See the description of the value field to see how to use the dead time.</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -1077,7 +1077,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>The conversion from the <em>cpm</em> unit to another unit hardly depends on your tube type. See the description of the value field to see how to use the conversion factor. <strong>Note:</strong> only trust your manufacturer if it comes to the actual factor value. The internet seems <a rel="nofollow" href="http://sapporohibaku.wordpress.com/2011/10/15/conversion-factor/" target="_blank">full of wrong copy & pastes</a>, don't even trust your neighbour hackerspace. If in doubt ask the tube manufacturer.</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -1087,7 +1087,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>The location of your sensor such as <samp>Outside</samp>, <samp>Inside</samp>, <samp>Ceiling</samp>, <samp>Roof</samp> or <samp>Room 1</samp>.</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -1097,7 +1097,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>This field is an additional field to give your sensor a name. This can be useful if you have multiple sensors in the same location.</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -1107,13 +1107,13 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>An extra field that you can use to attach some additional information to this sensor instance.</p>
-<div></details>
+</div></details>
 </section></li>
 </ul>
-<div></details>
+</div></details>
 </section></li>
 </ul>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -1133,7 +1133,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>The sensor value</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -1145,7 +1145,7 @@ but they may be left away if they're not required.
 <p>The unit of the sensor value. You should always define the unit though if the sensor is a flag of a boolean type then you can of course omit it.</p>
 <h4>Valid values</h4>
 <p><code>%</code></p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -1155,7 +1155,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>The location of your sensor such as <samp>Outside</samp>, <samp>Inside</samp>, <samp>Ceiling</samp>, <samp>Roof</samp> or <samp>Room 1</samp>.</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -1165,7 +1165,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>This field is an additional field to give your sensor a name. This can be useful if you have multiple sensors in the same location.</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -1175,10 +1175,10 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>An extra field that you can use to attach some additional information to this sensor instance.</p>
-<div></details>
+</div></details>
 </section></li>
 </ul>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -1198,7 +1198,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>The sensor value</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -1210,7 +1210,7 @@ but they may be left away if they're not required.
 <p>The unit, either <samp>btl</samp> for bottles or <samp>crt</samp> for crates.</p>
 <h4>Valid values</h4>
 <p><code>btl</code> | <code>crt</code></p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -1220,7 +1220,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>The location of your sensor such as <samp>Room 1</samp> or <samp>Room 2</samp> or <samp>Room 3</samp>, <samp>Roof</samp> or <samp>Room 1</samp>.</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -1230,7 +1230,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>This field is an additional field to give your sensor a name. This can be useful if you have multiple sensors in the same location.</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -1240,10 +1240,10 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>An extra field that you can use to attach some additional information to this sensor instance.</p>
-<div></details>
+</div></details>
 </section></li>
 </ul>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -1263,7 +1263,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>The sensor value</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -1275,7 +1275,7 @@ but they may be left away if they're not required.
 <p>The unit of the sensor value. You should always define the unit though if the sensor is a flag of a boolean type then you can of course omit it.</p>
 <h4>Valid values</h4>
 <p><code>mW</code> | <code>W</code> | <code>VA</code></p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -1285,7 +1285,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>The location of your sensor such as <samp>Outside</samp>, <samp>Inside</samp>, <samp>Ceiling</samp>, <samp>Roof</samp> or <samp>Room 1</samp>.</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -1295,7 +1295,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>This field is an additional field to give your sensor a name. This can be useful if you have multiple sensors in the same location.</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -1305,10 +1305,10 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>An extra field that you can use to attach some additional information to this sensor instance.</p>
-<div></details>
+</div></details>
 </section></li>
 </ul>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -1350,7 +1350,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>The sensor value</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -1362,10 +1362,10 @@ but they may be left away if they're not required.
 <p>The unit of the sensor value. You should always define the unit though if the sensor is a flag of a boolean type then you can of course omit it.</p>
 <h4>Valid values</h4>
 <p><code>m/s</code> | <code>km/h</code> | <code>kn</code></p>
-<div></details>
+</div></details>
 </section></li>
 </ul>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -1386,7 +1386,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>The sensor value</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -1398,10 +1398,10 @@ but they may be left away if they're not required.
 <p>The unit of the sensor value. You should always define the unit though if the sensor is a flag of a boolean type then you can of course omit it.</p>
 <h4>Valid values</h4>
 <p><code>m/s</code> | <code>km/h</code> | <code>kn</code></p>
-<div></details>
+</div></details>
 </section></li>
 </ul>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -1422,7 +1422,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>The sensor value</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -1434,10 +1434,10 @@ but they may be left away if they're not required.
 <p>The unit of the sensor value. You should always define the unit though if the sensor is a flag of a boolean type then you can of course omit it.</p>
 <h4>Valid values</h4>
 <p><code>°</code></p>
-<div></details>
+</div></details>
 </section></li>
 </ul>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -1458,7 +1458,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>The sensor value</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -1470,13 +1470,13 @@ but they may be left away if they're not required.
 <p>The unit of the sensor value. You should always define the unit though if the sensor is a flag of a boolean type then you can of course omit it.</p>
 <h4>Valid values</h4>
 <p><code>m</code></p>
-<div></details>
+</div></details>
 </section></li>
 </ul>
-<div></details>
+</div></details>
 </section></li>
 </ul>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -1486,7 +1486,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>The location of your sensor such as <samp>Outside</samp>, <samp>Inside</samp>, <samp>Ceiling</samp>, <samp>Roof</samp> or <samp>Room 1</samp>.</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -1496,7 +1496,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>This field is an additional field to give your sensor a name. This can be useful if you have multiple sensors in the same location.</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -1506,10 +1506,10 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>An extra field that you can use to attach some additional information to this sensor instance.</p>
-<div></details>
+</div></details>
 </section></li>
 </ul>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -1531,7 +1531,7 @@ but they may be left away if they're not required.
 <p>This field is optional but you can use it to the network type such as <samp>wifi</samp> or <samp>cable</samp>. You can even expose the number of <a href="https://spacefed.net/wiki/index.php/Spacenet" target="_blank">spacenet</a>-authenticated connections.</p>
 <h4>Valid values</h4>
 <p><code>wifi</code> | <code>cable</code> | <code>spacenet</code></p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -1541,7 +1541,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>The amount of network connections.</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -1561,7 +1561,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>The machine name.</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -1571,10 +1571,10 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>The machine's MAC address of the format <samp>D3:3A:DB:EE:FF:00</samp>.</p>
-<div></details>
+</div></details>
 </section></li>
 </ul>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -1584,7 +1584,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>The location of your sensor such as <samp>Outside</samp>, <samp>Inside</samp>, <samp>Ceiling</samp>, <samp>Roof</samp> or <samp>Room 1</samp>.</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -1594,7 +1594,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>This field is an additional field to give your sensor a name. This can be useful if you have multiple sensors in the same location.</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -1604,10 +1604,10 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>An extra field that you can use to attach some additional information to this sensor instance.</p>
-<div></details>
+</div></details>
 </section></li>
 </ul>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -1627,7 +1627,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>How much?</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -1639,7 +1639,7 @@ but they may be left away if they're not required.
 <p>What's the currency? Please use the ones provided, in the next version you can use currency definitions according to <a href="https://en.wikipedia.org/wiki/ISO_4217" target="_blank">ISO 4217</a></p>
 <h4>Valid values</h4>
 <p><code>BTC</code> | <code>EUR</code> | <code>USD</code> | <code>GBP</code></p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -1649,7 +1649,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>If you have more than one account you can use this field to specify where it is.</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -1659,7 +1659,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>Give your sensor instance a name.</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -1669,10 +1669,10 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>An extra field that you can use to attach some additional information to this sensor instance.</p>
-<div></details>
+</div></details>
 </section></li>
 </ul>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -1692,7 +1692,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>The amount of your space members.</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -1702,7 +1702,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>Specify the location if your hackerspace has different departments (for whatever reason). This field is for one department. Every department should have its own sensor instance.</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -1712,7 +1712,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>You can use this field to specify if this sensor instance counts active or inactive members.</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -1722,10 +1722,10 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>An extra field that you can use to attach some additional information to this sensor instance.</p>
-<div></details>
+</div></details>
 </section></li>
 </ul>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -1745,7 +1745,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>The amount of present people.</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -1755,7 +1755,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>If you use multiple sensor instances for different rooms, use this field to indicate the location.</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -1765,7 +1765,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>Give this sensor a name if necessary at all. Use the location field for the rooms. This field is not intended to be used for names of hackerspace members. Use the field 'names' instead.</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -1779,7 +1779,7 @@ but they may be left away if they're not required.
 <p>1</p>
 <h4>Nested array items</h4>
 <span>string</span>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -1789,13 +1789,13 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>An extra field that you can use to attach some additional information to this sensor instance.</p>
-<div></details>
+</div></details>
 </section></li>
 </ul>
-<div></details>
+</div></details>
 </section></li>
 </ul>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -1826,7 +1826,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>Type of the feed, for example <samp>rss</samp>, <samp>atom</atom>, <samp>ical</samp></p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -1836,10 +1836,10 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>Feed URL</p>
-<div></details>
+</div></details>
 </section></li>
 </ul>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -1860,7 +1860,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>Type of the feed, for example <samp>rss</samp>, <samp>atom</atom>, <samp>ical</samp></p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -1870,10 +1870,10 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>Feed URL</p>
-<div></details>
+</div></details>
 </section></li>
 </ul>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -1894,7 +1894,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>Type of the feed, for example <samp>rss</samp>, <samp>atom</atom>, <samp>ical</samp></p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -1904,10 +1904,10 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>Feed URL</p>
-<div></details>
+</div></details>
 </section></li>
 </ul>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -1928,7 +1928,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>Type of the feed, for example <samp>rss</samp>, <samp>atom</atom>, <samp>ical</samp></p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -1938,13 +1938,13 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>Feed URL</p>
-<div></details>
+</div></details>
 </section></li>
 </ul>
-<div></details>
+</div></details>
 </section></li>
 </ul>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -1967,10 +1967,10 @@ but they may be left away if they're not required.
 <p>Cache update cycle. This field must match the basic regular expression <code>^[mhd]\.[0-9]{2}$</code>, where the first field specifies a unit of time (<code>m</code> for 1 minute, <code>h</code> for 1 hour, <code>d</code> for 1 day), and the second field specifies how many of this unit should be skipped between updates. For example, <samp>m.10</samp> means one updates every 10 minutes, <samp>h.03</samp> means one update every 3 hours, and <samp>d.01</samp> means one update every day.</p>
 <h4>Valid values</h4>
 <p><code>m.02</code> | <code>m.05</code> | <code>m.10</code> | <code>m.15</code> | <code>m.30</code> | <code>h.01</code> | <code>h.02</code> | <code>h.04</code> | <code>h.08</code> | <code>h.12</code> | <code>d.01</code></p>
-<div></details>
+</div></details>
 </section></li>
 </ul>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -1982,7 +1982,7 @@ but they may be left away if they're not required.
 <p>Your project sites (links to GitHub, wikis or wherever your projects are hosted)</p>
 <h4>Nested array items</h4>
 <span>string</span>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -2002,7 +2002,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>The name of the radio show.</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -2012,7 +2012,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>The stream URL which must end in a filename or a semicolon such as <br><ul><li>http://signal.hackerspaces.org:8090/signal.mp3</li><li>http://85.214.64.213:8060/;</ul></p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -2024,7 +2024,7 @@ but they may be left away if they're not required.
 <p>The stream encoder.</p>
 <h4>Valid values</h4>
 <p><code>mp3</code> | <code>ogg</code></p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -2034,7 +2034,7 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>Specify the start time by using the <a href="http://en.wikipedia.org/wiki/ISO_8601" target="_blank">ISO 8601</a> standard. This encodes the time as follows: <br><br><ul><li>Combined date and time in UTC: 2013-06-10T10:00Z</li><li>Combined date and time in localtime with the timezone offset: 2013-06-10T12:00+02:00</li><li>Combined date and time in localtime with the timezone offset: 2013-06-10T07:00-03:00</li></ul> The examples refer all to the same time.</p>
-<div></details>
+</div></details>
 </section></li>
 <li><section class="item">
 <header>
@@ -2044,10 +2044,10 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>Specify the end time by using the <a href="http://en.wikipedia.org/wiki/ISO_8601" target="_blank">ISO 8601</a> standard. This encodes the time as follows: <br><br><ul><li>Combined date and time in UTC: 2013-06-10T10:00Z</li><li>Combined date and time in localtime with the timezone offset: 2013-06-10T12:00+02:00</li><li>Combined date and time in localtime with the timezone offset: 2013-06-10T07:00-03:00</li></ul> The examples refer all to the same time.</p>
-<div></details>
+</div></details>
 </section></li>
 </ul>
-<div></details>
+</div></details>
 </section></li>
 </ul>
 ---
