@@ -13,3 +13,11 @@ description: Get the list of *spaces from the Space Directory and show their det
 space: Post Tenebras Lab
 ---
 space_url: https://www.posttenebraslab.ch/
+---
+download1_label: PyPI
+---
+download1_url: https://pypi.org/project/spacedirectory/
+---
+source_label: Framagit
+---
+source_url: https://framagit.org/SebGen/spacedirectory
