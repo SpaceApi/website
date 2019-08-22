@@ -4,9 +4,16 @@ footer {
     padding-bottom: 55px;
 
     .leftcontainer {
-        grid-column: col / span 3;
+        grid-column: col 2 / span 3;
         grid-row: row;
         width: 230px;
+        border: 1px solid blue;
+
+        @media (max-width: $width_responsive_mid) {
+            &, .logo {
+                width: 150px;
+            }
+        }
 
         #reficons {
             display: flex;
@@ -24,8 +31,17 @@ footer {
     }
 
     nav {
-        grid-column: col 4 / span 8;
+        grid-column: col 5 / span 8;
         grid-row: row;
+        border: 1px solid red;
+
+        @media (max-width: $width_responsive_wide) {
+            grid-column: col 6 / span 7;
+        }
+
+        @media (max-width: $width_responsive_mid) {
+            grid-column: col 8 / span 5;
+        }
 
         ul {
             li {
