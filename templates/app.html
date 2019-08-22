@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+<div class="appdetail">
+  <h2>{{ this.title }}</h2>
+  {{ this.description }}
+  <h3>Author</h3>
+  <p>
+  This app was made by <a href="{{ this.author_url }}">{{ this.author }}</a>
+  from <a href="{{ this.space_url }}">{{ this.space }}</a>.
+  </p>
+  {% if this.attachments.images.count() %}
+    <h3>Picture{% if this.attachments.images.count() > 1 %}s{% endif %} / Screenshot{% if this.attachments.images.count() > 1 %}s{% endif %}</h3>
+    {% for image in this.attachments.images %}
+      <img src="{{ image|url }}">
+    {% endfor %}
+  {% endif %}
+</div>
+{% endblock %}

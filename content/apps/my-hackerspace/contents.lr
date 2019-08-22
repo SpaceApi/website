@@ -1,0 +1,15 @@
+_model: app
+---
+title: My Hackerspace
+---
+author: Jean-Baptiste Aubort
+---
+author_url: https://twitter.com/jbaubort
+---
+description: Check the space state everywhere with the *My Hackerspace* Android app. Select your space and start monitoring it.
+---
+space: FIXME
+---
+space_url: https://fixme.ch/
+---
+category: app

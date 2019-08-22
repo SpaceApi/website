@@ -6,6 +6,7 @@
 @import "footer";
 @import "validator";
 @import "apidocs";
+@import "apps";
 
 .grid {
     display: grid;
@@ -43,6 +44,7 @@ h2 {
 
 h3 {
     font-size: 2em;
+    margin-top: 1em;
 }
 
 p {
@@ -72,6 +74,7 @@ code {
     .page {
         margin: 100px 0;
         z-index: 1500;
+        width: 100%;
         max-width: 1080px;
         min-width: 320px;
 

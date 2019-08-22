@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+  <div class="apps">
+    <h2>{{ this.title }}</h2>
+    {{ this.body }}
+    <div class="applist">
+      {% for app in this.children %}
+        <section class="app">
+          <h3><a href="{{ app|url }}">{{ app.title }}</a></h3>
+          {{ app.description }}
+          <p><em>By <a href="{{ app.author_url }}">{{ app.author }}</a>
+            from <a href="{{ app.space_url }}">{{ app.space }}</a>.</em></p>
+          <p class="category category-{{ app.category }}">Category: {{ app.category }}</p>
+        </section>
+      {% endfor %}
+    </div>
+  </div>
+{% endblock %}
