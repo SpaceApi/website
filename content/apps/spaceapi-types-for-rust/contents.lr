@@ -13,3 +13,7 @@ description: A Rust crate with types that can be used to serialize and deseriali
 space: Coredump
 ---
 space_url: https://www.coredump.ch/
+---
+author2: Raphael Nestler
+---
+author2_url: https://twitter.com/rnstlr

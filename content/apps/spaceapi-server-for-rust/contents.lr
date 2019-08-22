@@ -13,3 +13,7 @@ description: A Rust crate that enables you to run your own SpaceAPI server with 
 space: Coredump
 ---
 space_url: https://www.coredump.ch/
+---
+author2: Raphael Nestler
+---
+author2_url: https://twitter.com/rnstlr
