@@ -26,19 +26,27 @@ Run dev server:
 
 Now open `http://localhost:5000/` in your browser.
 
-### docker
+### Docker
 
 To use docker you can run:
-```bash
-docker build -t website -f Dockerfile_dev .
-docker run -v $(pwd):/code -it -p5000:80 website
-```
+
+    docker build -t website -f Dockerfile_dev .
+    docker run -v $(pwd):/code -it -p5000:80 website
+
 Then open http://localhost:5000
+
 
 ## Deployment
 
 The website should auto-deploy after a push to master. The update might take a
 few minutes though.
+
+
+## API Docs
+
+API documentation is generated from the schema. To update:
+
+    python3 generate_api_docs.py ../schema/13.json > content/docs/contents.lr
 
 
 <!-- Badges -->

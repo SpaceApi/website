@@ -2,9 +2,6 @@ import sys
 import json
 import collections
 
-# versions = ['11', '12', '13']
-versions = ['13']
-
 
 def visit_generic(name, data, nullable):
     print('<header>')
@@ -99,9 +96,11 @@ def process_version(path):
         schema = json.loads(f.read(), object_pairs_hook=collections.OrderedDict)
     assert schema['type'] == 'object'
     assert 'properties' in schema
-    print('Title: API Documentation')
-    print('Slug: docs')
-    print('Summary: The SpaceAPI format documentation.')
+    print('_model: page')
+    print('---')
+    print('title: API Documentation')
+    print('---')
+    print('body:')
     print()
     print("It's highly recommended to use the explicit specified fields from the")
     print("reference. If you need other fields additionally, please make a change request.")
@@ -114,7 +113,14 @@ def process_version(path):
     print('<ul class="group apidocs">')
     visit(schema['properties'])
     print('</ul>')
+    print('---')
+    print('_discoverable: yes')
+    print('---')
+    print('_slug: docs')
 
 
-for version in versions:
-    process_version('schema/%s.json' % version)
+if len(sys.argv) != 2:
+    print('Usage: {} <path/to/schema.json>'.format(sys.argv[0]))
+    sys.exit(1)
+
+process_version(sys.argv[1])
