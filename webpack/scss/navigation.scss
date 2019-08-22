@@ -1,4 +1,5 @@
-$width_responsive: 700px;
+$width_responsive_wide: 1130px;
+$width_responsive_mid: 700px;
 
 #header {
     width: 100%;
@@ -13,7 +14,7 @@ $width_responsive: 700px;
         padding-top: 55px;
         z-index: 1100;
 
-        @media (max-width: $width_responsive) {
+        @media (max-width: $width_responsive_mid) {
             padding-left: 24px;
             padding-top: 24px;
         }
@@ -40,7 +41,7 @@ $width_responsive: 700px;
         padding-right: 80px;
         z-index: 1100;
 
-        @media (max-width: $width_responsive) {
+        @media (max-width: $width_responsive_mid) {
             padding-top: 24px;
             padding-right: 24px;
         }
@@ -53,10 +54,19 @@ $width_responsive: 700px;
             align-items: baseline;
             align-content: flex-start;
 
+            & > li {
+                @media (max-width: $width_responsive_wide) {
+                    height: 48px;
+                }
+            }
 
             & > li a {
                 margin-right: 0px;
                 padding: 15px 30px;
+
+                @media (max-width: $width_responsive_wide) {
+                    padding: 8px 12px;
+                }
             }
 
             & > li:last-child a {
