@@ -1,0 +1,7 @@
+_model: page
+---
+title: Validator
+---
+_template: validator.html
+---
+body: Disclaimer: This is an early development of the validator! Usability will be improved in the future =)

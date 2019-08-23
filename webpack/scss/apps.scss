@@ -1,0 +1,41 @@
+.apps {
+    .applist {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        section {
+            width: 30%;
+            border: 1px solid #999;
+            border-radius: 8px;
+            padding: 8px;
+            margin: 16px 0 0;
+            background-color: white;
+
+            h3 {
+                font-size: 1.5em;
+                font-weight: bold;
+                margin: 0 0 16px;
+                padding: 0;
+            }
+
+            .category {
+                display: inline-block;
+                background-color: #42a5f5;
+                border-radius: 4px;
+                padding: 2px 6px;
+                margin-top: 8px;
+                color: white;
+                font-size: 0.7em;
+            }
+        }
+    }
+}
+
+.appdetail {
+    img {
+        max-width: 100%;
+        max-height: 500px;
+        margin-bottom: 24px;
+    }
+}

@@ -1,0 +1,19 @@
+_model: app
+---
+title: Wordpress Widget
+---
+author: Danilo Bargen
+---
+author_url: https://twitter.com/dbrgn
+---
+description: Display your hackerspace opening status in a Wordpress widget.
+---
+space: Coredump
+---
+space_url: https://www.coredump.ch/
+---
+category: integration
+---
+source_label: GitHub
+---
+source_url: https://github.com/spaceapi-community/spaceapi-wp-widget

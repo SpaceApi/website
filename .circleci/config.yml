@@ -1,5 +1,15 @@
 version: 2
 jobs:
+  test:
+    docker:
+      - image: docker:stable
+    steps:
+      - checkout
+      - setup_remote_docker
+      - run:
+          name: Build Docker image
+          command: |
+            docker build --no-cache .
   build:
     docker:
       - image: docker:stable
@@ -12,7 +22,7 @@ jobs:
             docker build \
               --no-cache \
               -t spaceapi/website:latest \
-              -t spaceapi/website:v2 \
+              -t spaceapi/website:v3 \
               -t spaceapi/website:${CIRCLE_BRANCH} \
               .
       - deploy:
@@ -26,6 +36,7 @@ workflows:
   # Build on push to master
   on_push:
     jobs:
+      - test
       - build:
           filters:
             branches:

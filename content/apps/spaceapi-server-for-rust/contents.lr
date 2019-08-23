@@ -1,0 +1,27 @@
+_model: app
+---
+title: SpaceAPI Server for Rust
+---
+author: Danilo Bargen
+---
+author_url: https://twitter.com/dbrgn
+---
+category: library
+---
+description: A Rust crate that enables you to run your own SpaceAPI server with support for dynamic sensor data.
+---
+space: Coredump
+---
+space_url: https://www.coredump.ch/
+---
+author2: Raphael Nestler
+---
+author2_url: https://twitter.com/rnstlr
+---
+download1_label: Crates.io
+---
+download1_url: https://crates.io/crates/spaceapi-server
+---
+source_label: GitHub
+---
+source_url: https://github.com/spaceapi-community/spaceapi-server-rs/

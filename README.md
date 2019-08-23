@@ -5,34 +5,48 @@
 
 This are the sources for the SpaceAPI website.
 
-The website is generated using Pelican, a static site generator written in
+The website is generated using Lektor, a static site generator written in
 Python. This simplifies hosting and makes the website very fast.
 
-## Run server locally
 
-Prerequisites: Python 3 and [pipenv](https://docs.pipenv.org/).
+## Dev Setup
 
-    $ pipenv install
-    $ pipenv run make html serve
+Create and activate a virtualenv:
 
-Then visit `http://localhost:8000` in your browser to see the result.
+    python3 -m virtualenv VENV
+    source VENV/bin/activate
 
-## Change contents
+Install dependencies:
 
-To apply the changes of contents of `/content/pages/*` you must restart the webserver:
+    pip install -U -r requirements.txt
 
-    make html serve
+Run dev server:
 
-## Re-generate API docs
+    lektor server -f webpack
 
-Update the file inside `schema/`. Then:
+Now open `http://localhost:5000/` in your browser.
 
-    python generate_api_docs.py > content/pages/docs.md
+### Docker
+
+To use docker you can run:
+
+    docker build -t website -f Dockerfile_dev .
+    docker run -v $(pwd):/code -it -p5000:80 website
+
+Then open http://localhost:5000
+
 
 ## Deployment
 
 The website should auto-deploy after a push to master. The update might take a
 few minutes though.
+
+
+## API Docs
+
+API documentation is generated from the schema. To update:
+
+    python3 generate_api_docs.py ../schema/13.json > content/docs/contents.lr
 
 
 <!-- Badges -->

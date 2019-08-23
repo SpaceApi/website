@@ -1,0 +1,111 @@
+@import 'reset';
+@import 'variables';
+
+@import "color";
+@import "navigation";
+@import "footer";
+@import "validator";
+@import "apidocs";
+@import "apps";
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, [col] 1fr);
+    grid-template-rows: repeat(1, [row] auto);
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+}
+
+html {
+    font-size: 14pt;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #444;
+
+    a {
+        color: #444;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    margin-top: 0.25em;
+    margin-bottom: 0.5em;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+h3 {
+    font-size: 2em;
+    margin-top: 1em;
+}
+
+p {
+    line-height: 1.3em;
+    margin-bottom: 0.5em;
+}
+
+li {
+    padding-bottom: 8px;
+}
+
+pre {
+    white-space: pre-wrap;
+    font-family: monospace;
+    font-size: 0.8em;
+    padding: 12px;
+    line-height: 1.15em;
+}
+
+.pagecontainer {
+    background-color: white;
+    min-height: calc(100vh - 227px - 385px);
+}
+
+.gridcontainer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    .page {
+        margin: 100px 0;
+        z-index: 1500;
+        width: 100%;
+        max-width: 1080px;
+        min-width: 320px;
+
+        p {
+            background-color: white;
+        }
+
+        ul {
+            list-style-position: inside;
+            list-style-type: circle;
+        }
+    }
+}
+.logo {
+    max-width: 230px;
+}
+
+nav a {
+    font-size: 12pt;
+    text-decoration: none;
+}
+
+button {
+    border-radius: 20px;
+    background: linear-gradient($gradientStart, $gradientEnd);
+    border: none;
+    padding: 10px 40px;
+    color: $altFontColor;
+    font-weight: bold;
+}
+
