@@ -15,8 +15,7 @@ RUN cd /code && \
     pip install -U -r requirements.txt && \
     lektor build -f webpack --output-path /code/output
 
+# Move generated data to separate alpine-based image
 FROM nginx:1.15-alpine
-# Remove default nginx files
 RUN rm -Rf /usr/share/nginx/html
-# Copy data from build image
 COPY --from=builder /code/output /usr/share/nginx/html
