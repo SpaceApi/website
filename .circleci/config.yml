@@ -1,5 +1,15 @@
 version: 2
 jobs:
+  test:
+    docker:
+      - image: docker:stable
+    steps:
+      - checkout
+      - setup_remote_docker
+      - run:
+          name: Build Docker image
+          command: |
+            docker build --no-cache .
   build:
     docker:
       - image: docker:stable
@@ -26,6 +36,7 @@ workflows:
   # Build on push to master
   on_push:
     jobs:
+      - test
       - build:
           filters:
             branches:
