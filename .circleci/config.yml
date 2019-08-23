@@ -12,7 +12,7 @@ jobs:
             docker build \
               --no-cache \
               -t spaceapi/website:latest \
-              -t spaceapi/website:v2 \
+              -t spaceapi/website:v3 \
               -t spaceapi/website:${CIRCLE_BRANCH} \
               .
       - deploy:
