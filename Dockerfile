@@ -7,15 +7,17 @@ RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
 RUN apt-get update -y
 RUN apt-get install build-essential nodejs  -y
 
-# Add sources
-COPY . /code
+# Install requirements
+COPY requirements.txt /tmp/
+RUN pip install -U -r /tmp/requirements.txt && rm /tmp/requirements.txt
 
-# Install requirements and build the site
-RUN cd /code && \
-    pip install -U -r requirements.txt && \
-    lektor build -f webpack --output-path /code/output
+# Add sources and build the site
+COPY . /code
+RUN cd /code && lektor build -f webpack --output-path /code/output
 
 # Move generated data to separate alpine-based image
-FROM nginx:1.15-alpine
+FROM nginx:1.15-alpine as server
+RUN apk update && apk add nginx-mod-http-headers-more
 RUN rm -Rf /usr/share/nginx/html
 COPY --from=builder /code/output /usr/share/nginx/html
+COPY configs/nginx.conf /etc/nginx/nginx.conf
