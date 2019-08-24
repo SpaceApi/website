@@ -1,5 +1,6 @@
-@import 'reset';
-@import 'variables';
+@import "reset";
+@import "variables";
+@import "fonts";
 
 @import "color";
 @import "navigation";
@@ -97,6 +98,7 @@ pre {
 
 nav a {
     font-size: 12pt;
+    font-weight: 700;
     text-decoration: none;
 }
 
