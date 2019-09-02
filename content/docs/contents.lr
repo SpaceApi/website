@@ -16,6 +16,7 @@ but they may be left away if they're not required.
 <li><section class="item">
 <header>
 <h3>api</h3><span class="type">(string)</span>
+<span class="tag required">required</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -28,6 +29,7 @@ but they may be left away if they're not required.
 <li><section class="item">
 <header>
 <h3>space</h3><span class="type">(string)</span>
+<span class="tag required">required</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -38,6 +40,7 @@ but they may be left away if they're not required.
 <li><section class="item">
 <header>
 <h3>logo</h3><span class="type">(string)</span>
+<span class="tag required">required</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -48,6 +51,7 @@ but they may be left away if they're not required.
 <li><section class="item">
 <header>
 <h3>url</h3><span class="type">(string)</span>
+<span class="tag required">required</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -102,7 +106,6 @@ but they may be left away if they're not required.
 <li><section class="item">
 <header>
 <h3>spacefed</h3><span class="type">(object)</span>
-<span class="tag required">required</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -255,7 +258,6 @@ but they may be left away if they're not required.
 <li><section class="item">
 <header>
 <h3>icon</h3><span class="type">(object)</span>
-<span class="tag required">required</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -345,6 +347,7 @@ but they may be left away if they're not required.
 <li><section class="item">
 <header>
 <h3>contact</h3><span class="type">(object)</span>
+<span class="tag required">required</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -556,6 +559,7 @@ but they may be left away if they're not required.
 <li><section class="item">
 <header>
 <h3>issue_report_channels</h3><span class="type">(array of string)</span>
+<span class="tag required">required</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -1323,7 +1327,6 @@ but they may be left away if they're not required.
 <li><section class="item">
 <header>
 <h3>properties</h3><span class="type">(object)</span>
-<span class="tag required">required</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -1334,7 +1337,6 @@ but they may be left away if they're not required.
 <li><section class="item">
 <header>
 <h3>speed</h3><span class="type">(object)</span>
-<span class="tag required">required</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -1370,7 +1372,6 @@ but they may be left away if they're not required.
 <li><section class="item">
 <header>
 <h3>gust</h3><span class="type">(object)</span>
-<span class="tag required">required</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -1406,7 +1407,6 @@ but they may be left away if they're not required.
 <li><section class="item">
 <header>
 <h3>direction</h3><span class="type">(object)</span>
-<span class="tag required">required</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -1442,7 +1442,6 @@ but they may be left away if they're not required.
 <li><section class="item">
 <header>
 <h3>elevation</h3><span class="type">(object)</span>
-<span class="tag required">required</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -1810,7 +1809,6 @@ but they may be left away if they're not required.
 <li><section class="item">
 <header>
 <h3>blog</h3><span class="type">(object)</span>
-<span class="tag required">required</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -1844,7 +1842,6 @@ but they may be left away if they're not required.
 <li><section class="item">
 <header>
 <h3>wiki</h3><span class="type">(object)</span>
-<span class="tag required">required</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -1878,7 +1875,6 @@ but they may be left away if they're not required.
 <li><section class="item">
 <header>
 <h3>calendar</h3><span class="type">(object)</span>
-<span class="tag required">required</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -1912,7 +1908,6 @@ but they may be left away if they're not required.
 <li><section class="item">
 <header>
 <h3>flickr</h3><span class="type">(object)</span>
-<span class="tag required">required</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -1949,7 +1944,6 @@ but they may be left away if they're not required.
 <li><section class="item">
 <header>
 <h3>cache</h3><span class="type">(object)</span>
-<span class="tag required">required</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>

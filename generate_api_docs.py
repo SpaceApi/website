@@ -3,13 +3,13 @@ import json
 import collections
 
 
-def visit_generic(name, data, nullable):
+def visit_generic(name, data, nullable, required):
     print('<header>')
     full_type = data['type']
     if full_type == 'array':
         full_type += ' of %s' % data['items']['type']
     print('<h3>%s</h3><span class="type">(%s)</span>' % (name, full_type))
-    if 'required' in data and data['required']:
+    if required:
         print('<span class="tag required">required</span>')
     if nullable:
         print('<span class="tag nullable">nullable</span>')
@@ -62,8 +62,10 @@ def visit_boolean(name, data):
     pass
 
 
-def visit(properties):
+def visit(properties, required=None):
     for k, v in properties.items():
+        key_required = required is not None and k in required
+        #print(k, key_required)
         print('<li><section class="item">')
         nullable = False
         a = isinstance(v['type'], list)
@@ -73,7 +75,7 @@ def visit(properties):
             nullable = True
             v['type'].remove('null')
             v['type'] = v['type'][0]
-        visit_generic(k, v, nullable)
+        visit_generic(k, v, nullable, key_required)
         if v['type'] == 'object':
             visit_object(k, v)
         elif v['type'] == 'string':
@@ -111,7 +113,7 @@ def process_version(path):
     print("but they may be left away if they're not required.")
     print()
     print('<ul class="group apidocs">')
-    visit(schema['properties'])
+    visit(schema['properties'], schema['required'])
     print('</ul>')
     print('---')
     print('_discoverable: yes')
