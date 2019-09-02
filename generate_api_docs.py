@@ -1,15 +1,16 @@
-import sys
-import json
 import collections
+import json
+import sys
+from typing import List
 
 
-def visit_generic(name, data, nullable):
+def visit_generic(name: str, data, nullable: bool, required: bool):
     print('<header>')
     full_type = data['type']
     if full_type == 'array':
         full_type += ' of %s' % data['items']['type']
     print('<h3>%s</h3><span class="type">(%s)</span>' % (name, full_type))
-    if 'required' in data and data['required']:
+    if required:
         print('<span class="tag required">required</span>')
     if nullable:
         print('<span class="tag nullable">nullable</span>')
@@ -31,7 +32,7 @@ def visit_object(name, data):
     assert 'properties' in data
     print('<h4>Nested object properties</h4>')
     print('<ul class="group">')
-    visit(data['properties'])
+    visit(data['properties'], data.get('required', []))
     print('</ul>')
 
 
@@ -46,7 +47,7 @@ def visit_array(name, data):
             print('<p><code>%s</code></p>' % '</code> | <code>'.join(items['enum']))
     elif items['type'] == 'object':
         print('<ul class="group">')
-        visit(items['properties'])
+        visit(items['properties'], items.get('required', []))
         print('</ul>')
 
 
@@ -62,7 +63,7 @@ def visit_boolean(name, data):
     pass
 
 
-def visit(properties):
+def visit(properties, required_fields: List[str]):
     for k, v in properties.items():
         print('<li><section class="item">')
         nullable = False
@@ -73,7 +74,7 @@ def visit(properties):
             nullable = True
             v['type'].remove('null')
             v['type'] = v['type'][0]
-        visit_generic(k, v, nullable)
+        visit_generic(k, v, nullable, k in required_fields)
         if v['type'] == 'object':
             visit_object(k, v)
         elif v['type'] == 'string':
@@ -111,7 +112,7 @@ def process_version(path):
     print("but they may be left away if they're not required.")
     print()
     print('<ul class="group apidocs">')
-    visit(schema['properties'])
+    visit(schema['properties'], schema.get('required', []))
     print('</ul>')
     print('---')
     print('_discoverable: yes')
