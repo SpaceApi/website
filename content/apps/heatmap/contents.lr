@@ -1,0 +1,21 @@
+_model: app
+---
+title: heatmap
+---
+author: Folkert van Heusden
+---
+category: website
+---
+description: This website collects the openclosed status of all hackerspaces known by spaceapi.io and shows for each a heatmap of their openclosed times.
+---
+download1_label: 
+---
+space: NURDSpace
+---
+source_label: website
+---
+source_url: https://spaceapi.vanheusden.com
+---
+space_url: https://nurdspace.nl/
+---
+author_url: https://vanheusden.com
