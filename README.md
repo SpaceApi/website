@@ -13,6 +13,11 @@ Python. This simplifies hosting and makes the website very fast.
 
 ### Variant A: Virtualenv
 
+Prerequisites:
+
+- Python 3
+- npm
+
 Create and activate a virtualenv:
 
     python3 -m virtualenv VENV
@@ -29,6 +34,10 @@ Run dev server:
 Now open `http://localhost:5000/` in your browser.
 
 ### Variant B: Docker
+
+Prerequisites:
+
+- Docker
 
 To use docker you can run:
 
