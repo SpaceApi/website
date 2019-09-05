@@ -11,6 +11,8 @@ Python. This simplifies hosting and makes the website very fast.
 
 ## Dev Setup
 
+### Variant A: Virtualenv
+
 Create and activate a virtualenv:
 
     python3 -m virtualenv VENV
@@ -26,7 +28,7 @@ Run dev server:
 
 Now open `http://localhost:5000/` in your browser.
 
-### Docker
+### Variant B: Docker
 
 To use docker you can run:
 
@@ -34,6 +36,31 @@ To use docker you can run:
     docker run -v $(pwd):/code -it -p5000:80 website
 
 Then open http://localhost:5000
+
+
+## Adding an App
+
+### With Lektor
+
+1. Fork this repository on GitHub
+2. Run the dev setup as described above.
+3. Go to http://localhost:5000/admin/root:apps/preview and press the "+" icon
+   in the top left part of the navigation to add a new subpage
+4. Choose the model "App" and pick a title. An appropriate id will be
+   automatically suggested.
+5. Click "Add Child Page"
+6. Fill out the form. To add a screenshot, click on "Add Attachment" in the
+   left navigation.
+7. Commit the changes in the file system and submit the changes as a pull
+   request against the [upstream project](https://github.com/spaceapi/website)
+
+### Without Lektor
+
+1. Fork this repository on GitHub
+2. In the `content/apps/` directory, copy one of the existing apps and adjust it
+3. Make sure to replace the screenshot image with an image of your own
+4. Commit the changes in the file system and submit the changes as a pull
+   request against the [upstream project](https://github.com/spaceapi/website)
 
 
 ## Deployment
