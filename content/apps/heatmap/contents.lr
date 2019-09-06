@@ -1,0 +1,23 @@
+_model: app
+---
+title: Opening Status Heatmap
+---
+author: Folkert van Heusden
+---
+category: website
+---
+description: This website collects the opening status of all hackerspaces known by SpaceAPI and shows a heatmap of their usual opening times.
+---
+download1_label: Website
+---
+space: NURDSpace
+---
+source_label: Not yet public
+---
+source_url: #
+---
+space_url: https://nurdspace.nl/
+---
+author_url: https://vanheusden.com
+---
+download1_url: https://spaceapi.vanheusden.com
