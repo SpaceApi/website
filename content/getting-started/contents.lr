@@ -39,7 +39,7 @@ A most minimal JSON file with just the required fields looks like that:
 
 ### Common Issues
 
-To make sure That your SpaceAPI endpoint is compatible with webapps, verify that your server:
+To make sure that your SpaceAPI endpoint is compatible with webapps, verify that your server:
 
 - Is reachable by TLS/HTTPS. See [Mixed Content](https://developer.mozilla.org/en-US/docs/Web/Security/Mixed_content)
 - Sets the `Access-Control-Allow-Origin` header to `*`. See [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
