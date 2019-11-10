@@ -2,12 +2,18 @@ title: SpaceAPI
 ---
 body:
 
-The purpose of the SpaceAPI is to define a unified specification across the
-hackerspaces, makerspaces, fablabs, chaostreffs and the like across the world
-that can be used to expose information to web apps or any other application.
+SpaceAPI project provides a list of URLs of places called [directory](#directory) implementing the SpaceAPI [schema](#schema).
 
-The specification is based on the JSON data interchange format. The following
-example shows how it looks like:
+### Directory
+
+The directory is a curated list of places implementing a JSON file based on the [schema](#schema)
+
+### Schema
+
+A standard for a JSON File defining a unified specification across the hackerspaces, makerspaces, fablabs, chaostreffs and the like across the world that can be used to expose information to web apps or any other application.
+The defintion is based on the [Json Schema](https://json-schema.org/) definition.
+
+The following example shows how it looks like:
 
 ```json
 {
@@ -42,9 +48,3 @@ example shows how it looks like:
   ]
 }
 ```
-
-### Contributing
-
-We encourage anybody who wants to participate in this project to join the
-discussion [on GitHub](https://github.com/spaceapi/), the #spaceapi IRC channel
-on Freenode or our [Mattermost chat instance](https://chat.spaceapi.io/).

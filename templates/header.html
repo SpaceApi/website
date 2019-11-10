@@ -7,14 +7,13 @@
   <nav>
     <ul>
       <li{% if this._path == '/' %} class="active"{% endif %}>
-      <a href="{{ '/' | url }}">Home</a>
+      <a href="{{ '/' | url }}">What is it?</a>
       </li>
       {% for href, title in [
-      ['/docs/', 'Docs'],
-      ['/getting-started/', 'Getting Started'],
-      ['/apps/', 'Apps'],
-      ['/validator', 'Validator'],
-      ['/directory/', 'Directory'],
+      ['/how-to-use/', 'How to use'],
+      ['/provide-an-endpoint/', 'How to provide an endpoint'],
+      ['/write-software/', 'How to write software based on spaceapi'],
+      ['/project-history', 'Project history'],
       ['https://github.com/SpaceApi', 'GitHub'],
       ] %}
       <li{% if this.is_child_of(href) %} class="active"{% endif %}>

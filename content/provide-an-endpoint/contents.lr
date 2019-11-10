@@ -1,0 +1,29 @@
+_model: page
+---
+title: How to provide an endpoint
+---
+body:
+
+If you want to implement the SpaceAPI for your hackerspace you need to do the following:
+* Host the JSON file and a logo somewhere
+* Create a pull-request on the [directory repository](https://github.com/SpaceApi/directory) to add your space to the directory.
+
+Add all fields you want, you can find the available fields in the [schema documentation](/docs). Feel free to add your own, at best prefix your own fields with `ext_` to mark them external from the standard definition. Otherwise you might have interferences with later schema versions.
+
+Of course the fun starts with providing an endpoint with dynamic data. Either you can write a piece of software yourself or you can use one of the different [implementations](#software-for-providing-an-endpoint).
+
+### Validator
+
+The [spaceAPI validator](/validator) validates URLs or files. Please note that invalid endpoints will not be added to the directory and removed when they turn invalid.
+
+### HTTP and CORS
+
+We also check your server for issues that could occur when people working with your data, your server should be reachable via TLS/HTTPS to prevent websites having problems with [mixed content](https://developer.mozilla.org/en-US/docs/Web/Security/Mixed_content).
+You should also provide [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) and [Content-type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Type) headers.
+
+### Software for providing an endpoint
+
+There are multiple projects that you can use if you don't want to write and maintain software for a dynamic endpoint yourself.
+
+* [spaceapi-server-rs](https://github.com/spaceapi-community/spaceapi-server-rs)
+* [SpaceApiDaemon](https://github.com/gidsi/SpaceApiDaemon)
