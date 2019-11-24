@@ -20,9 +20,12 @@ The api is a service for interacting with the directory by default it gives you 
 
 Documentation is available as an [openapi file](https://api.spaceapi.io/openapi.json), you can use it to [generate clients](https://openapi-generator.tech/) for a lot of [different languages](https://openapi-generator.tech/docs/generators#client-generators).
 
-### libs
+### libs and types
 
-We constantly developing new libs to help you developing software feel free to share and contribute too. You can find most of them in the [SpaceAPI Community](#community).
+We constantly developing new libs and provide types for different languages to help you developing software feel free to share and contribute too.
+{% from "macros/projects.html" import render_project_list_md %}
+{{ render_project_list_md(site.query('/projects').filter(F.category.contains('development'))) }}
+
 
 ### community
 

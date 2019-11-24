@@ -25,5 +25,5 @@ You should also provide [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP
 
 There are multiple projects that you can use if you don't want to write and maintain software for a dynamic endpoint yourself.
 
-* [spaceapi-server-rs](https://github.com/spaceapi-community/spaceapi-server-rs)
-* [SpaceApiDaemon](https://github.com/gidsi/SpaceApiDaemon)
+{% from "macros/projects.html" import render_project_list_md %}
+{{ render_project_list_md(site.query('/projects').filter(F.category.contains('operation'))) }}

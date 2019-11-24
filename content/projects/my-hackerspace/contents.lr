@@ -1,4 +1,4 @@
-_model: app
+_model: project
 ---
 title: My Hackerspace
 ---
@@ -12,7 +12,7 @@ space: FIXME
 ---
 space_url: https://fixme.ch/
 ---
-category: app
+category: space-visualization
 ---
 download1_label: F-Droid
 ---

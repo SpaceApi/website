@@ -1,7 +1,10 @@
 [project]
 name = SpaceAPI
+locale = en_US
+url = https://spaceapi.io
 
 [packages]
 lektor-webpack-support = 0.5
 lektor-markdown-header-anchors = 0.3.1
 lektor-markdown-highlighter = 0.3.1
+lektor-jinja-content = 0.4.3

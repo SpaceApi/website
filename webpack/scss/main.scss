@@ -7,7 +7,7 @@
 @import "footer";
 @import "validator";
 @import "apidocs";
-@import "apps";
+@import "projects";
 
 .grid {
     display: grid;
@@ -55,6 +55,9 @@ p {
 
 li {
     padding-bottom: 8px;
+    p {
+        display: inline;
+    }
 }
 
 pre {

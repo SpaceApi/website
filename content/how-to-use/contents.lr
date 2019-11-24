@@ -1,15 +1,17 @@
-_model: page
----
 title: How to use
 ---
 body:
 
+{% from "macros/projects.html" import render_project_list %}
 This is an overview of applications using SpaceAPI
 
-### Apps
+## Endpoint visualization
+These are applications for visualize an endpoint
 
-### Websites
+{{ render_project_list(site.query('/projects').filter(F.category.contains('space-visualization'))) }}
 
-### Visualizations
+## Directory visualization
+These are applications visualizing the directory
 
-### Integrations
+{{ render_project_list(site.query('/projects').filter(F.category.contains('directory-visualization'))) }}
+

@@ -1,4 +1,4 @@
-_model: app
+_model: project
 ---
 title: Python Module / CLI App
 ---
@@ -6,7 +6,7 @@ author: Sébastien Gendre
 ---
 author_url: https://k-7.ch/
 ---
-category: library
+category: space-visualization, directory-visualization, operation
 ---
 description: Get the list of *spaces from the Space Directory and show their details on your terminal. Or query them from your Python software.
 ---

@@ -1,4 +1,4 @@
-_model: app
+_model: project
 ---
 title: Spacer
 ---
@@ -12,7 +12,7 @@ space: NURDspace
 ---
 space_url: https://nurdspace.nl/
 ---
-category: website
+category: directory-visualization
 ---
 source_label: GitHub
 ---

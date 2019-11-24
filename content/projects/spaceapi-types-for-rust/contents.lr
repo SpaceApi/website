@@ -1,4 +1,4 @@
-_model: app
+_model: project
 ---
 title: SpaceAPI Types for Rust
 ---
@@ -6,7 +6,7 @@ author: Danilo Bargen
 ---
 author_url: https://twitter.com/dbrgn
 ---
-category: library
+category: development
 ---
 description: A Rust crate with types that can be used to serialize and deserialize SpaceAPI data.
 ---
