@@ -27,6 +27,15 @@
   </p>
   {% endif %}
 
+  <h3>Categories</h3>
+  <p>
+    <ul>
+    {% for item in this.category %}
+      <li>{{ item }}</li>
+    {% endfor %}
+    </ul>
+  </p>
+
   <h3>Author{% if this.author2 %}s{% endif %}</h3>
   <p>
   This app was made

@@ -1,4 +1,4 @@
-_model: project
+_model: stuff
 ---
 title: Opening Status Heatmap
 ---
@@ -11,10 +11,6 @@ description: This website collects the opening status of all hackerspaces known 
 download1_label: Website
 ---
 space: NURDSpace
----
-source_label: Not yet public
----
-source_url: #
 ---
 space_url: https://nurdspace.nl/
 ---

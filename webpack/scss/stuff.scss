@@ -1,5 +1,5 @@
-.projects {
-    .projectlist {
+.stuff-container {
+    .stufflist {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -32,7 +32,7 @@
     }
 }
 
-.projectdetail {
+.stuffdetail {
     img {
         max-width: 100%;
         max-height: 500px;

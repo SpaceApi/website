@@ -23,7 +23,7 @@ You should also provide [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP
 
 ### Software for providing an endpoint
 
-There are multiple projects that you can use if you don't want to write and maintain software for a dynamic endpoint yourself.
+There is stuff that you can use if you don't want to write and maintain software for a dynamic endpoint yourself.
 
-{% from "macros/projects.html" import render_project_list_md %}
-{{ render_project_list_md(site.query('/projects').filter(F.category.contains('operation'))) }}
+{% from "macros/stuff.html" import render_stuff_list_md %}
+{{ render_stuff_list_md(site.query('/stuff').filter(F.category.contains('operation'))) }}
