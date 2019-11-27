@@ -4,7 +4,7 @@ title: How to write software based on spaceAPI
 ---
 body:
 
-We encourage everybody to write software based on or using SpaceAPI,
+We encourage everybody to write software based on or using SpaceAPI, here are a few things that might help you with that.
 
 ### static file
 
@@ -12,7 +12,7 @@ The static file is simply that the directory as it is in github.
 
 You can reach it at [directory.spaceapi.io](https://directory.spaceapi.io/) we will make sure that it will be always reachable there, regardless if we switch to a different repository or whatsover.
 
-You can also load the file from [github directly](https://raw.githubusercontent.com/SpaceApi/directory/master/directory.json), but please be aware that we don't have control over it there.
+You can also load the file from [github directly](https://raw.githubusercontent.com/SpaceApi/directory/master/directory.json), but please be aware that we don't have control over it there and your software might brake later on.
 
 ### api
 
@@ -30,4 +30,3 @@ We constantly developing new libs and provide types for different languages to h
 ### community
 
 We've created a [communtiy organization on github](https://github.com/SpaceApi-community) for software and libs around SpaceAPI. Feel free to join, you will also get access to our [metrics](https://metrics.spaceapi.io).
-

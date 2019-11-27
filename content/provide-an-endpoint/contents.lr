@@ -10,7 +10,7 @@ If you want to implement the SpaceAPI for your hackerspace you need to do the fo
 
 Add all fields you want, you can find the available fields in the [schema documentation](/docs). Feel free to add your own, at best prefix your own fields with `ext_` to mark them external from the standard definition. Otherwise you might have interferences with later schema versions.
 
-Of course the fun starts with providing an endpoint with dynamic data. Either you can write a piece of software yourself or you can use one of the different [implementations](#software-for-providing-an-endpoint).
+Of course the fun starts with providing an endpoint with dynamic data. Either you can write a piece of software yourself or you can use one of the different [implementations](#stuff-you-can-use).
 
 ### Validator
 
@@ -21,9 +21,9 @@ The [spaceAPI validator](/validator) validates URLs or files. Please note that i
 We also check your server for issues that could occur when people working with your data, your server should be reachable via TLS/HTTPS to prevent websites having problems with [mixed content](https://developer.mozilla.org/en-US/docs/Web/Security/Mixed_content).
 You should also provide [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) and [Content-type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Type) headers.
 
-### Software for providing an endpoint
+### Stuff you can use
 
-There is stuff that you can use if you don't want to write and maintain software for a dynamic endpoint yourself.
+There is stuff that you can use to provide an endpoint or integrate e.g. your space status into your website.
 
 {% from "macros/stuff.html" import render_stuff_list_md %}
 {{ render_stuff_list_md(site.query('/stuff').filter(F.category.contains('operation'))) }}

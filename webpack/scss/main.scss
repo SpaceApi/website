@@ -93,8 +93,16 @@ pre {
         ul {
             background-color: white;
             list-style-position: inside;
-            list-style-type: circle;
+            list-style-type: disc;
             padding-left: 15px;
+
+            li {
+                padding-top: 5px;
+
+                ul {
+                    list-style-type: circle;
+                }
+            }
         }
     }
 }
@@ -117,3 +125,6 @@ button {
     font-weight: bold;
 }
 
+strong {
+    font-weight: bold;
+}
