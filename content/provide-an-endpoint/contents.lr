@@ -14,7 +14,7 @@ Of course the fun starts with providing an endpoint with dynamic data. Either yo
 
 ### Validator
 
-The [spaceAPI validator](/validator) validates URLs or files. Please note that invalid endpoints will not be added to the directory and removed when they turn invalid.
+The [SpaceAPI validator](/validator) validates URLs or files. Please note that invalid endpoints will not be added to the directory and removed when they turn invalid.
 
 ### HTTP and CORS
 
