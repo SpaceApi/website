@@ -26,4 +26,4 @@ You should also provide [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP
 There is stuff that you can use to provide an endpoint or integrate e.g. your space status into your website.
 
 {% from "macros/stuff.html" import render_stuff_list_md %}
-{{ render_stuff_list_md(site.query('/stuff').filter(F.category.contains('operation'))) }}
+{{ render_stuff_list(site.query('/stuff').filter(F.category.contains('operation'))) }}
