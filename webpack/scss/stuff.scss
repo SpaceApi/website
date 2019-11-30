@@ -2,14 +2,14 @@
     .stufflist {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: flex-start;
 
         section {
             width: 30%;
             border: 1px solid #999;
             border-radius: 8px;
             padding: 8px;
-            margin: 16px 0 0;
+            margin: 8px;
             background-color: white;
 
             h3 {
