@@ -1,15 +1,19 @@
 .stuff-container {
     .stufflist {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
+        display: grid;
+        grid-template-columns: repeat(3, [col] 1fr);
+        grid-template-rows: repeat(1, [row] auto);
+        grid-column-gap: 10px;
+        grid-row-gap: 15px;
+
+        @media (max-width: $width_responsive_mid) {
+            grid-template-columns: repeat(2, [col] 1fr);
+        }
 
         section {
-            width: 30%;
             border: 1px solid #999;
             border-radius: 8px;
             padding: 8px;
-            margin: 8px;
             background-color: white;
 
             h3 {
