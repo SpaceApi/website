@@ -8,3 +8,4 @@ VENV
 *.psd
 gen
 node_modules/
+assets/css

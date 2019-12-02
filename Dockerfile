@@ -13,7 +13,7 @@ RUN pip install -U -r /tmp/requirements.txt && rm /tmp/requirements.txt
 
 # Add sources and build the site
 COPY . /code
-RUN cd /code && lektor build -f webpack --output-path /code/output
+RUN cd /code && lektor build -f webpack -f scsscompile --output-path /code/output
 
 # Move generated data to separate alpine-based image
 FROM nginx:1.15-alpine as server

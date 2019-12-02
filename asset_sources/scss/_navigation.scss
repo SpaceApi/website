@@ -1,0 +1,78 @@
+@import "_variables";
+
+#header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    z-index: 1000;
+
+    .logocontainer {
+        max-width: 230px;
+        padding-left: 65px;
+        padding-top: 55px;
+        z-index: 1100;
+
+        @media (max-width: $width_responsive_mid) {
+            padding-left: 24px;
+            padding-top: 24px;
+        }
+
+        .logo {
+            width: 100%;
+        }
+    }
+
+    #navbg {
+        background-image: url("/static/images/navbg.png");
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 961px;
+        max-width: calc(100vw - 230px);
+        background-repeat: no-repeat;
+        z-index: 1050;
+    }
+
+    nav {
+        padding-top: 85px;
+        padding-right: 80px;
+        z-index: 1100;
+
+        @media (max-width: $width_responsive_mid) {
+            padding-top: 24px;
+            padding-right: 24px;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            align-items: baseline;
+            align-content: flex-start;
+
+            & > li {
+                @media (max-width: $width_responsive_wide) {
+                    height: 48px;
+                }
+            }
+
+            & > li a {
+                margin-right: 0px;
+                padding: 15px 24px;
+
+                @media (max-width: $width_responsive_wide) {
+                    padding: 8px 12px;
+                }
+            }
+
+            & > li:last-child a {
+                margin-right: 0;
+                border: 1px black solid;
+                border-radius: 5px;
+            }
+        }
+    }
+}
