@@ -15,6 +15,14 @@ RUN pip install -U -r /tmp/requirements.txt && rm /tmp/requirements.txt
 COPY . /code
 RUN cd /code && lektor build -f webpack --output-path /code/output
 
+# Optimize images
+RUN apt-get install jpegoptim optipng -y
+RUN npm install -g svgo
+WORKDIR /code/output
+RUN jpegoptim -m 80 -t $(find . -name "*.jpg")
+RUN optipng -o7 -strip all $(find . -name "*.png")
+RUN svgo $(find . -name "*.svg")
+
 # Move generated data to separate alpine-based image
 FROM nginx:1.15-alpine as server
 RUN apk update && apk add nginx-mod-http-headers-more
