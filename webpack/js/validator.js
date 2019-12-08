@@ -28,7 +28,7 @@ export const generateValidator = (function() {
         ev.preventDefault();
         offlineCheck();
 
-        var content = getValue(textarea_selector);
+        var content = JSON.parse(getValue(textarea_selector));
 
         prepareNewRequest();
 
