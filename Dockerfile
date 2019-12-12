@@ -20,4 +20,5 @@ FROM nginx:1.17-alpine as server
 RUN rm -Rf /usr/share/nginx/html
 COPY --from=builder /code/output /usr/share/nginx/html
 COPY configs/nginx.conf /etc/nginx/nginx.conf
+EXPOSE 8080
 USER nginx
