@@ -1,0 +1,23 @@
+_model: app
+---
+title: SpaceAPI Server for Python
+---
+author: s3lph
+---
+author_url: https://chaos.social/@s3lph
+---
+category: server
+---
+description: A lightweight SpaceAPI endpoint server written in Python.
+---
+space: CCC Basel
+---
+space_url: https://ccc-basel.ch/
+---
+download1_label: Releases
+---
+download1_url: https://gitlab.com/s3lph/spaceapi-server/-/releases
+---
+source_label: Gitlab
+---
+source_url: https://gitlab.com/s3lph/spaceapi-server
