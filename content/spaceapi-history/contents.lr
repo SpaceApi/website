@@ -11,7 +11,7 @@ body:
   * The first directory is online, it's a list of 37 spaces
 
 * **2016**
-  * The project struggled for a while and access to the original server and the website was not possible anymore, so the directory and the schema was forked. First fixme forked the directory and applied the pull requests made to the original directory, which lead to the spacedirectory.org fork which forked the schema and began active maintenance
+  * The project struggled for a while and access to the original server and the website was not possible anymore, so the directory and the schema was forked. First [fixme](https://fixme.ch/) (developers of the [MyHackerspace](/stuff/my-hackerspace/) Android app) forked the directory and applied the pull requests made to the original directory, which lead to the spacedirectory.org fork which forked the schema and began active maintenance.
 
 * **2017**
   * People involved in the original Project and the fork met in Luxembourg to discuss the future of the project. The fork joined the original project.
