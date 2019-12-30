@@ -2,7 +2,7 @@ title: SpaceAPI
 ---
 body:
 
-SpaceAPI project provides a list of URLs from different places called [directory](#directory) which implement the SpaceAPI [schema](#schema).
+The SpaceAPI project provides a list of URLs (the [Directory](#directory)) from hacker- and makerspaces which implement the SpaceAPI [Schema](#schema).
 
 ### Directory
 
