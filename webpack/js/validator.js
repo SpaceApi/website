@@ -1,6 +1,6 @@
 export const generateValidator = (function() {
     'use strict';
-    var validator_target = 'https://validator.spaceapi.io/v1/validate';
+    var validator_target = 'https://validator.spaceapi.io/v1/validate/';
     var textarea_selector = '#validator_content';
     var url_selector = '#version';
     var url_input = '#input_url';
