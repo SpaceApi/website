@@ -2,6 +2,7 @@
 name = SpaceAPI
 locale = en_US
 url = https://spaceapi.io
+url_style = absolute
 
 [packages]
 lektor-webpack-support = 0.5
