@@ -6,7 +6,7 @@ author: Fabian Affolter
 ---
 description: This Home-Assistant integration allows you to serve the SpaceAPI JSON file from your Home-Assistant instance.
 ---
-category: integration
+category: operation
 ---
 source_label: GitHub
 ---
