@@ -4,7 +4,7 @@ body:
 
 {% from "macros/stuff.html" import render_stuff_list %}
 There are a lot of things that you can do with the SpaceAPI, for example visualizing the opening state of your favorite space endpoint or even of all spaces in the directory.
-This can be a lot of things, for instance a notification thats getting pushed to your browser, an LED that will switch color according to the room temperature or simply something telling you if your favorite space is open or not.
+Other applications could include opening notifications pushed to your web browser, an LED that will switch color according to the room temperature or a widget for your website that indicates the number of people present.
 
 ### Endpoint visualization
 These are applications for visualize a single endpoint
