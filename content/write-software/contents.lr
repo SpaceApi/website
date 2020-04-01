@@ -6,7 +6,7 @@ body:
 
 We encourage everybody to write software based on or using SpaceAPI, here are a few things that might help you with that.
 
-### Static file
+### Static directory file
 
 The static file is simply that the directory as it is in github.
 
