@@ -3,7 +3,7 @@ title: How to use
 body:
 
 {% from "macros/stuff.html" import render_stuff_list %}
-There are a lot of things that you can to with the SpaceAPI, most important are visualizing your favorite spaces endpoint or visualize the whole directory in some way.
+There are a lot of things that you can do with the SpaceAPI, for example visualizing the opening state of your favorite space endpoint or even of all spaces in the directory.
 This can be a lot of things, for instance a notification thats getting pushed to your browser, an LED that will switch color according to the room temperature or simply something telling you if your favorite space is open or not.
 
 ### Endpoint visualization
