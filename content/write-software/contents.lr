@@ -20,7 +20,7 @@ The API is a service for interacting with the directory. By default it returns t
 
 The API is hosted at [api.spaceapi.io](https://api.spaceapi.io/). Documentation is available as an [openapi file](https://api.spaceapi.io/openapi.json), you can use it to [generate clients](https://openapi-generator.tech/) for a lot of [different languages](https://openapi-generator.tech/docs/generators#client-generators).
 
-### Libs and types
+### Libraries
 
 We are constantly developing new libraries and provide types for different languages to help you develop software. Feel free to share and contribute too!
 {% from "macros/stuff.html" import render_stuff_list %}
