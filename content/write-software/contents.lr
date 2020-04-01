@@ -12,7 +12,7 @@ The static file is simply that the directory as it is in github.
 
 You can access it through [directory.spaceapi.io](https://directory.spaceapi.io/). We will make sure that the static directory will be always reachable under that domain, even if we would switch away from GitHub in the future.
 
-You can also load the file from [github directly](https://raw.githubusercontent.com/SpaceApi/directory/master/directory.json), but please be aware that we don't have control over it there and your software might brake later on.
+You can also load the file from [github directly](https://raw.githubusercontent.com/SpaceApi/directory/master/directory.json), but please be aware that we don't have control over it there and your software might break if we ever need to move away from GitHub.
 
 ### API
 
