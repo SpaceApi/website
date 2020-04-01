@@ -22,7 +22,7 @@ Documentation is available as an [openapi file](https://api.spaceapi.io/openapi.
 
 ### Libs and types
 
-We constantly developing new libs and provide types for different languages to help you developing software feel free to share and contribute too.
+We are constantly developing new libraries and provide types for different languages to help you develop software. Feel free to share and contribute too!
 {% from "macros/stuff.html" import render_stuff_list %}
 {{ render_stuff_list(site.query('/stuff').filter(F.category.contains('development'))) }}
 
