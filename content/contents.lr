@@ -10,7 +10,7 @@ The directory is a curated list of places providing a JSON file based on the [Sc
 
 ### Schema
 
-A standard for a JSON file defining a unified specification across the hackerspaces, makerspaces, fablabs, chaostreffs and the like across the world that can be used to expose information about the place to web apps or any other application.
+A standardized JSON file that can be used to expose information about hackerspaces, makerspaces, fablabs, chaostreffs and the like across the world to web apps or any other application.
 The specification uses [JSON Schema](https://json-schema.org/).
 
 The following example shows how it looks like:
