@@ -8,7 +8,7 @@ We encourage everybody to write software based on or using SpaceAPI, here are a 
 
 ### Static directory file
 
-The static file is simply that the directory as it is in github.
+The directory is essentially just a plain static JSON file on GitHub.
 
 You can access it through [directory.spaceapi.io](https://directory.spaceapi.io/). We will make sure that the static directory will be always reachable under that domain, even if we would switch away from GitHub in the future.
 
