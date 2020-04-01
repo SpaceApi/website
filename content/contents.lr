@@ -6,7 +6,7 @@ The SpaceAPI project provides a list of URLs (the [Directory](#directory)) from 
 
 ### Directory
 
-The directory is a curated list of places implementing a JSON file based on the [Schema](#schema).
+The directory is a curated list of places providing a JSON file based on the [Schema](#schema).
 
 ### Schema
 
