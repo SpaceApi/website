@@ -10,7 +10,7 @@ If you want to implement the SpaceAPI for your hackerspace you need to do the fo
 
 Add all fields you want, you can find the official fields in the [schema documentation](/docs). Feel free to add your own fields, but ideally prefix custom fields with `ext_` to mark them as extension fields. Otherwise you might have conflicts with later schema versions.
 
-Of course the fun starts with providing an endpoint with dynamic data. Either you can write a piece of software yourself or you can use one of the different [implementations](#stuff-you-can-use).
+Of course the fun starts with providing an endpoint with dynamic data. Either you can [write a piece of software yourself](/write-software/) or you can use one of the different [implementations](#stuff-you-can-use).
 
 ### Validator
 
