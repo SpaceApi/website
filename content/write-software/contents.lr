@@ -18,7 +18,7 @@ You can also load the file from [github directly](https://raw.githubusercontent.
 
 The API is a service for interacting with the directory. By default it returns the directory in the same form as the [static file](#static-file), but filters the list to include only reachable and valid endpoints. Additionally it can give you a lot more information about entries that you might need.
 
-Documentation is available as an [openapi file](https://api.spaceapi.io/openapi.json), you can use it to [generate clients](https://openapi-generator.tech/) for a lot of [different languages](https://openapi-generator.tech/docs/generators#client-generators).
+The API is hosted at [api.spaceapi.io](https://api.spaceapi.io/). Documentation is available as an [openapi file](https://api.spaceapi.io/openapi.json), you can use it to [generate clients](https://openapi-generator.tech/) for a lot of [different languages](https://openapi-generator.tech/docs/generators#client-generators).
 
 ### Libs and types
 
