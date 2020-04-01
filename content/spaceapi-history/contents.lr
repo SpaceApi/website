@@ -14,7 +14,7 @@ body:
   * The project struggled for a while and was not actively maintained anymore, so the directory and the schema were forked. First [fixme](https://fixme.ch/) (developers of the [MyHackerspace](/stuff/my-hackerspace/) Android app) forked the directory and applied the pull requests made to the original directory. Later there was a fork of the schema called [spacedirectory.org](http://web.archive.org/web/20180107132756/https://spacedirectory.org/) by people from [Coredump](https://www.coredump.ch/), who forked the schema and began active maintenance.
 
 * **2017**
-  * People involved in the original Project and the fork met in Luxembourg to discuss the future of the project. The fork was merged back into the original project.
+  * People involved in the original project and the fork met in Luxembourg to discuss the future of the project. The fork was merged back into the original project and the core team was expanded.
   * The new team deployed a new server and got control over the [SpaceAPI GitHub organisation](https://github.com/SpaceApi).
 
 * **2018**
