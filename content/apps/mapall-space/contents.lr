@@ -1,0 +1,23 @@
+_model: app
+---
+title: Live map of all hacker/makerspaces and fablabs worldwide.
+---
+author: Dave Borghuis
+---
+category: website
+---
+description: This website collect several sources to make one map with all hacker/makerspaces and fablabs. The SpaceAPI is used to hourly check all hackerspaces worldwide and show if they are open/closed
+---
+download1_label: Website
+---
+space: TkkrLab
+---
+space_url: https://tkkrlab.nl/
+---
+source_label: Github
+---
+source_url: https://github.com/zeno4ever/map-all-spaces
+---
+author_url: https://daveborghuis.nl/
+---
+download1_url: https://mapall.space/
