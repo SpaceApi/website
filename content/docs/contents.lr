@@ -7,6 +7,8 @@ body:
 This specification lists a number of standardized keys and values. It's highly
 recommended to stick to these fields and values.
 
+The full specification in the form of JSON Schema files can be found in the [schema repository](https://github.com/SpaceApi/schema).
+
 If you need other fields in addition to the ones specified here, and you think
 that the fields could be of use to others too, please make a change request in
 the [schema repository](https://github.com/SpaceApi/schema).
