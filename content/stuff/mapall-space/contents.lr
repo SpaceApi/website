@@ -4,7 +4,7 @@ title: Live map of all hacker/makerspaces and fablabs worldwide.
 ---
 author: Dave Borghuis
 ---
-category: website
+category: directory-visualization
 ---
 description: This website collect several sources to make one map with all hacker/makerspaces and fablabs. The SpaceAPI is used to hourly check all hackerspaces worldwide and show if they are open/closed
 ---
