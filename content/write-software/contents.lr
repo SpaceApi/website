@@ -1,0 +1,32 @@
+_model: page
+---
+title: How to write software based on SpaceAPI
+---
+body:
+
+We encourage everybody to write software based on or using SpaceAPI, here are a few things that might help you with that.
+
+### Static directory file
+
+The directory is essentially just a plain static JSON file on GitHub.
+
+You can access it through [directory.spaceapi.io](https://directory.spaceapi.io/). We will make sure that the static directory will be always reachable under that domain, even if we would switch away from GitHub in the future.
+
+You can also load the file from [github directly](https://raw.githubusercontent.com/SpaceApi/directory/master/directory.json), but please be aware that we don't have control over it there and your software might break if we ever need to move away from GitHub.
+
+### API
+
+The API is a service for interacting with the directory. By default it returns the directory in the same form as the [static file](#static-file), but filters the list to include only reachable and valid endpoints. Additionally it can give you a lot more information about entries that you might need.
+
+The API is hosted at [api.spaceapi.io](https://api.spaceapi.io/). Documentation is available as an [openapi file](https://api.spaceapi.io/openapi.json), you can use it to [generate clients](https://openapi-generator.tech/) for a lot of [different languages](https://openapi-generator.tech/docs/generators#client-generators).
+
+### Libraries
+
+We are constantly developing new libraries and provide types for different languages to help you develop software. Feel free to share and contribute too!
+{% from "macros/stuff.html" import render_stuff_list %}
+{{ render_stuff_list(site.query('/stuff').filter(F.category.contains('development'))) }}
+
+
+### Community
+
+We've created a [community organization on GitHub](https://github.com/SpaceApi-community) for software and libs around SpaceAPI. Feel free to join, you will also get access to our [metrics](https://metrics.spaceapi.io).

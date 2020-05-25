@@ -1,0 +1,22 @@
+_model: page
+---
+title: History of SpaceAPI
+---
+body:
+
+* **2011**
+  * The SpaceAPI project has its first traces in hacker- and makerspaces in the Netherlands
+
+* **2012**
+  * The first directory is online, it's a list of 37 spaces
+
+* **2016**
+  * The project struggled for a while and was not actively maintained anymore, so the directory and the schema were forked. First [fixme](https://fixme.ch/) (developers of the [MyHackerspace](/stuff/my-hackerspace/) Android app) forked the directory and applied the pull requests made to the original directory. Later there was a fork of the schema called [spacedirectory.org](http://web.archive.org/web/20180107132756/https://spacedirectory.org/) by people from [Coredump](https://www.coredump.ch/), who forked the schema and began active maintenance.
+
+* **2017**
+  * People involved in the original project and the fork met in Luxembourg to discuss the future of the project. The fork was merged back into the original project and the core team was expanded.
+  * The new team deployed a new server and got control over the [SpaceAPI GitHub organisation](https://github.com/SpaceApi).
+
+* **2018**
+  * [blinry](https://twitter.com/blinry) created a new [SpaceAPI logo](https://morr.cc/spaceapi-logo/).
+  * We switched domains from spaceapi.net to [spaceapi.io](https://spaceapi.io) since we've lost control over the old domain. Access to the @SpaceAPI Twitter account is also not possible anymore, but we set up a new account at [@space_api](https://twitter.com/space_api) as well as a Mastodon account at [@spaceapi@chaos.social](https://chaos.social/@spaceapi).

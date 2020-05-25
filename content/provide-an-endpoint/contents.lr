@@ -1,0 +1,29 @@
+_model: page
+---
+title: How to provide an endpoint
+---
+body:
+
+If you want to implement the SpaceAPI for your hackerspace you need to do the following:
+* Host the JSON file and a logo somewhere
+* Create a pull-request on the [directory repository](https://github.com/SpaceApi/directory) to add your space to the directory.
+
+Add all fields you want, you can find the official fields in the [schema documentation](/docs). Feel free to add your own fields, but ideally prefix custom fields with `ext_` to mark them as extension fields. Otherwise you might have conflicts with later schema versions.
+
+Of course the fun starts with providing an endpoint with dynamic data. Either you can [write a piece of software yourself](/write-software/) or you can use one of the different [implementations](#stuff-you-can-use).
+
+### Validator
+
+The [SpaceAPI validator](/validator) validates URLs or files. Please note that invalid endpoints will not be added to the directory and may get removed when they turn invalid.
+
+### HTTP and CORS
+
+Your server should be reachable via HTTPS to prevent websites having problems with [mixed content warnings](https://developer.mozilla.org/en-US/docs/Web/Security/Mixed_content).
+You should also provide [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) and [Content-type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Type) headers so that JavaScript based web applications can query your endpoint directly.
+
+### Stuff you can use
+
+There is stuff that you can use to provide an endpoint or integrate e.g. your space status into your website.
+
+{% from "macros/stuff.html" import render_stuff_list %}
+{{ render_stuff_list(site.query('/stuff').filter(F.category.contains('operation'))) }}

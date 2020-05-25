@@ -1,0 +1,19 @@
+_model: stuff
+---
+title: Spacer
+---
+author: @nooitaf
+---
+author_url: https://github.com/nooitaf
+---
+description: Displays all spaces in the Space Directory on a map. The opening status is visible by the color of the marker.
+---
+space: NURDspace
+---
+space_url: https://nurdspace.nl/
+---
+category: directory-visualization
+---
+source_label: GitHub
+---
+source_url: https://github.com/nooitaf/spacer

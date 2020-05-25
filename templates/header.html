@@ -1,20 +1,19 @@
 <header id="header">
   <div class="logocontainer">
     <a href="/">
-      <img src="{{ '/static/images/spaceapi-logo.png' | url }}" class="logo" alt="SpaceAPI">
+      <img src="{{ '/static/images/spaceapi-logo-230px.png' | url }}" class="logo" alt="SpaceAPI">
     </a>
   </div>
   <nav>
     <ul>
       <li{% if this._path == '/' %} class="active"{% endif %}>
-      <a href="{{ '/' | url }}">Home</a>
+      <a href="{{ '/' | url }}">What is it?</a>
       </li>
       {% for href, title in [
-      ['/docs/', 'Docs'],
-      ['/getting-started/', 'Getting Started'],
-      ['/apps/', 'Apps'],
-      ['/validator', 'Validator'],
-      ['/directory/', 'Directory'],
+      ['/how-to-use/', 'How to use'],
+      ['/provide-an-endpoint/', 'Provide an endpoint'],
+      ['/write-software/', 'Write software'],
+      ['/spaceapi-history', 'History'],
       ['https://github.com/SpaceApi', 'GitHub'],
       ] %}
       <li{% if this.is_child_of(href) %} class="active"{% endif %}>

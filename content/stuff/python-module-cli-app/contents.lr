@@ -1,0 +1,23 @@
+_model: stuff
+---
+title: Python Module / CLI App
+---
+author: Sébastien Gendre
+---
+author_url: https://k-7.ch/
+---
+category: space-visualization, directory-visualization, development
+---
+description: Get the list of *spaces from the Space Directory and show their details on your terminal. Or query them from your Python software.
+---
+space: Post Tenebras Lab
+---
+space_url: https://www.posttenebraslab.ch/
+---
+download1_label: PyPI
+---
+download1_url: https://pypi.org/project/spacedirectory/
+---
+source_label: Framagit
+---
+source_url: https://framagit.org/SebGen/spacedirectory

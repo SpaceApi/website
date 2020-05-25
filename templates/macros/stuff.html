@@ -1,0 +1,22 @@
+{% macro render_stuff_list(stufflist) %}
+<div class="stuff-container">
+  <div class="stufflist">
+  {% for stuff in stufflist %}
+    <section class="stuff">
+      <h3><a href="{{ stuff|url }}">{{ stuff.title }}</a></h3>
+      {{ stuff.description }}
+      <p><em>By <a href="{{ stuff.author_url }}">{{ stuff.author }}</a>
+        {% if stuff.author2 %}and <a href="{{ stuff.author2_url }}">{{ stuff.author2 }}</a>{% endif %}
+        from <a href="{{ stuff.space_url }}">{{ stuff.space }}</a>.</em></p>
+      <p class="category">Category: {{ stuff.category|join(', ') }}</p>
+    </section>
+  {% endfor %}
+  </div>
+</div>
+{% endmacro %}
+
+{% macro render_stuff_list_md(stufflist) %}
+{% for stuff in stufflist %}
+* [{{ stuff.title }}]({{ stuff|url }})
+{% endfor %}
+{% endmacro %}

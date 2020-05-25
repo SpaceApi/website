@@ -1,0 +1,61 @@
+@import "_variables";
+
+footer {
+    width: 1080px;
+    padding-top: 110px;
+    padding-bottom: 55px;
+
+    .leftcontainer {
+        grid-column: col 2 / span 3;
+        grid-row: row;
+        width: 230px;
+
+        @media (max-width: $width_responsive_mid) {
+            &, .logo {
+                width: 150px;
+            }
+        }
+
+        #reficons {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            img {
+                width: 25px;
+                height: 25px;
+                background-color: #fff;
+                border-radius: 50%;
+                padding: 5px;
+                margin: 5px;
+            }
+        }
+    }
+
+    nav {
+        grid-column: col 5 / span 8;
+        grid-row: row;
+
+        @media (max-width: $width_responsive_wide) {
+            grid-column: col 6 / span 7;
+        }
+
+        @media (max-width: $width_responsive_mid) {
+            grid-column: col 8 / span 5;
+        }
+
+        ul {
+            li {
+                padding-bottom: 20px;
+            }
+        }
+    }
+}
+
+.footerbackground {
+    height: 385px;
+    overflow: hidden;
+    width: 100%;
+    background-image: url("/static/images/footer.jpg");
+    background-size: cover;
+    position: center;
+}
