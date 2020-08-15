@@ -16,7 +16,7 @@ COPY . /code
 RUN cd /code && lektor build -f webpack -f scsscompile --output-path /code/output
 
 # Move generated data to separate alpine-based image
-FROM nginx:1.17-alpine as server
+FROM nginx:1.19-alpine as server
 
 RUN apk --update --no-cache add curl
 HEALTHCHECK CMD curl --fail http://localhost:8080 || exit 1
