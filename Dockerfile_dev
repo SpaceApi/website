@@ -2,12 +2,7 @@ FROM python:3 as builder
 
 ENV LANG=en_US.utf8
 
-# Install Node/npm for webpack
-RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
-RUN apt-get update -y
-RUN apt-get install build-essential nodejs  -y
-
 # Install requirements and build the site
 CMD cd /code && \
     pip install -U -r requirements.txt && \
-    lektor server -f webpack -h 0.0.0.0 -p 80 -v
+    lektor server -h 0.0.0.0 -p 80 -v

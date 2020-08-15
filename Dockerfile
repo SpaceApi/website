@@ -2,18 +2,13 @@ FROM python:3 as builder
 
 ENV LANG=en_US.utf8
 
-# Install Node/npm for webpack
-RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
-RUN apt-get update -y
-RUN apt-get install build-essential nodejs  -y
-
 # Install requirements
 COPY requirements.txt /tmp/
 RUN pip install -U -r /tmp/requirements.txt && rm /tmp/requirements.txt
 
 # Add sources and build the site
 COPY . /code
-RUN cd /code && lektor build -f webpack -f scsscompile --output-path /code/output
+RUN cd /code && lektor build -f scsscompile --output-path /code/output
 
 # Move generated data to separate alpine-based image
 FROM nginx:1.17-alpine as server
