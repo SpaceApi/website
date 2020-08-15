@@ -1,4 +1,4 @@
-export const generateValidator = (function() {
+const generateValidator = (function() {
     'use strict';
     var validator_target = 'https://validator.spaceapi.io/v1/validate/';
     var textarea_selector = '#validator_content';
@@ -131,13 +131,11 @@ export const generateValidator = (function() {
 
     function setBanner(status, message) {
         banner.className = status;
-
         banner.querySelector('#'+status).innerHTML = status +'\n'+ message;
     }
 });
 
-
-export const generateBackupIframe = (function() {
+const generateBackupIframe = (function() {
     'use strict';
     var root = document.querySelector('#backup_iframe');
     var iframe = root.querySelector('iframe');
@@ -160,3 +158,6 @@ export const generateBackupIframe = (function() {
         }, 200);
     }
 });
+
+window.generateValidator = generateValidator;
+window.generateBackupIframe = generateBackupIframe;
