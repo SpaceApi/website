@@ -44,7 +44,7 @@ To use docker you can run:
     docker build -t website -f Dockerfile_dev .
     docker run -v $(pwd):/code -it -p5000:80 website
 
-Then open http://localhost:5000
+Then open this-> http://localhost:5000
 
 
 ## Adding an App
