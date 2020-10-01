@@ -1,4 +1,4 @@
-# spaceapi.io
+# spaceapi.io - an amazing project
 
 [![CircleCI][circle-ci-badge]][circle-ci]
 [![Docker Image][docker-image-badge]][docker-image]
