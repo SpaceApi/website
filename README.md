@@ -1,3 +1,6 @@
+* © Copyright - protected 
+
+
 # spaceapi.io
 
 [![CircleCI][circle-ci-badge]][circle-ci]
