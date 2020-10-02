@@ -1,4 +1,4 @@
-# spaceapi.io
+# SpaceAPI.io
 
 [![CircleCI][circle-ci-badge]][circle-ci]
 [![Docker Image][docker-image-badge]][docker-image]
