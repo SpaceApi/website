@@ -3,7 +3,7 @@
 [![CircleCI][circle-ci-badge]][circle-ci]
 [![Docker Image][docker-image-badge]][docker-image]
 
-This are the sources for the SpaceAPI website.
+These are the sources for the SpaceAPI website.
 
 The website is generated using Lektor, a static site generator written in
 Python. This simplifies hosting and makes the website very fast.
