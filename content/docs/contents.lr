@@ -1,14 +1,14 @@
 _model: page
 ---
-title: API Documentation
+title: Schema Documentation v14
 ---
 body:
 
 This specification lists a number of standardized keys and values. It's highly
 recommended to stick to these fields and values.
 
-The full specification in the form of JSON Schema files can be found in the
-[schema repository](https://github.com/SpaceApi/schema).
+The full specification in the form of [JSON Schema](http://json-schema.org/) files 
+can be found in the [schema repository](https://github.com/SpaceApi/schema).
 
 If you need other fields in addition to the ones specified here, and you think
 that the fields could be of use to others too, please make a change request in
@@ -26,15 +26,15 @@ but they may be left away if they're not required.
 <ul class="group apidocs">
 <li><section class="item">
 <header>
-<h3>api</h3><span class="type">(string)</span>
+<h3>api_compatibility</h3><span class="type">(array of string)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>The version of SpaceAPI your endpoint uses</p>
-<h4>Valid values</h4>
-<p><code>0.13</code></p>
+<p>The versions your SpaceAPI endpoint supports</p>
+<h4>Nested array items</h4>
+<span>string</span>
 </div></details>
 </section></li>
 <li><section class="item">
@@ -113,6 +113,16 @@ but they may be left away if they're not required.
 <p>Longitude of your space location, in degree with decimal places. Use positive values for locations east of Greenwich, and negative values for locations west of Greenwich.</p>
 </div></details>
 </section></li>
+<li><section class="item">
+<header>
+<h3>timezone</h3><span class="type">(string)</span>
+</header>
+<details class="togglable">
+<summary>Details</summary>
+<div>
+<p>The timezone the space is located in. It should be formatted according to the <a target="_blank" href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones">TZ database location names</a>.</p>
+</div></details>
+</section></li>
 </ul>
 </div></details>
 </section></li>
@@ -134,7 +144,7 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>See the <a target="_blank" href="https://spacefed.net/wiki/index.php/Category:Howto/Spacenet">wiki</a>.</p>
+<p>See the <a target="_blank" href="https://spacefed.net/index.php/Category:Howto/Spacenet">wiki</a>.</p>
 </div></details>
 </section></li>
 <li><section class="item">
@@ -145,18 +155,7 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>See the <a target="_blank" href="https://spacefed.net/wiki/index.php/Category:Howto/Spacesaml">wiki</a>.</p>
-</div></details>
-</section></li>
-<li><section class="item">
-<header>
-<h3>spacephone</h3><span class="type">(boolean)</span>
-<span class="tag required">required</span>
-</header>
-<details class="togglable">
-<summary>Details</summary>
-<div>
-<p>See the <a target="_blank" href="https://spacefed.net/wiki/index.php/Category:Howto/Spacephone">wiki</a>.</p>
+<p>See the <a target="_blank" href="https://spacefed.net/index.php?title=Spacesaml">wiki</a>.</p>
 </div></details>
 </section></li>
 </ul>
@@ -178,51 +177,7 @@ but they may be left away if they're not required.
 </section></li>
 <li><section class="item">
 <header>
-<h3>stream</h3><span class="type">(object)</span>
-</header>
-<details class="togglable">
-<summary>Details</summary>
-<div>
-<p>A mapping of stream types to stream URLs. If you use other stream types make a <a href="https://github.com/spaceapi/schema/pulls" target="_blank">pull request</a> or prefix yours with <samp>ext_</samp>.</p>
-<h4>Nested object properties</h4>
-<ul class="group">
-<li><section class="item">
-<header>
-<h3>m4</h3><span class="type">(string)</span>
-</header>
-<details class="togglable">
-<summary>Details</summary>
-<div>
-<p>Your mpg stream URL. Example: <samp>{"mp4": "http://example.org/stream.mpg"}</samp></p>
-</div></details>
-</section></li>
-<li><section class="item">
-<header>
-<h3>mjpeg</h3><span class="type">(string)</span>
-</header>
-<details class="togglable">
-<summary>Details</summary>
-<div>
-<p>Your mjpeg stream URL. Example: <samp>{"mjpeg": "http://example.org/stream.mjpeg"}</samp></p>
-</div></details>
-</section></li>
-<li><section class="item">
-<header>
-<h3>ustream</h3><span class="type">(string)</span>
-</header>
-<details class="togglable">
-<summary>Details</summary>
-<div>
-<p>Your ustream stream URL. Example: <samp>{"ustream": "http://www.ustream.tv/channel/hackspsps"}</samp></p>
-</div></details>
-</section></li>
-</ul>
-</div></details>
-</section></li>
-<li><section class="item">
-<header>
 <h3>state</h3><span class="type">(object)</span>
-<span class="tag required">required</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -233,13 +188,11 @@ but they may be left away if they're not required.
 <li><section class="item">
 <header>
 <h3>open</h3><span class="type">(boolean)</span>
-<span class="tag required">required</span>
-<span class="tag nullable">nullable</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>A flag which indicates if the space is currently open or closed. The state 'undefined' can be achieved by assigning this field the value 'null' (without the quotes). In most (all?) programming languages this is evaluated to false so that no app should break</p>
+<p>A flag which indicates whether the space is currently open or closed. The state 'undefined' can be achieved by omitting this field. A missing 'open' property carries the semantics of a temporary unavailability of the state, whereas the absence of the 'state' property itself means the state is generally not implemented for this space.</p>
 </div></details>
 </section></li>
 <li><section class="item">
@@ -459,6 +412,36 @@ but they may be left away if they're not required.
 <p>Twitter username with leading <samp>@</samp>.</p>
 </div></details>
 </section></li>
+<li><section class="item">
+<header>
+<h3>xmpp</h3><span class="type">(string)</span>
+</header>
+<details class="togglable">
+<summary>Details</summary>
+<div>
+<p>XMPP (Jabber) ID</p>
+</div></details>
+</section></li>
+<li><section class="item">
+<header>
+<h3>mastodon</h3><span class="type">(string)</span>
+</header>
+<details class="togglable">
+<summary>Details</summary>
+<div>
+<p>Mastodon username. Example: @ordnung@chaos.social</p>
+</div></details>
+</section></li>
+<li><section class="item">
+<header>
+<h3>matrix</h3><span class="type">(string)</span>
+</header>
+<details class="togglable">
+<summary>Details</summary>
+<div>
+<p>Matrix username. Example: <samp>@user:example.org</samp></p>
+</div></details>
+</section></li>
 </ul>
 </div></details>
 </section></li>
@@ -484,35 +467,22 @@ but they may be left away if they're not required.
 </section></li>
 <li><section class="item">
 <header>
+<h3>mastodon</h3><span class="type">(string)</span>
+</header>
+<details class="togglable">
+<summary>Details</summary>
+<div>
+<p>Mastodon username: Example: @ordnung@chaos.social.</p>
+</div></details>
+</section></li>
+<li><section class="item">
+<header>
 <h3>facebook</h3><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
 <div>
 <p>Facebook account URL.</p>
-</div></details>
-</section></li>
-<li><section class="item">
-<header>
-<h3>google</h3><span class="type">(object)</span>
-</header>
-<details class="togglable">
-<summary>Details</summary>
-<div>
-<p>Google services.</p>
-<h4>Nested object properties</h4>
-<ul class="group">
-<li><section class="item">
-<header>
-<h3>plus</h3><span class="type">(string)</span>
-</header>
-<details class="togglable">
-<summary>Details</summary>
-<div>
-<p>Google plus URL.</p>
-</div></details>
-</section></li>
-</ul>
 </div></details>
 </section></li>
 <li><section class="item">
@@ -557,7 +527,7 @@ but they may be left away if they're not required.
 </section></li>
 <li><section class="item">
 <header>
-<h3>jabber</h3><span class="type">(string)</span>
+<h3>xmpp</h3><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -572,27 +542,40 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>A separate email address for issue reports (see the <em>issue_report_channels</em> field). This value can be Base64-encoded.</p>
-</div></details>
-</section></li>
-</ul>
+<p>A separate email address for issue reports. This value can be Base64-encoded.</p>
 </div></details>
 </section></li>
 <li><section class="item">
 <header>
-<h3>issue_report_channels</h3><span class="type">(array of string)</span>
-<span class="tag required">required</span>
+<h3>gopher</h3><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>This array defines all communication channels where you want to get automated issue reports about your SpaceAPI endpoint from the revalidator. This field is meant for internal usage only and it should never be consumed by any app. At least one channel must be defined. Please consider that when using <samp>ml</samp> the mailing list moderator has to moderate incoming emails or add the sender email to the subscribers. If you don't break your SpaceAPI implementation you won't get any notifications ;-)</p>
-<h4>Minimum number of items</h4>
-<p>1</p>
-<h4>Nested array items</h4>
-<span>string</span>
-<h5>Valid values</h5>
-<p><code>email</code> | <code>issue_mail</code> | <code>twitter</code> | <code>ml</code></p>
+<p>A URL to find information about the Space in the Gopherspace. Example: gopher://gopher.binary-kitchen.de</p>
+</div></details>
+</section></li>
+<li><section class="item">
+<header>
+<h3>matrix</h3><span class="type">(string)</span>
+</header>
+<details class="togglable">
+<summary>Details</summary>
+<div>
+<p>Matrix channel/community for the Hackerspace. Example: <samp>#spaceroom:example.org</samp> or <samp>+spacecommunity:example.org</samp></p>
+</div></details>
+</section></li>
+<li><section class="item">
+<header>
+<h3>mumble</h3><span class="type">(string)</span>
+</header>
+<details class="togglable">
+<summary>Details</summary>
+<div>
+<p>URL to a Mumble server/channel, as specified in https://wiki.mumble.info/wiki/Mumble_URL . Example: <samp>mumble://mumble.example.org/spaceroom?version=1.2.0</samp></p>
+</div></details>
+</section></li>
+</ul>
 </div></details>
 </section></li>
 <li><section class="item">
@@ -757,9 +740,9 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>The unit of the sensor value. You should always define the unit though if the sensor is a flag of a boolean type then you can of course omit it.</p>
+<p>The unit of pressure used by your sensor<br>Note: The <code>hPA</code> unit is deprecated and should not be used anymore. Use the correct <code>hPa</code> unit instead.</p>
 <h4>Valid values</h4>
-<p><code>hPA</code></p>
+<p><code>hPa</code> | <code>hPA</code></p>
 </div></details>
 </section></li>
 <li><section class="item">
@@ -1699,9 +1682,7 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>What's the currency? Please use the ones provided, in the next version you can use currency definitions according to <a href="https://en.wikipedia.org/wiki/ISO_4217" target="_blank">ISO 4217</a></p>
-<h4>Valid values</h4>
-<p><code>BTC</code> | <code>EUR</code> | <code>USD</code> | <code>GBP</code></p>
+<p>What's the currency? It should be formatted according to <a href="https://en.wikipedia.org/wiki/ISO_4217" target="_blank">ISO 4217</a> short-code format.</p>
 </div></details>
 </section></li>
 <li><section class="item">
@@ -1854,6 +1835,122 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>An extra field that you can use to attach some additional information to this sensor instance.</p>
+</div></details>
+</section></li>
+</ul>
+</div></details>
+</section></li>
+<li><section class="item">
+<header>
+<h3>network_traffic</h3><span class="type">(array of object)</span>
+</header>
+<details class="togglable">
+<summary>Details</summary>
+<div>
+<p>The current network traffic, in bits/second or packets/second (or both)</p>
+<h4>Minimum number of items</h4>
+<p>1</p>
+<h4>Nested array items</h4>
+<ul class="group">
+<li><section class="item">
+<header>
+<h3>properties</h3><span class="type">(object)</span>
+<span class="tag required">required</span>
+</header>
+<details class="togglable">
+<summary>Details</summary>
+<div>
+<h4>Nested object properties</h4>
+<ul class="group">
+<li><section class="item">
+<header>
+<h3>bits_per_second</h3><span class="type">(object)</span>
+</header>
+<details class="togglable">
+<summary>Details</summary>
+<div>
+<p></p>
+<h4>Nested object properties</h4>
+<ul class="group">
+<li><section class="item">
+<header>
+<h3>value</h3><span class="type">(number)</span>
+<span class="tag required">required</span>
+</header>
+<details class="togglable">
+<summary>Details</summary>
+<div>
+<p>The measurement value, in bits/second</p>
+</div></details>
+</section></li>
+<li><section class="item">
+<header>
+<h3>maximum</h3><span class="type">(number)</span>
+</header>
+<details class="togglable">
+<summary>Details</summary>
+<div>
+<p>The maximum available throughput in bits/second, e.g. as sold by your ISP</p>
+</div></details>
+</section></li>
+</ul>
+</div></details>
+</section></li>
+<li><section class="item">
+<header>
+<h3>packets_per_second</h3><span class="type">(object)</span>
+</header>
+<details class="togglable">
+<summary>Details</summary>
+<div>
+<p></p>
+<h4>Nested object properties</h4>
+<ul class="group">
+<li><section class="item">
+<header>
+<h3>value</h3><span class="type">(number)</span>
+<span class="tag required">required</span>
+</header>
+<details class="togglable">
+<summary>Details</summary>
+<div>
+<p>The measurement value, in packets/second</p>
+</div></details>
+</section></li>
+</ul>
+</div></details>
+</section></li>
+</ul>
+</div></details>
+</section></li>
+<li><section class="item">
+<header>
+<h3>name</h3><span class="type">(string)</span>
+</header>
+<details class="togglable">
+<summary>Details</summary>
+<div>
+<p>Name of the measurement, e.g. to distinguish between upstream and downstream traffic</p>
+</div></details>
+</section></li>
+<li><section class="item">
+<header>
+<h3>location</h3><span class="type">(string)</span>
+</header>
+<details class="togglable">
+<summary>Details</summary>
+<div>
+<p>Location the measurement relates to, e.g. <samp>WiFi</samp> or <samp>Uplink</samp></p>
+</div></details>
+</section></li>
+<li><section class="item">
+<header>
+<h3>description</h3><span class="type">(string)</span>
+</header>
+<details class="togglable">
+<summary>Details</summary>
+<div>
+<p>An extra field that you can use to attach some additional information to this sensor instance</p>
 </div></details>
 </section></li>
 </ul>
@@ -2013,32 +2110,6 @@ but they may be left away if they're not required.
 </section></li>
 <li><section class="item">
 <header>
-<h3>cache</h3><span class="type">(object)</span>
-</header>
-<details class="togglable">
-<summary>Details</summary>
-<div>
-<p>Specifies options about caching of your SpaceAPI endpoint. Use this if you want to avoid hundreds/thousands of application instances crawling your status.</p>
-<h4>Nested object properties</h4>
-<ul class="group">
-<li><section class="item">
-<header>
-<h3>schedule</h3><span class="type">(string)</span>
-<span class="tag required">required</span>
-</header>
-<details class="togglable">
-<summary>Details</summary>
-<div>
-<p>Cache update cycle. This field must match the basic regular expression <code>^[mhd]\.[0-9]{2}$</code>, where the first field specifies a unit of time (<code>m</code> for 1 minute, <code>h</code> for 1 hour, <code>d</code> for 1 day), and the second field specifies how many of this unit should be skipped between updates. For example, <samp>m.10</samp> means one updates every 10 minutes, <samp>h.03</samp> means one update every 3 hours, and <samp>d.01</samp> means one update every day.</p>
-<h4>Valid values</h4>
-<p><code>m.02</code> | <code>m.05</code> | <code>m.10</code> | <code>m.15</code> | <code>m.30</code> | <code>h.01</code> | <code>h.02</code> | <code>h.04</code> | <code>h.08</code> | <code>h.12</code> | <code>d.01</code></p>
-</div></details>
-</section></li>
-</ul>
-</div></details>
-</section></li>
-<li><section class="item">
-<header>
 <h3>projects</h3><span class="type">(array of string)</span>
 </header>
 <details class="togglable">
@@ -2051,12 +2122,12 @@ but they may be left away if they're not required.
 </section></li>
 <li><section class="item">
 <header>
-<h3>radio_show</h3><span class="type">(array of object)</span>
+<h3>links</h3><span class="type">(array of object)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>A list of radio shows that your hackerspace might broadcast.</p>
+<p>Arbitrary links that you'd like to share</p>
 <h4>Nested array items</h4>
 <ul class="group">
 <li><section class="item">
@@ -2067,7 +2138,17 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>The name of the radio show.</p>
+<p>The link name.</p>
+</div></details>
+</section></li>
+<li><section class="item">
+<header>
+<h3>description</h3><span class="type">(string)</span>
+</header>
+<details class="togglable">
+<summary>Details</summary>
+<div>
+<p>An extra field for a more detailed description of the link.</p>
 </div></details>
 </section></li>
 <li><section class="item">
@@ -2078,42 +2159,76 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>The stream URL which must end in a filename or a semicolon such as <br><ul><li>http://signal.hackerspaces.org:8090/signal.mp3</li><li>http://85.214.64.213:8060/;</ul></p>
+<p>The URL.</p>
+</div></details>
+</section></li>
+</ul>
 </div></details>
 </section></li>
 <li><section class="item">
 <header>
-<h3>type</h3><span class="type">(string)</span>
+<h3>membership_plans</h3><span class="type">(array of object)</span>
+</header>
+<details class="togglable">
+<summary>Details</summary>
+<div>
+<p>A list of the different membership plans your hackerspace might have. Set the value according to your billing process. For example, if your membership fee is 10€ per month, but you bill it yearly (aka. the member pays the fee once per year), set the amount to 120 an the billing_interval to yearly.</p>
+<h4>Nested array items</h4>
+<ul class="group">
+<li><section class="item">
+<header>
+<h3>name</h3><span class="type">(string)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>The stream encoder.</p>
+<p>The name of the membership plan. For example Student Membership, Normal Membership etc.</p>
+</div></details>
+</section></li>
+<li><section class="item">
+<header>
+<h3>value</h3><span class="type">(number)</span>
+<span class="tag required">required</span>
+</header>
+<details class="togglable">
+<summary>Details</summary>
+<div>
+<p>How much does this plan cost?</p>
+</div></details>
+</section></li>
+<li><section class="item">
+<header>
+<h3>currency</h3><span class="type">(string)</span>
+<span class="tag required">required</span>
+</header>
+<details class="togglable">
+<summary>Details</summary>
+<div>
+<p>What's the currency? It should be formatted according to <a href="https://en.wikipedia.org/wiki/ISO_4217" target="_blank">ISO 4217</a> short-code format.</p>
+</div></details>
+</section></li>
+<li><section class="item">
+<header>
+<h3>billing_interval</h3><span class="type">(string)</span>
+<span class="tag required">required</span>
+</header>
+<details class="togglable">
+<summary>Details</summary>
+<div>
+<p>How often is the membership billed? If you select other, please specify in the description what your billing interval is.</p>
 <h4>Valid values</h4>
-<p><code>mp3</code> | <code>ogg</code></p>
+<p><code>yearly</code> | <code>monthly</code> | <code>weekly</code> | <code>daily</code> | <code>hourly</code> | <code>other</code></p>
 </div></details>
 </section></li>
 <li><section class="item">
 <header>
-<h3>start</h3><span class="type">(string)</span>
-<span class="tag required">required</span>
+<h3>description</h3><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>Specify the start time by using the <a href="http://en.wikipedia.org/wiki/ISO_8601" target="_blank">ISO 8601</a> standard. This encodes the time as follows: <br><br><ul><li>Combined date and time in UTC: 2013-06-10T10:00Z</li><li>Combined date and time in localtime with the timezone offset: 2013-06-10T12:00+02:00</li><li>Combined date and time in localtime with the timezone offset: 2013-06-10T07:00-03:00</li></ul> The examples refer all to the same time.</p>
-</div></details>
-</section></li>
-<li><section class="item">
-<header>
-<h3>end</h3><span class="type">(string)</span>
-<span class="tag required">required</span>
-</header>
-<details class="togglable">
-<summary>Details</summary>
-<div>
-<p>Specify the end time by using the <a href="http://en.wikipedia.org/wiki/ISO_8601" target="_blank">ISO 8601</a> standard. This encodes the time as follows: <br><br><ul><li>Combined date and time in UTC: 2013-06-10T10:00Z</li><li>Combined date and time in localtime with the timezone offset: 2013-06-10T12:00+02:00</li><li>Combined date and time in localtime with the timezone offset: 2013-06-10T07:00-03:00</li></ul> The examples refer all to the same time.</p>
+<p>A free form string.</p>
 </div></details>
 </section></li>
 </ul>
