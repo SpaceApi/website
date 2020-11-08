@@ -1,5 +1,6 @@
 import collections
 import json
+import re
 import sys
 from typing import List
 
@@ -96,18 +97,20 @@ def process_version(path):
     with open(path, 'r') as f:
         schema = json.loads(f.read(), object_pairs_hook=collections.OrderedDict)
     assert schema['type'] == 'object'
+    version = re.search(r'schema\.spaceapi\.io\/(.*)\.json', schema['$id']).group(1)
+    schema['properties']['api_compatibility']
     assert 'properties' in schema
     print('_model: page')
     print('---')
-    print('title: API Documentation')
+    print('title: Schema Documentation v{}'.format(version))
     print('---')
     print('body:')
     print()
     print('This specification lists a number of standardized keys and values. It\'s highly')
     print('recommended to stick to these fields and values.')
     print()
-    print('The full specification in the form of JSON Schema files can be found in the')
-    print('[schema repository](https://github.com/SpaceApi/schema).')
+    print('The full specification in the form of [JSON Schema](http://json-schema.org/) files ')
+    print('can be found in the [schema repository](https://github.com/SpaceApi/schema).')
     print()
     print('If you need other fields in addition to the ones specified here, and you think')
     print('that the fields could be of use to others too, please make a change request in')
