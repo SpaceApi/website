@@ -50,6 +50,15 @@ def visit_array(name, data):
         print('<ul class="group">')
         visit(items['properties'], items.get('required', []))
         print('</ul>')
+    if 'contains' in data:
+        print('<h4>Required item values</h4>')
+        # Ensure that we can handle this schema logic
+        keys = set(data['contains'].keys())
+        if keys != {'const'}:
+            raise ValueError('Unspported "contains" variant(s): {}'.format(keys - {'const'}))
+        # Generate docs
+        print('<p>The array must contain the value')
+        print('<code>{}</code>.</p>'.format(data['contains']['const']))
 
 
 def visit_string(name, data):

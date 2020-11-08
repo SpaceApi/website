@@ -35,6 +35,9 @@ but they may be left away if they're not required.
 <p>The versions your SpaceAPI endpoint supports</p>
 <h4>Nested array items</h4>
 <span>string</span>
+<h4>Required item values</h4>
+<p>The array must contain the value
+<code>14</code>.</p>
 </div></details>
 </section></li>
 <li><section class="item">
