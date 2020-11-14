@@ -78,11 +78,11 @@ The website should auto-deploy after a push to master. The update might take a
 few minutes though.
 
 
-## API Docs
+## Schema Docs
 
-API documentation is generated from the schema. To update:
+Schema documentation is generated from the schema. To update:
 
-    python3 generate_api_docs.py ../schema/13.json > content/docs/contents.lr
+    python3 generate_schema_docs.py ../schema/13.json > content/docs/contents.lr
 
 
 <!-- Badges -->

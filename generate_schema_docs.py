@@ -1,5 +1,6 @@
 import collections
 import json
+import re
 import sys
 from typing import List
 
@@ -49,6 +50,15 @@ def visit_array(name, data):
         print('<ul class="group">')
         visit(items['properties'], items.get('required', []))
         print('</ul>')
+    if 'contains' in data:
+        print('<h4>Required item values</h4>')
+        # Ensure that we can handle this schema logic
+        keys = set(data['contains'].keys())
+        if keys != {'const'}:
+            raise ValueError('Unspported "contains" variant(s): {}'.format(keys - {'const'}))
+        # Generate docs
+        print('<p>The array must contain the value')
+        print('<code>{}</code>.</p>'.format(data['contains']['const']))
 
 
 def visit_string(name, data):
@@ -96,20 +106,33 @@ def process_version(path):
     with open(path, 'r') as f:
         schema = json.loads(f.read(), object_pairs_hook=collections.OrderedDict)
     assert schema['type'] == 'object'
+    version = re.search(r'schema\.spaceapi\.io\/(.*)\.json', schema['$id']).group(1)
+    schema['properties']['api_compatibility']
     assert 'properties' in schema
     print('_model: page')
     print('---')
-    print('title: API Documentation')
+    print('title: Schema Documentation v{}'.format(version))
     print('---')
     print('body:')
     print()
-    print("It's highly recommended to use the explicit specified fields from the")
-    print("reference. If you need other fields additionally, please make a change request.")
-    print("Or prefix custom fields with `ext_` to make it clear the field is not part of")
-    print("the documented API. Consumers are not obligated to interpret any custom fields.")
+    print('This specification lists a number of standardized keys and values. It\'s highly')
+    print('recommended to stick to these fields and values.')
+    print()
+    print('The full specification in the form of [JSON Schema](http://json-schema.org/) files ')
+    print('can be found in the [schema repository](https://github.com/SpaceApi/schema).')
+    print()
+    print('If you need other fields in addition to the ones specified here, and you think')
+    print('that the fields could be of use to others too, please make a change request in')
+    print('the [schema repository](https://github.com/SpaceApi/schema).')
+    print()
+    print('If you still need to use non-standard fields, you should prefix them with')
+    print('`ext_` to make it clear the field is not part of the documented API. If you')
+    print('don\'t use that prefix, the fields will still be ignored by client')
+    print('implementations, but they may collide with fields that we might standardize in')
+    print('the future.')
     print()
     print('Most types are not nullable. That means that they may not contain the value "null",')
-    print("but they may be left away if they're not required.")
+    print('but they may be left away if they\'re not required.')
     print()
     print('<ul class="group apidocs">')
     visit(schema['properties'], schema.get('required', []))
