@@ -330,7 +330,7 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>Contact information about your space. You must define at least one which is in the list of allowed values of the issue_report_channels field.</p>
+<p>Contact information about your space.</p>
 <h4>Nested object properties</h4>
 <ul class="group">
 <li><section class="item">
