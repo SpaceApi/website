@@ -1,0 +1,19 @@
+_model: stuff
+---
+title: SpaceAPI Parser for Kotlin/Java
+---
+author: Danilo Bargen
+---
+author_url: https://twitter.com/dbrgn
+---
+category: development
+---
+description: A lenient parser for SpaceAPI endpoints. Can be used both from Kotlin and from Java.
+---
+source_label: GitHub
+---
+source_url: https://github.com/spaceapi-community/spaceapi-kt/
+---
+space: Coredump
+---
+space_url: https://www.coredump.ch/
