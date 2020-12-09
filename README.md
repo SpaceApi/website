@@ -47,15 +47,15 @@ To use docker you can run:
 Then open http://localhost:5000
 
 
-## Adding an App
+## Adding an App/Library/Tool (aka "Stuff")
 
 ### With Lektor
 
 1. Fork this repository on GitHub
 2. Run the dev setup as described above.
-3. Go to http://localhost:5000/admin/root:apps/preview and press the "+" icon
+3. Go to http://localhost:5000/admin/root:stuff/preview and press the "+" icon
    in the top left part of the navigation to add a new subpage
-4. Choose the model "App" and pick a title. An appropriate id will be
+4. Choose the model "Stuff" and pick a title. An appropriate id will be
    automatically suggested.
 5. Click "Add Child Page"
 6. Fill out the form. To add a screenshot, click on "Add Attachment" in the
@@ -66,7 +66,7 @@ Then open http://localhost:5000
 ### Without Lektor
 
 1. Fork this repository on GitHub
-2. In the `content/apps/` directory, copy one of the existing apps and adjust it
+2. In the `content/stuff/` directory, copy one of the existing models and adjust it
 3. Make sure to replace the screenshot image with an image of your own
 4. Commit the changes in the file system and submit the changes as a pull
    request against the [upstream project](https://github.com/spaceapi/website)
