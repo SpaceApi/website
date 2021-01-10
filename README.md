@@ -1,6 +1,6 @@
 # spaceapi.io
 
-[![CircleCI][circle-ci-badge]][circle-ci]
+[![GitHub CI][ci-badge]][ci]
 [![Docker Image][docker-image-badge]][docker-image]
 
 These are the sources for the SpaceAPI website.
@@ -86,7 +86,7 @@ Schema documentation is generated from the schema. To update:
 
 
 <!-- Badges -->
-[circle-ci]: https://circleci.com/gh/SpaceApi/website/tree/master
-[circle-ci-badge]: https://circleci.com/gh/SpaceApi/website/tree/master.svg?style=shield
+[ci]: https://img.shields.io/github/workflow/status/SpaceAPI/website/CI/master
+[ci-badge]: https://github.com/SpaceAPI/website/actions?query=workflow%3ACI
 [docker-image]: https://hub.docker.com/r/spaceapi/website/
 [docker-image-badge]: https://img.shields.io/docker/pulls/spaceapi/website.svg
