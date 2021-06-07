@@ -5,8 +5,7 @@ url = https://spaceapi.io
 url_style = absolute
 
 [packages]
-lektor-webpack-support = 0.5
 lektor-markdown-header-anchors = 0.3.1
 lektor-markdown-highlighter = 0.3.1
 lektor-jinja-content = 0.4.3
-lektor-scsscompile = 1.2.4
+lektor-scsscompile = 1.3.0
