@@ -20,7 +20,7 @@ Prerequisites:
 
 Create and activate a virtualenv:
 
-    python3 -m virtualenv VENV
+    python3 -m venv VENV
     source VENV/bin/activate
 
 Install dependencies:
