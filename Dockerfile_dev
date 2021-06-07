@@ -5,4 +5,4 @@ ENV LANG=en_US.utf8
 # Install requirements and build the site
 CMD cd /code && \
     pip install -U -r requirements.txt && \
-    lektor server -h 0.0.0.0 -p 80 -v
+    lektor server -f scsscompile -h 0.0.0.0 -p 80 -v
