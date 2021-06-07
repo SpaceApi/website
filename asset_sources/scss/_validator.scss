@@ -1,18 +1,4 @@
 #validator {
-    textarea { width: 100%; min-height: 340px; }
-
-    iframe { width: 100%; min-height: 23vh; border: 2px solid #555; }
-
-
-    .centering { display: flex; justify-content: center; align-items: center; flex-direction: column; }
-
-    #banner > * { display: none; border: 2px solid rgba(0,0,0, 0.5); border-radius: 12px; padding: 8px; }
-    #banner.OK #OK, #banner.ERROR #ERROR, #banner.processing #processing, #banner.fetching #fetching { display: block; }
-
-    #OK { background: green; }
-    #ERROR { background: red; }
-    #processing, #fetching { background: orange; }
-
-    #log { overflow-x: scroll; }
+    iframe { width: 100%; min-height: 800px; border: 2px solid #333; }
 }
 
