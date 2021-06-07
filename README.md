@@ -29,7 +29,7 @@ Install dependencies:
 
 Run dev server:
 
-    lektor server -f webpack -f scsscompile
+    lektor server -f scsscompile
 
 Now open `http://localhost:5000/` in your browser.
 
