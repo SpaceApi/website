@@ -4,48 +4,7 @@
 <h2>{{ this.title }}</h2>
 {{ this.body }}
 <div id="validator">
-  <form>
-    <p>
-      Validate URL:
-      <input id="input_url" type="url" value="https://status.crdmp.ch/" />
-      <button id="submit_validate_url" type="submit">
-        Validate URL
-      </button>
-    </p>
-
-    <p>Paste your output here:</p>
-    <textarea id="validator_content"></textarea>
-    <button id="submit_validate" type="submit">
-      Validate
-    </button>
-  </form>
-
-  <div id="banner">
-    <pre id="OK">OK</pre>
-    <pre id="ERROR">ERROR</pre>
-    <pre id="processing">Processing request, please hold ...</pre>
-    <pre id="fetching">Fetching data, please hold ...</pre>
-  </div>
-
-  <div>
-    <h2>Log</h2>
-    <pre id="log"></pre>
-  </div>
-
-  <div id="backup_iframe">
-    <h2>Backup iFrame</h2>
-    <p>iFrame points to: <pre></pre></p>
-    <iframe src="#">This is the backup iFrame</iframe>
-  </div>
-
-  <script>
-    (function() {
-      window.onload = function () {
-        generateValidator();
-        generateBackupIframe();
-      };
-    })();
-  </script>
+  <iframe src="https://validator.spaceapi.io/ui/"></iframe>
 </div>
 {% endblock %}
 

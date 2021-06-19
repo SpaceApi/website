@@ -4,4 +4,7 @@ title: Validator
 ---
 _template: validator.html
 ---
-body: Disclaimer: This is an early development of the validator! Usability will be improved in the future =)
+body: Enter an URL (or raw JSON) below.
+
+Note: The validator is also available as a standalone UI at
+[validator.spaceapi.io/ui/](https://validator.spaceapi.io/ui/) ([source](https://github.com/gidsi/spaceapi-validator-web)).
