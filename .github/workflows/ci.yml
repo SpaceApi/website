@@ -36,4 +36,4 @@ jobs:
       - name: Push Docker image
         run: |
           docker login -u "${{ secrets.DOCKER_USERNAME }}" -p "${{ secrets.DOCKER_PASSWORD }}" && \
-          docker push spaceapi/website
+          docker push -a spaceapi/website
