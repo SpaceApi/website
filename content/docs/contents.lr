@@ -191,11 +191,12 @@ but they may be left away if they're not required.
 <li><section class="item">
 <header>
 <h3>open</h3><span class="type">(boolean)</span>
+<span class="tag nullable">nullable</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>A flag which indicates whether the space is currently open or closed. The state 'undefined' can be achieved by omitting this field. A missing 'open' property carries the semantics of a temporary unavailability of the state, whereas the absence of the 'state' property itself means the state is generally not implemented for this space.</p>
+<p>A flag which indicates whether the space is currently open or closed. The state 'undefined' can be achieved by omitting this field. A missing 'open' property carries the semantics of a temporary unavailability of the state, whereas the absence of the 'state' property itself means the state is generally not implemented for this space. This field is also allowed to explicitly have the value `null` for backwards compatibility with older schema versions, but this is deprecated and will be removed in a future version.</p>
 </div></details>
 </section></li>
 <li><section class="item">
