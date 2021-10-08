@@ -86,7 +86,7 @@ Schema documentation is generated from the schema. To update:
 
 
 <!-- Badges -->
-[ci]: https://img.shields.io/github/workflow/status/SpaceAPI/website/CI/master
-[ci-badge]: https://github.com/SpaceAPI/website/actions?query=workflow%3ACI
+[ci]: https://github.com/SpaceAPI/website/actions?query=workflow%3ACI
+[ci-badge]: https://img.shields.io/github/workflow/status/SpaceAPI/website/CI/master
 [docker-image]: https://hub.docker.com/r/spaceapi/website/
 [docker-image-badge]: https://img.shields.io/docker/pulls/spaceapi/website.svg
