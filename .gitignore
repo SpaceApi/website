@@ -4,6 +4,7 @@ __pycache__
 *.pid
 output/
 VENV
+venv
 .mypy_cache/
 *.psd
 gen
