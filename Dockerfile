@@ -1,4 +1,4 @@
-FROM python:3 as builder
+FROM python:3.9 as builder
 
 ENV LANG=en_US.utf8
 
