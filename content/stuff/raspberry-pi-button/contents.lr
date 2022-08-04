@@ -1,0 +1,19 @@
+_model: stuff
+---
+title: Raspberry Pi Status Switch
+---
+author: Nicco Kunzmann
+---
+category: operation
+---
+description: This provides source code and a directory endpoint for the hackerspace status based on a Raspberry Pi attached to a button. You can switch the opening status on and off.
+---
+download1_label: Repository
+---
+space: Amman Valley MakerSpace
+---
+space_url: https://cwmaman.org.uk/makerspace/
+---
+author_url: https://niccokunzmann.github.io
+---
+download1_url: https://github.com/AmmanVMS/space.api#readme
