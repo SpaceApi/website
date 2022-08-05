@@ -1,0 +1,19 @@
+_model: stuff
+---
+title: Circular Heatmap Image
+---
+author: Nicco Kunzmann
+---
+category: space-visualization
+---
+description: Based on the data collected by the mapall.space, this provides a circular SVG image to embed into a website.
+---
+download1_label: Website
+---
+space: Amman Valley MakerSpace
+---
+space_url: https://cwmaman.org.uk/makerspace/
+---
+author_url: https://niccokunzmann.github.io
+---
+download1_url: https://ammanvms.github.io/circular-space-heatmap/
