@@ -1,0 +1,19 @@
+_model: stuff
+---
+title: Opening Status Image
+---
+author: Nicco Kunzmann
+---
+category: space-visualization
+---
+description: This service allows you to embed the a status image for your space into a web page. You can replace the open and closed images.
+---
+download1_label: Website
+---
+space: Amman Valley MakerSpace
+---
+space_url: https://cwmaman.org.uk/makerspace/
+---
+author_url: https://niccokunzmann.github.io
+---
+download1_url: https://ammanvms.github.io/SpaceAPIStatusImage/
