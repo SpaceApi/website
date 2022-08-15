@@ -1,0 +1,42 @@
+_model: page
+---
+title: Privacy Policy "MyHackerspace"
+---
+body:
+
+This is the privacy policy for the "MyHackerspace" Android app.
+
+SpaceAPI developers built the MyHackerspace app as an Open Source app. This service is provided by SpaceAPI developers at no cost and is intended for use as is.
+
+### Information Collection and Use
+
+We do not collect any personally identifiable information.
+
+Crash reports are not collected by the app itself, but may be collected and submitted through your mobile operating system at your choice.
+
+### Service Providers
+
+The "MyHackerspace" app does not use any third party service providers.
+
+### Ads
+
+There are no ads in the "MyHackerspace" app.
+
+### Changes to This Privacy Policy
+
+We may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. We will notify you of any changes by posting the new Privacy Policy on this page.
+
+### Contact Us
+
+If you have any questions or suggestions about our Privacy Policy, you can contact us through our public chat channels:
+
+- IRC: #spaceapi on Libera.chat
+- Matrix: #spaceapi:matrix.coredump.ch
+
+All channels are bridged.
+
+_This policy is effective as of 2022-08-15._
+---
+_discoverable: no
+---
+_hidden: no
