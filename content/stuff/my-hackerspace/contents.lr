@@ -20,8 +20,8 @@ source_label: GitHub
 ---
 source_url: https://github.com/spaceapi-community/my-hackerspace/
 ---
-download1_url: https://f-droid.org/repository/browse/?fdfilter=hackerspace&fdid=ch.fixme.status
+download1_url: https://f-droid.org/packages/io.spaceapi.community.myhackerspace/
 ---
 download2_label: Google Play
 ---
-download2_url: https://play.google.com/store/apps/details?id=io.spaceapi.myhackerspace
+download2_url: https://play.google.com/store/apps/details?id=io.spaceapi.community.myhackerspace
