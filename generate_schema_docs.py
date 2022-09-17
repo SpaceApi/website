@@ -24,6 +24,11 @@ def visit_generic(name: str, data, nullable: bool, required: bool):
     if 'enum' in data:
         print('<h4>Valid values</h4>')
         print('<p><code>%s</code></p>' % '</code> | <code>'.join(data['enum']))
+    if 'examples' in data:
+        print('<h4>Examples</h4>')
+        print('<p>')
+        print(', '.join('<samp>%s</samp>' % e for e in data['examples']))
+        print('</p>')
     if 'minItems' in data:
         print('<h4>Minimum number of items</h4>')
         print('<p>%s</p>' % data['minItems'])
