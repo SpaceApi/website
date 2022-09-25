@@ -124,6 +124,10 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>The timezone the space is located in. It should be formatted according to the <a target="_blank" href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones">TZ database location names</a>.</p>
+<h4>Examples</h4>
+<p>
+<samp>Europe/Kyiv</samp>, <samp>Antarctica/Palmer</samp>
+</p>
 </div></details>
 </section></li>
 </ul>
@@ -196,7 +200,7 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>A flag which indicates whether the space is currently open or closed. The state 'undefined' can be achieved by omitting this field. A missing 'open' property carries the semantics of a temporary unavailability of the state, whereas the absence of the 'state' property itself means the state is generally not implemented for this space. This field is also allowed to explicitly have the value `null` for backwards compatibility with older schema versions, but this is deprecated and will be removed in a future version.</p>
+<p>A flag which indicates whether the space is currently open or closed. The state 'undefined' can be achieved by omitting this field. A missing 'open' property carries the semantics of a temporary unavailability of the state, whereas the absence of the 'state' property itself means the state is generally not implemented for this space. This field is also allowed to explicitly have the value null for backwards compatibility with older schema versions, but this is deprecated and will be removed in a future version.</p>
 </div></details>
 </section></li>
 <li><section class="item">
@@ -216,7 +220,7 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>The person who lastly changed the state e.g. opened or closed the space.</p>
+<p>The person who lastly changed the state e.g. opened or closed the space</p>
 </div></details>
 </section></li>
 <li><section class="item">
@@ -331,7 +335,7 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>Contact information about your space.</p>
+<p>Contact information about your space</p>
 <h4>Nested object properties</h4>
 <ul class="group">
 <li><section class="item">
@@ -341,7 +345,11 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>Phone number, including country code with a leading plus sign. Example: <samp>+1 800 555 4567</samp></p>
+<p>Phone number, including country code with a leading plus sign</p>
+<h4>Examples</h4>
+<p>
+<samp>+1 800 555 4567</samp>, <samp>+41 79 123 45 67</samp>
+</p>
 </div></details>
 </section></li>
 <li><section class="item">
@@ -351,7 +359,11 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>URI for Voice-over-IP via SIP. Example: <samp>sip:yourspace@sip.example.org</samp></p>
+<p>URI for Voice-over-IP via SIP</p>
+<h4>Examples</h4>
+<p>
+<samp>sip:yourspace@sip.example.org</samp>
+</p>
 </div></details>
 </section></li>
 <li><section class="item">
@@ -393,7 +405,11 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>Example: <samp>['+1 800 555 4567','+1 800 555 4544']</samp></p>
+<p>Phone number, including country code with a leading plus sign</p>
+<h4>Examples</h4>
+<p>
+<samp>+1 800 555 4567</samp>, <samp>+41 79 123 45 67</samp>
+</p>
 </div></details>
 </section></li>
 <li><section class="item">
@@ -403,7 +419,7 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>Email address which can be base64 encoded.</p>
+<p>Email address which can be base64 encoded</p>
 </div></details>
 </section></li>
 <li><section class="item">
@@ -413,7 +429,11 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>Twitter username with leading <samp>@</samp>.</p>
+<p>Twitter username with leading <code>@</code></p>
+<h4>Examples</h4>
+<p>
+<samp>@space_api</samp>
+</p>
 </div></details>
 </section></li>
 <li><section class="item">
@@ -433,7 +453,11 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>Mastodon username. Example: @ordnung@chaos.social</p>
+<p>Mastodon username</p>
+<h4>Examples</h4>
+<p>
+<samp>@ordnung@chaos.social</samp>
+</p>
 </div></details>
 </section></li>
 <li><section class="item">
@@ -443,7 +467,11 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>Matrix username. Example: <samp>@user:example.org</samp></p>
+<p>Matrix username (including domain)</p>
+<h4>Examples</h4>
+<p>
+<samp>@user:example.org</samp>
+</p>
 </div></details>
 </section></li>
 </ul>
@@ -456,7 +484,11 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>URL of the IRC channel, in the form <samp>irc://example.org/#channelname</samp></p>
+<p>URL of the IRC channel</p>
+<h4>Examples</h4>
+<p>
+<samp>irc://example.org/#channelname</samp>
+</p>
 </div></details>
 </section></li>
 <li><section class="item">
@@ -466,7 +498,11 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>Twitter handle, with leading @</p>
+<p>Twitter username with leading <code>@</code></p>
+<h4>Examples</h4>
+<p>
+<samp>@space_api</samp>
+</p>
 </div></details>
 </section></li>
 <li><section class="item">
@@ -476,7 +512,11 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>Mastodon username: Example: @ordnung@chaos.social.</p>
+<p>Mastodon username</p>
+<h4>Examples</h4>
+<p>
+<samp>@ordnung@chaos.social</samp>
+</p>
 </div></details>
 </section></li>
 <li><section class="item">
@@ -486,7 +526,7 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>Facebook account URL.</p>
+<p>Facebook account URL</p>
 </div></details>
 </section></li>
 <li><section class="item">
@@ -506,7 +546,7 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>Foursquare ID, in the form <samp>4d8a9114d85f3704eab301dc</samp>.</p>
+<p>Foursquare ID, in the form <samp>4d8a9114d85f3704eab301dc</samp></p>
 </div></details>
 </section></li>
 <li><section class="item">
@@ -556,7 +596,11 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>A URL to find information about the Space in the Gopherspace. Example: gopher://gopher.binary-kitchen.de</p>
+<p>A URL to find information about the Space in the Gopherspace</p>
+<h4>Examples</h4>
+<p>
+<samp>gopher://gopher.binary-kitchen.de</samp>
+</p>
 </div></details>
 </section></li>
 <li><section class="item">
@@ -566,7 +610,11 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>Matrix channel/community for the Hackerspace. Example: <samp>#spaceroom:example.org</samp> or <samp>+spacecommunity:example.org</samp></p>
+<p>Matrix channel/community for the Hackerspace</p>
+<h4>Examples</h4>
+<p>
+<samp>#spaceroom:example.org</samp>, <samp>+spacecommunity:example.org</samp>
+</p>
 </div></details>
 </section></li>
 <li><section class="item">
@@ -576,7 +624,11 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>URL to a Mumble server/channel, as specified in https://wiki.mumble.info/wiki/Mumble_URL . Example: <samp>mumble://mumble.example.org/spaceroom?version=1.2.0</samp></p>
+<p>URL to a Mumble server/channel, as specified in https://wiki.mumble.info/wiki/Mumble_URL</p>
+<h4>Examples</h4>
+<p>
+<samp>mumble://mumble.example.org/spaceroom?version=1.2.0</samp>
+</p>
 </div></details>
 </section></li>
 </ul>
@@ -621,7 +673,7 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>The unit of the sensor value.</p>
+<p>The unit of the sensor value</p>
 <h4>Valid values</h4>
 <p><code>°C</code> | <code>°F</code> | <code>K</code> | <code>°De</code> | <code>°N</code> | <code>°R</code> | <code>°Ré</code> | <code>°Rø</code></p>
 </div></details>
@@ -634,7 +686,11 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>The location of your sensor such as <samp>Outside</samp>, <samp>Inside</samp>, <samp>Ceiling</samp>, <samp>Roof</samp> or <samp>Room 1</samp>.</p>
+<p>The location of your sensor</p>
+<h4>Examples</h4>
+<p>
+<samp>Outside</samp>, <samp>Inside</samp>, <samp>Ceiling</samp>, <samp>Room 1</samp>
+</p>
 </div></details>
 </section></li>
 <li><section class="item">
@@ -654,7 +710,7 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>An extra field that you can use to attach some additional information to this sensor instance.</p>
+<p>An extra field that you can use to attach some additional information to this sensor instance</p>
 </div></details>
 </section></li>
 </ul>
@@ -667,7 +723,7 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>Sensor type to indicate if a certain door is locked.</p>
+<p>Sensor type to indicate if a certain door is locked</p>
 <h4>Nested array items</h4>
 <ul class="group">
 <li><section class="item">
@@ -689,7 +745,11 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>The location of your sensor such as <samp>front door</samp>, <samp>chill room</samp> or <samp>lab</samp>.</p>
+<p>The location of your sensor</p>
+<h4>Examples</h4>
+<p>
+<samp>Front door</samp>, <samp>Chill room</samp>, <samp>Lab</samp>
+</p>
 </div></details>
 </section></li>
 <li><section class="item">
@@ -709,7 +769,7 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>An extra field that you can use to attach some additional information to this sensor instance.</p>
+<p>An extra field that you can use to attach some additional information to this sensor instance</p>
 </div></details>
 </section></li>
 </ul>
@@ -757,7 +817,11 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>The location of your sensor such as <samp>Outside</samp>, <samp>Inside</samp>, <samp>Ceiling</samp>, <samp>Roof</samp> or <samp>Room 1</samp>.</p>
+<p>The location of your sensor</p>
+<h4>Examples</h4>
+<p>
+<samp>Outside</samp>, <samp>Inside</samp>, <samp>Lab</samp>
+</p>
 </div></details>
 </section></li>
 <li><section class="item">
@@ -777,7 +841,7 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>An extra field that you can use to attach some additional information to this sensor instance.</p>
+<p>An extra field that you can use to attach some additional information to this sensor instance</p>
 </div></details>
 </section></li>
 </ul>
@@ -822,7 +886,7 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>Choose the appropriate unit for your radiation sensor instance.</p>
+<p>Choose the appropriate unit for your radiation sensor instance</p>
 <h4>Valid values</h4>
 <p><code>cpm</code> | <code>r/h</code> | <code>µSv/h</code> | <code>mSv/a</code> | <code>µSv/a</code></p>
 </div></details>
@@ -854,7 +918,11 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>The location of your sensor such as <samp>Outside</samp>, <samp>Inside</samp>, <samp>Ceiling</samp>, <samp>Roof</samp> or <samp>Room 1</samp>.</p>
+<p>The location of your sensor</p>
+<h4>Examples</h4>
+<p>
+<samp>Outside</samp>, <samp>Roof</samp>, <samp>Lab</samp>
+</p>
 </div></details>
 </section></li>
 <li><section class="item">
@@ -874,7 +942,7 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>An extra field that you can use to attach some additional information to this sensor instance.</p>
+<p>An extra field that you can use to attach some additional information to this sensor instance</p>
 </div></details>
 </section></li>
 </ul>
@@ -909,7 +977,7 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>Choose the appropriate unit for your radiation sensor instance.</p>
+<p>Choose the appropriate unit for your radiation sensor instance</p>
 <h4>Valid values</h4>
 <p><code>cpm</code> | <code>r/h</code> | <code>µSv/h</code> | <code>mSv/a</code> | <code>µSv/a</code></p>
 </div></details>
@@ -941,7 +1009,11 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>The location of your sensor such as <samp>Outside</samp>, <samp>Inside</samp>, <samp>Ceiling</samp>, <samp>Roof</samp> or <samp>Room 1</samp>.</p>
+<p>The location of your sensor</p>
+<h4>Examples</h4>
+<p>
+<samp>Outside</samp>, <samp>Roof</samp>, <samp>Lab</samp>
+</p>
 </div></details>
 </section></li>
 <li><section class="item">
@@ -961,7 +1033,7 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>An extra field that you can use to attach some additional information to this sensor instance.</p>
+<p>An extra field that you can use to attach some additional information to this sensor instance</p>
 </div></details>
 </section></li>
 </ul>
@@ -996,7 +1068,7 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>Choose the appropriate unit for your radiation sensor instance.</p>
+<p>Choose the appropriate unit for your radiation sensor instance</p>
 <h4>Valid values</h4>
 <p><code>cpm</code> | <code>r/h</code> | <code>µSv/h</code> | <code>mSv/a</code> | <code>µSv/a</code></p>
 </div></details>
@@ -1028,7 +1100,11 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>The location of your sensor such as <samp>Outside</samp>, <samp>Inside</samp>, <samp>Ceiling</samp>, <samp>Roof</samp> or <samp>Room 1</samp>.</p>
+<p>The location of your sensor</p>
+<h4>Examples</h4>
+<p>
+<samp>Outside</samp>, <samp>Roof</samp>, <samp>Lab</samp>
+</p>
 </div></details>
 </section></li>
 <li><section class="item">
@@ -1048,7 +1124,7 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>An extra field that you can use to attach some additional information to this sensor instance.</p>
+<p>An extra field that you can use to attach some additional information to this sensor instance</p>
 </div></details>
 </section></li>
 </ul>
@@ -1083,7 +1159,7 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>Choose the appropriate unit for your radiation sensor instance.</p>
+<p>Choose the appropriate unit for your radiation sensor instance</p>
 <h4>Valid values</h4>
 <p><code>cpm</code> | <code>r/h</code> | <code>µSv/h</code> | <code>mSv/a</code> | <code>µSv/a</code></p>
 </div></details>
@@ -1115,7 +1191,11 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>The location of your sensor such as <samp>Outside</samp>, <samp>Inside</samp>, <samp>Ceiling</samp>, <samp>Roof</samp> or <samp>Room 1</samp>.</p>
+<p>The location of your sensor</p>
+<h4>Examples</h4>
+<p>
+<samp>Outside</samp>, <samp>Roof</samp>, <samp>Lab</samp>
+</p>
 </div></details>
 </section></li>
 <li><section class="item">
@@ -1135,7 +1215,7 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>An extra field that you can use to attach some additional information to this sensor instance.</p>
+<p>An extra field that you can use to attach some additional information to this sensor instance</p>
 </div></details>
 </section></li>
 </ul>
@@ -1186,7 +1266,11 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>The location of your sensor such as <samp>Outside</samp>, <samp>Inside</samp>, <samp>Ceiling</samp>, <samp>Roof</samp> or <samp>Room 1</samp>.</p>
+<p>The location of your sensor</p>
+<h4>Examples</h4>
+<p>
+<samp>Outside</samp>, <samp>Roof</samp>, <samp>Lab</samp>
+</p>
 </div></details>
 </section></li>
 <li><section class="item">
@@ -1206,7 +1290,7 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>An extra field that you can use to attach some additional information to this sensor instance.</p>
+<p>An extra field that you can use to attach some additional information to this sensor instance</p>
 </div></details>
 </section></li>
 </ul>
@@ -1241,7 +1325,7 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>The unit, either <samp>btl</samp> for bottles or <samp>crt</samp> for crates.</p>
+<p>The unit, either <samp>btl</samp> for bottles or <samp>crt</samp> for crates</p>
 <h4>Valid values</h4>
 <p><code>btl</code> | <code>crt</code></p>
 </div></details>
@@ -1253,7 +1337,11 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>The location of your sensor such as <samp>Room 1</samp> or <samp>Room 2</samp> or <samp>Room 3</samp>, <samp>Roof</samp> or <samp>Room 1</samp>.</p>
+<p>The location of your sensor</p>
+<h4>Examples</h4>
+<p>
+<samp>Entrance</samp>, <samp>Room 1</samp>, <samp>Fridge 3</samp>, <samp>Lab</samp>
+</p>
 </div></details>
 </section></li>
 <li><section class="item">
@@ -1273,7 +1361,7 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>An extra field that you can use to attach some additional information to this sensor instance.</p>
+<p>An extra field that you can use to attach some additional information to this sensor instance</p>
 </div></details>
 </section></li>
 </ul>
@@ -1286,7 +1374,7 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>The power consumption of a specific device or of your whole space.</p>
+<p>The power consumption of a specific device or of your whole space</p>
 <h4>Nested array items</h4>
 <ul class="group">
 <li><section class="item">
@@ -1321,7 +1409,11 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>The location of your sensor such as <samp>Outside</samp>, <samp>Inside</samp>, <samp>Ceiling</samp>, <samp>Roof</samp> or <samp>Room 1</samp>.</p>
+<p>The location of your sensor</p>
+<h4>Examples</h4>
+<p>
+<samp>Room 1</samp>, <samp>Lab</samp>
+</p>
 </div></details>
 </section></li>
 <li><section class="item">
@@ -1341,7 +1433,7 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>An extra field that you can use to attach some additional information to this sensor instance.</p>
+<p>An extra field that you can use to attach some additional information to this sensor instance</p>
 </div></details>
 </section></li>
 </ul>
@@ -1354,7 +1446,7 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>Your wind sensor.</p>
+<p>Your wind sensor</p>
 <h4>Nested array items</h4>
 <ul class="group">
 <li><section class="item">
@@ -1452,7 +1544,7 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>The wind direction in degrees.</p>
+<p>The wind direction in degrees</p>
 <h4>Nested object properties</h4>
 <ul class="group">
 <li><section class="item">
@@ -1490,7 +1582,7 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>Height above mean sea level.</p>
+<p>Height above mean sea level</p>
 <h4>Nested object properties</h4>
 <ul class="group">
 <li><section class="item">
@@ -1531,7 +1623,11 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>The location of your sensor such as <samp>Outside</samp>, <samp>Inside</samp>, <samp>Ceiling</samp>, <samp>Roof</samp> or <samp>Room 1</samp>.</p>
+<p>The location of your sensor</p>
+<h4>Examples</h4>
+<p>
+<samp>Roof</samp>, <samp>Entrance</samp>
+</p>
 </div></details>
 </section></li>
 <li><section class="item">
@@ -1551,7 +1647,7 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>An extra field that you can use to attach some additional information to this sensor instance.</p>
+<p>An extra field that you can use to attach some additional information to this sensor instance</p>
 </div></details>
 </section></li>
 </ul>
@@ -1564,7 +1660,7 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>This sensor type is to specify the currently active  ethernet or wireless network devices. You can create different instances for each network type.</p>
+<p>This sensor type is to specify the currently active ethernet or wireless network devices. You can create different instances for each network type.</p>
 <h4>Nested array items</h4>
 <ul class="group">
 <li><section class="item">
@@ -1631,7 +1727,11 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>The location of your sensor such as <samp>Outside</samp>, <samp>Inside</samp>, <samp>Ceiling</samp>, <samp>Roof</samp> or <samp>Room 1</samp>.</p>
+<p>The location of your sensor</p>
+<h4>Examples</h4>
+<p>
+<samp>Lab</samp>, <samp>Room 1</samp>
+</p>
 </div></details>
 </section></li>
 <li><section class="item">
@@ -1651,7 +1751,7 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>An extra field that you can use to attach some additional information to this sensor instance.</p>
+<p>An extra field that you can use to attach some additional information to this sensor instance</p>
 </div></details>
 </section></li>
 </ul>
@@ -1716,7 +1816,7 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>An extra field that you can use to attach some additional information to this sensor instance.</p>
+<p>An extra field that you can use to attach some additional information to this sensor instance</p>
 </div></details>
 </section></li>
 </ul>
@@ -1770,7 +1870,7 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>An extra field that you can use to attach some additional information to this sensor instance.</p>
+<p>An extra field that you can use to attach some additional information to this sensor instance</p>
 </div></details>
 </section></li>
 </ul>
@@ -1838,7 +1938,7 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>An extra field that you can use to attach some additional information to this sensor instance.</p>
+<p>An extra field that you can use to attach some additional information to this sensor instance</p>
 </div></details>
 </section></li>
 </ul>
@@ -1990,7 +2090,11 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>Type of the feed, for example <samp>rss</samp>, <samp>atom</atom>, <samp>ical</samp></p>
+<p>Type of the feed</p>
+<h4>Examples</h4>
+<p>
+<samp>rss</samp>, <samp>atom</samp>, <samp>ical</samp>
+</p>
 </div></details>
 </section></li>
 <li><section class="item">
@@ -2024,7 +2128,11 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>Type of the feed, for example <samp>rss</samp>, <samp>atom</atom>, <samp>ical</samp></p>
+<p>Type of the feed</p>
+<h4>Examples</h4>
+<p>
+<samp>rss</samp>, <samp>atom</samp>, <samp>ical</samp>
+</p>
 </div></details>
 </section></li>
 <li><section class="item">
@@ -2058,7 +2166,11 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>Type of the feed, for example <samp>rss</samp>, <samp>atom</atom>, <samp>ical</samp></p>
+<p>Type of the feed</p>
+<h4>Examples</h4>
+<p>
+<samp>rss</samp>, <samp>atom</samp>, <samp>ical</samp>
+</p>
 </div></details>
 </section></li>
 <li><section class="item">
@@ -2092,7 +2204,11 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>Type of the feed, for example <samp>rss</samp>, <samp>atom</atom>, <samp>ical</samp></p>
+<p>Type of the feed</p>
+<h4>Examples</h4>
+<p>
+<samp>rss</samp>, <samp>atom</samp>, <samp>ical</samp>
+</p>
 </div></details>
 </section></li>
 <li><section class="item">
@@ -2142,7 +2258,7 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>The link name.</p>
+<p>The link name</p>
 </div></details>
 </section></li>
 <li><section class="item">
@@ -2152,7 +2268,7 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>An extra field for a more detailed description of the link.</p>
+<p>An extra field for a more detailed description of the link</p>
 </div></details>
 </section></li>
 <li><section class="item">
@@ -2163,7 +2279,7 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>The URL.</p>
+<p>The URL</p>
 </div></details>
 </section></li>
 </ul>
@@ -2187,7 +2303,11 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>The name of the membership plan. For example Student Membership, Normal Membership etc.</p>
+<p>The name of the membership plan</p>
+<h4>Examples</h4>
+<p>
+<samp>Student Membership</samp>, <samp>Normal Membership</samp>
+</p>
 </div></details>
 </section></li>
 <li><section class="item">
@@ -2210,6 +2330,10 @@ but they may be left away if they're not required.
 <summary>Details</summary>
 <div>
 <p>What's the currency? It should be formatted according to <a href="https://en.wikipedia.org/wiki/ISO_4217" target="_blank">ISO 4217</a> short-code format.</p>
+<h4>Examples</h4>
+<p>
+<samp>EUR</samp>, <samp>USD</samp>, <samp>CHF</samp>
+</p>
 </div></details>
 </section></li>
 <li><section class="item">
@@ -2232,7 +2356,7 @@ but they may be left away if they're not required.
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>A free form string.</p>
+<p>A free form string</p>
 </div></details>
 </section></li>
 </ul>

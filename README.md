@@ -82,7 +82,7 @@ few minutes though.
 
 Schema documentation is generated from the schema. To update:
 
-    python3 generate_schema_docs.py ../schema/13.json > content/docs/contents.lr
+    python3 generate_schema_docs.py ../schema/14.json > content/docs/contents.lr
 
 
 <!-- Badges -->
