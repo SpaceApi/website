@@ -1,0 +1,19 @@
+_model: stuff
+---
+title: Hacker Hotel Spacestate
+---
+author: Jelle Haandrikman
+---
+category: operation
+---
+description: This provides the code for a spacestate switch using an ESP32 with Micropython and provide the endpoint on a webserver with PHP.
+---
+download1_label: Repository
+---
+space: Hackerspace TDvenlo
+---
+space_url: https://tdvenlo.nl
+---
+author_url: https://jhaand.nl
+---
+download1_url: https://gitlab.com/jhaand/hacker-hotel-space-state
