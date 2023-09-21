@@ -23,6 +23,8 @@ the future.
 Most types are not nullable. That means that they may not contain the value "null",
 but they may be left away if they're not required.
 
+You can use the [SpaceAPI validator](/validator/) to verify that you implement the schema correctly.
+
 <ul class="group apidocs">
 <li><section class="item">
 <header>
