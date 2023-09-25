@@ -21,8 +21,11 @@
         margin: 0 0 0.5em;
     }
 
-    header h3 {
+    header a {
+        display: block;
         margin: 0;
+        font-size: 1.17em;
+        font-weight: bold;
     }
 
     header span.type {

@@ -27,8 +27,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 
 <ul class="group apidocs">
 <li><section class="item">
-<header>
-<h3>api_compatibility</h3><span class="type">(array of string)</span>
+<header id="schema-key-api-compatibility">
+<a href="#schema-key-api-compatibility">api_compatibility</a><span class="type">(array of string)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -43,8 +43,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>space</h3><span class="type">(string)</span>
+<header id="schema-key-space">
+<a href="#schema-key-space">space</a><span class="type">(string)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -54,8 +54,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>logo</h3><span class="type">(string)</span>
+<header id="schema-key-logo">
+<a href="#schema-key-logo">logo</a><span class="type">(string)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -65,8 +65,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>url</h3><span class="type">(string)</span>
+<header id="schema-key-url">
+<a href="#schema-key-url">url</a><span class="type">(string)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -76,8 +76,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>location</h3><span class="type">(object)</span>
+<header id="schema-key-location">
+<a href="#schema-key-location">location</a><span class="type">(object)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -87,8 +87,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <h4>Nested object properties</h4>
 <ul class="group">
 <li><section class="item">
-<header>
-<h3>address</h3><span class="type">(string)</span>
+<header id="schema-key-location-address">
+<a href="#schema-key-location-address">address</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -97,8 +97,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>lat</h3><span class="type">(number)</span>
+<header id="schema-key-location-lat">
+<a href="#schema-key-location-lat">lat</a><span class="type">(number)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -108,8 +108,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>lon</h3><span class="type">(number)</span>
+<header id="schema-key-location-lon">
+<a href="#schema-key-location-lon">lon</a><span class="type">(number)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -119,8 +119,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>timezone</h3><span class="type">(string)</span>
+<header id="schema-key-location-timezone">
+<a href="#schema-key-location-timezone">timezone</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -136,8 +136,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>spacefed</h3><span class="type">(object)</span>
+<header id="schema-key-spacefed">
+<a href="#schema-key-spacefed">spacefed</a><span class="type">(object)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -146,8 +146,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <h4>Nested object properties</h4>
 <ul class="group">
 <li><section class="item">
-<header>
-<h3>spacenet</h3><span class="type">(boolean)</span>
+<header id="schema-key-spacefed-spacenet">
+<a href="#schema-key-spacefed-spacenet">spacenet</a><span class="type">(boolean)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -157,8 +157,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>spacesaml</h3><span class="type">(boolean)</span>
+<header id="schema-key-spacefed-spacesaml">
+<a href="#schema-key-spacefed-spacesaml">spacesaml</a><span class="type">(boolean)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -171,8 +171,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>cam</h3><span class="type">(array of string)</span>
+<header id="schema-key-cam">
+<a href="#schema-key-cam">cam</a><span class="type">(array of string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -185,8 +185,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>state</h3><span class="type">(object)</span>
+<header id="schema-key-state">
+<a href="#schema-key-state">state</a><span class="type">(object)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -195,8 +195,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <h4>Nested object properties</h4>
 <ul class="group">
 <li><section class="item">
-<header>
-<h3>open</h3><span class="type">(boolean)</span>
+<header id="schema-key-state-open">
+<a href="#schema-key-state-open">open</a><span class="type">(boolean)</span>
 <span class="tag nullable">nullable</span>
 </header>
 <details class="togglable">
@@ -206,8 +206,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>lastchange</h3><span class="type">(number)</span>
+<header id="schema-key-state-lastchange">
+<a href="#schema-key-state-lastchange">lastchange</a><span class="type">(number)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -216,8 +216,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>trigger_person</h3><span class="type">(string)</span>
+<header id="schema-key-state-trigger-person">
+<a href="#schema-key-state-trigger-person">trigger_person</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -226,8 +226,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>message</h3><span class="type">(string)</span>
+<header id="schema-key-state-message">
+<a href="#schema-key-state-message">message</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -236,8 +236,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>icon</h3><span class="type">(object)</span>
+<header id="schema-key-state-icon">
+<a href="#schema-key-state-icon">icon</a><span class="type">(object)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -246,8 +246,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <h4>Nested object properties</h4>
 <ul class="group">
 <li><section class="item">
-<header>
-<h3>open</h3><span class="type">(string)</span>
+<header id="schema-key-state-icon-open">
+<a href="#schema-key-state-icon-open">open</a><span class="type">(string)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -257,8 +257,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>closed</h3><span class="type">(string)</span>
+<header id="schema-key-state-icon-closed">
+<a href="#schema-key-state-icon-closed">closed</a><span class="type">(string)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -274,8 +274,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>events</h3><span class="type">(array of object)</span>
+<header id="schema-key-events">
+<a href="#schema-key-events">events</a><span class="type">(array of object)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -284,8 +284,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <h4>Nested array items</h4>
 <ul class="group">
 <li><section class="item">
-<header>
-<h3>name</h3><span class="type">(string)</span>
+<header id="schema-key-events-name">
+<a href="#schema-key-events-name">name</a><span class="type">(string)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -295,8 +295,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>type</h3><span class="type">(string)</span>
+<header id="schema-key-events-type">
+<a href="#schema-key-events-type">type</a><span class="type">(string)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -306,8 +306,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>timestamp</h3><span class="type">(number)</span>
+<header id="schema-key-events-timestamp">
+<a href="#schema-key-events-timestamp">timestamp</a><span class="type">(number)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -317,8 +317,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>extra</h3><span class="type">(string)</span>
+<header id="schema-key-events-extra">
+<a href="#schema-key-events-extra">extra</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -330,8 +330,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>contact</h3><span class="type">(object)</span>
+<header id="schema-key-contact">
+<a href="#schema-key-contact">contact</a><span class="type">(object)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -341,8 +341,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <h4>Nested object properties</h4>
 <ul class="group">
 <li><section class="item">
-<header>
-<h3>phone</h3><span class="type">(string)</span>
+<header id="schema-key-contact-phone">
+<a href="#schema-key-contact-phone">phone</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -355,8 +355,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>sip</h3><span class="type">(string)</span>
+<header id="schema-key-contact-sip">
+<a href="#schema-key-contact-sip">sip</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -369,8 +369,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>keymasters</h3><span class="type">(array of object)</span>
+<header id="schema-key-contact-keymasters">
+<a href="#schema-key-contact-keymasters">keymasters</a><span class="type">(array of object)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -381,8 +381,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <h4>Nested array items</h4>
 <ul class="group">
 <li><section class="item">
-<header>
-<h3>name</h3><span class="type">(string)</span>
+<header id="schema-key-contact-keymasters-name">
+<a href="#schema-key-contact-keymasters-name">name</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -391,8 +391,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>irc_nick</h3><span class="type">(string)</span>
+<header id="schema-key-contact-keymasters-irc-nick">
+<a href="#schema-key-contact-keymasters-irc-nick">irc_nick</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -401,8 +401,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>phone</h3><span class="type">(string)</span>
+<header id="schema-key-contact-keymasters-phone">
+<a href="#schema-key-contact-keymasters-phone">phone</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -415,8 +415,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>email</h3><span class="type">(string)</span>
+<header id="schema-key-contact-keymasters-email">
+<a href="#schema-key-contact-keymasters-email">email</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -425,8 +425,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>twitter</h3><span class="type">(string)</span>
+<header id="schema-key-contact-keymasters-twitter">
+<a href="#schema-key-contact-keymasters-twitter">twitter</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -439,8 +439,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>xmpp</h3><span class="type">(string)</span>
+<header id="schema-key-contact-keymasters-xmpp">
+<a href="#schema-key-contact-keymasters-xmpp">xmpp</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -449,8 +449,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>mastodon</h3><span class="type">(string)</span>
+<header id="schema-key-contact-keymasters-mastodon">
+<a href="#schema-key-contact-keymasters-mastodon">mastodon</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -463,8 +463,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>matrix</h3><span class="type">(string)</span>
+<header id="schema-key-contact-keymasters-matrix">
+<a href="#schema-key-contact-keymasters-matrix">matrix</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -480,8 +480,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>irc</h3><span class="type">(string)</span>
+<header id="schema-key-contact-irc">
+<a href="#schema-key-contact-irc">irc</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -494,8 +494,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>twitter</h3><span class="type">(string)</span>
+<header id="schema-key-contact-twitter">
+<a href="#schema-key-contact-twitter">twitter</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -508,8 +508,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>mastodon</h3><span class="type">(string)</span>
+<header id="schema-key-contact-mastodon">
+<a href="#schema-key-contact-mastodon">mastodon</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -522,8 +522,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>facebook</h3><span class="type">(string)</span>
+<header id="schema-key-contact-facebook">
+<a href="#schema-key-contact-facebook">facebook</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -532,8 +532,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>identica</h3><span class="type">(string)</span>
+<header id="schema-key-contact-identica">
+<a href="#schema-key-contact-identica">identica</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -542,8 +542,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>foursquare</h3><span class="type">(string)</span>
+<header id="schema-key-contact-foursquare">
+<a href="#schema-key-contact-foursquare">foursquare</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -552,8 +552,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>email</h3><span class="type">(string)</span>
+<header id="schema-key-contact-email">
+<a href="#schema-key-contact-email">email</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -562,8 +562,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>ml</h3><span class="type">(string)</span>
+<header id="schema-key-contact-ml">
+<a href="#schema-key-contact-ml">ml</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -572,8 +572,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>xmpp</h3><span class="type">(string)</span>
+<header id="schema-key-contact-xmpp">
+<a href="#schema-key-contact-xmpp">xmpp</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -582,8 +582,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>issue_mail</h3><span class="type">(string)</span>
+<header id="schema-key-contact-issue-mail">
+<a href="#schema-key-contact-issue-mail">issue_mail</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -592,8 +592,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>gopher</h3><span class="type">(string)</span>
+<header id="schema-key-contact-gopher">
+<a href="#schema-key-contact-gopher">gopher</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -606,8 +606,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>matrix</h3><span class="type">(string)</span>
+<header id="schema-key-contact-matrix">
+<a href="#schema-key-contact-matrix">matrix</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -620,8 +620,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>mumble</h3><span class="type">(string)</span>
+<header id="schema-key-contact-mumble">
+<a href="#schema-key-contact-mumble">mumble</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -637,8 +637,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>sensors</h3><span class="type">(object)</span>
+<header id="schema-key-sensors">
+<a href="#schema-key-sensors">sensors</a><span class="type">(object)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -647,8 +647,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <h4>Nested object properties</h4>
 <ul class="group">
 <li><section class="item">
-<header>
-<h3>temperature</h3><span class="type">(array of object)</span>
+<header id="schema-key-sensors-temperature">
+<a href="#schema-key-sensors-temperature">temperature</a><span class="type">(array of object)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -657,8 +657,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <h4>Nested array items</h4>
 <ul class="group">
 <li><section class="item">
-<header>
-<h3>value</h3><span class="type">(number)</span>
+<header id="schema-key-sensors-temperature-value">
+<a href="#schema-key-sensors-temperature-value">value</a><span class="type">(number)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -668,8 +668,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>unit</h3><span class="type">(string)</span>
+<header id="schema-key-sensors-temperature-unit">
+<a href="#schema-key-sensors-temperature-unit">unit</a><span class="type">(string)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -681,8 +681,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>location</h3><span class="type">(string)</span>
+<header id="schema-key-sensors-temperature-location">
+<a href="#schema-key-sensors-temperature-location">location</a><span class="type">(string)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -696,8 +696,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>name</h3><span class="type">(string)</span>
+<header id="schema-key-sensors-temperature-name">
+<a href="#schema-key-sensors-temperature-name">name</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -706,8 +706,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>description</h3><span class="type">(string)</span>
+<header id="schema-key-sensors-temperature-description">
+<a href="#schema-key-sensors-temperature-description">description</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -719,8 +719,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>door_locked</h3><span class="type">(array of object)</span>
+<header id="schema-key-sensors-door-locked">
+<a href="#schema-key-sensors-door-locked">door_locked</a><span class="type">(array of object)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -729,8 +729,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <h4>Nested array items</h4>
 <ul class="group">
 <li><section class="item">
-<header>
-<h3>value</h3><span class="type">(boolean)</span>
+<header id="schema-key-sensors-door-locked-value">
+<a href="#schema-key-sensors-door-locked-value">value</a><span class="type">(boolean)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -740,8 +740,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>location</h3><span class="type">(string)</span>
+<header id="schema-key-sensors-door-locked-location">
+<a href="#schema-key-sensors-door-locked-location">location</a><span class="type">(string)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -755,8 +755,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>name</h3><span class="type">(string)</span>
+<header id="schema-key-sensors-door-locked-name">
+<a href="#schema-key-sensors-door-locked-name">name</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -765,8 +765,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>description</h3><span class="type">(string)</span>
+<header id="schema-key-sensors-door-locked-description">
+<a href="#schema-key-sensors-door-locked-description">description</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -778,8 +778,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>barometer</h3><span class="type">(array of object)</span>
+<header id="schema-key-sensors-barometer">
+<a href="#schema-key-sensors-barometer">barometer</a><span class="type">(array of object)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -788,8 +788,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <h4>Nested array items</h4>
 <ul class="group">
 <li><section class="item">
-<header>
-<h3>value</h3><span class="type">(number)</span>
+<header id="schema-key-sensors-barometer-value">
+<a href="#schema-key-sensors-barometer-value">value</a><span class="type">(number)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -799,8 +799,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>unit</h3><span class="type">(string)</span>
+<header id="schema-key-sensors-barometer-unit">
+<a href="#schema-key-sensors-barometer-unit">unit</a><span class="type">(string)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -812,8 +812,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>location</h3><span class="type">(string)</span>
+<header id="schema-key-sensors-barometer-location">
+<a href="#schema-key-sensors-barometer-location">location</a><span class="type">(string)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -827,8 +827,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>name</h3><span class="type">(string)</span>
+<header id="schema-key-sensors-barometer-name">
+<a href="#schema-key-sensors-barometer-name">name</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -837,8 +837,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>description</h3><span class="type">(string)</span>
+<header id="schema-key-sensors-barometer-description">
+<a href="#schema-key-sensors-barometer-description">description</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -850,8 +850,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>radiation</h3><span class="type">(object)</span>
+<header id="schema-key-sensors-radiation">
+<a href="#schema-key-sensors-radiation">radiation</a><span class="type">(object)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -860,8 +860,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <h4>Nested object properties</h4>
 <ul class="group">
 <li><section class="item">
-<header>
-<h3>alpha</h3><span class="type">(array of object)</span>
+<header id="schema-key-sensors-radiation-alpha">
+<a href="#schema-key-sensors-radiation-alpha">alpha</a><span class="type">(array of object)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -870,8 +870,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <h4>Nested array items</h4>
 <ul class="group">
 <li><section class="item">
-<header>
-<h3>value</h3><span class="type">(number)</span>
+<header id="schema-key-sensors-radiation-alpha-value">
+<a href="#schema-key-sensors-radiation-alpha-value">value</a><span class="type">(number)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -881,8 +881,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>unit</h3><span class="type">(string)</span>
+<header id="schema-key-sensors-radiation-alpha-unit">
+<a href="#schema-key-sensors-radiation-alpha-unit">unit</a><span class="type">(string)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -894,8 +894,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>dead_time</h3><span class="type">(number)</span>
+<header id="schema-key-sensors-radiation-alpha-dead-time">
+<a href="#schema-key-sensors-radiation-alpha-dead-time">dead_time</a><span class="type">(number)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -904,8 +904,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>conversion_factor</h3><span class="type">(number)</span>
+<header id="schema-key-sensors-radiation-alpha-conversion-factor">
+<a href="#schema-key-sensors-radiation-alpha-conversion-factor">conversion_factor</a><span class="type">(number)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -914,8 +914,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>location</h3><span class="type">(string)</span>
+<header id="schema-key-sensors-radiation-alpha-location">
+<a href="#schema-key-sensors-radiation-alpha-location">location</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -928,8 +928,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>name</h3><span class="type">(string)</span>
+<header id="schema-key-sensors-radiation-alpha-name">
+<a href="#schema-key-sensors-radiation-alpha-name">name</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -938,8 +938,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>description</h3><span class="type">(string)</span>
+<header id="schema-key-sensors-radiation-alpha-description">
+<a href="#schema-key-sensors-radiation-alpha-description">description</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -951,8 +951,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>beta</h3><span class="type">(array of object)</span>
+<header id="schema-key-sensors-radiation-beta">
+<a href="#schema-key-sensors-radiation-beta">beta</a><span class="type">(array of object)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -961,8 +961,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <h4>Nested array items</h4>
 <ul class="group">
 <li><section class="item">
-<header>
-<h3>value</h3><span class="type">(number)</span>
+<header id="schema-key-sensors-radiation-beta-value">
+<a href="#schema-key-sensors-radiation-beta-value">value</a><span class="type">(number)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -972,8 +972,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>unit</h3><span class="type">(string)</span>
+<header id="schema-key-sensors-radiation-beta-unit">
+<a href="#schema-key-sensors-radiation-beta-unit">unit</a><span class="type">(string)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -985,8 +985,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>dead_time</h3><span class="type">(number)</span>
+<header id="schema-key-sensors-radiation-beta-dead-time">
+<a href="#schema-key-sensors-radiation-beta-dead-time">dead_time</a><span class="type">(number)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -995,8 +995,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>conversion_factor</h3><span class="type">(number)</span>
+<header id="schema-key-sensors-radiation-beta-conversion-factor">
+<a href="#schema-key-sensors-radiation-beta-conversion-factor">conversion_factor</a><span class="type">(number)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -1005,8 +1005,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>location</h3><span class="type">(string)</span>
+<header id="schema-key-sensors-radiation-beta-location">
+<a href="#schema-key-sensors-radiation-beta-location">location</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -1019,8 +1019,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>name</h3><span class="type">(string)</span>
+<header id="schema-key-sensors-radiation-beta-name">
+<a href="#schema-key-sensors-radiation-beta-name">name</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -1029,8 +1029,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>description</h3><span class="type">(string)</span>
+<header id="schema-key-sensors-radiation-beta-description">
+<a href="#schema-key-sensors-radiation-beta-description">description</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -1042,8 +1042,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>gamma</h3><span class="type">(array of object)</span>
+<header id="schema-key-sensors-radiation-gamma">
+<a href="#schema-key-sensors-radiation-gamma">gamma</a><span class="type">(array of object)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -1052,8 +1052,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <h4>Nested array items</h4>
 <ul class="group">
 <li><section class="item">
-<header>
-<h3>value</h3><span class="type">(number)</span>
+<header id="schema-key-sensors-radiation-gamma-value">
+<a href="#schema-key-sensors-radiation-gamma-value">value</a><span class="type">(number)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -1063,8 +1063,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>unit</h3><span class="type">(string)</span>
+<header id="schema-key-sensors-radiation-gamma-unit">
+<a href="#schema-key-sensors-radiation-gamma-unit">unit</a><span class="type">(string)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -1076,8 +1076,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>dead_time</h3><span class="type">(number)</span>
+<header id="schema-key-sensors-radiation-gamma-dead-time">
+<a href="#schema-key-sensors-radiation-gamma-dead-time">dead_time</a><span class="type">(number)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -1086,8 +1086,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>conversion_factor</h3><span class="type">(number)</span>
+<header id="schema-key-sensors-radiation-gamma-conversion-factor">
+<a href="#schema-key-sensors-radiation-gamma-conversion-factor">conversion_factor</a><span class="type">(number)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -1096,8 +1096,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>location</h3><span class="type">(string)</span>
+<header id="schema-key-sensors-radiation-gamma-location">
+<a href="#schema-key-sensors-radiation-gamma-location">location</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -1110,8 +1110,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>name</h3><span class="type">(string)</span>
+<header id="schema-key-sensors-radiation-gamma-name">
+<a href="#schema-key-sensors-radiation-gamma-name">name</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -1120,8 +1120,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>description</h3><span class="type">(string)</span>
+<header id="schema-key-sensors-radiation-gamma-description">
+<a href="#schema-key-sensors-radiation-gamma-description">description</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -1133,8 +1133,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>beta_gamma</h3><span class="type">(array of object)</span>
+<header id="schema-key-sensors-radiation-beta-gamma">
+<a href="#schema-key-sensors-radiation-beta-gamma">beta_gamma</a><span class="type">(array of object)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -1143,8 +1143,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <h4>Nested array items</h4>
 <ul class="group">
 <li><section class="item">
-<header>
-<h3>value</h3><span class="type">(number)</span>
+<header id="schema-key-sensors-radiation-beta-gamma-value">
+<a href="#schema-key-sensors-radiation-beta-gamma-value">value</a><span class="type">(number)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -1154,8 +1154,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>unit</h3><span class="type">(string)</span>
+<header id="schema-key-sensors-radiation-beta-gamma-unit">
+<a href="#schema-key-sensors-radiation-beta-gamma-unit">unit</a><span class="type">(string)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -1167,8 +1167,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>dead_time</h3><span class="type">(number)</span>
+<header id="schema-key-sensors-radiation-beta-gamma-dead-time">
+<a href="#schema-key-sensors-radiation-beta-gamma-dead-time">dead_time</a><span class="type">(number)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -1177,8 +1177,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>conversion_factor</h3><span class="type">(number)</span>
+<header id="schema-key-sensors-radiation-beta-gamma-conversion-factor">
+<a href="#schema-key-sensors-radiation-beta-gamma-conversion-factor">conversion_factor</a><span class="type">(number)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -1187,8 +1187,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>location</h3><span class="type">(string)</span>
+<header id="schema-key-sensors-radiation-beta-gamma-location">
+<a href="#schema-key-sensors-radiation-beta-gamma-location">location</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -1201,8 +1201,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>name</h3><span class="type">(string)</span>
+<header id="schema-key-sensors-radiation-beta-gamma-name">
+<a href="#schema-key-sensors-radiation-beta-gamma-name">name</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -1211,8 +1211,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>description</h3><span class="type">(string)</span>
+<header id="schema-key-sensors-radiation-beta-gamma-description">
+<a href="#schema-key-sensors-radiation-beta-gamma-description">description</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -1227,8 +1227,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>humidity</h3><span class="type">(array of object)</span>
+<header id="schema-key-sensors-humidity">
+<a href="#schema-key-sensors-humidity">humidity</a><span class="type">(array of object)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -1237,8 +1237,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <h4>Nested array items</h4>
 <ul class="group">
 <li><section class="item">
-<header>
-<h3>value</h3><span class="type">(number)</span>
+<header id="schema-key-sensors-humidity-value">
+<a href="#schema-key-sensors-humidity-value">value</a><span class="type">(number)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -1248,8 +1248,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>unit</h3><span class="type">(string)</span>
+<header id="schema-key-sensors-humidity-unit">
+<a href="#schema-key-sensors-humidity-unit">unit</a><span class="type">(string)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -1261,8 +1261,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>location</h3><span class="type">(string)</span>
+<header id="schema-key-sensors-humidity-location">
+<a href="#schema-key-sensors-humidity-location">location</a><span class="type">(string)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -1276,8 +1276,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>name</h3><span class="type">(string)</span>
+<header id="schema-key-sensors-humidity-name">
+<a href="#schema-key-sensors-humidity-name">name</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -1286,8 +1286,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>description</h3><span class="type">(string)</span>
+<header id="schema-key-sensors-humidity-description">
+<a href="#schema-key-sensors-humidity-description">description</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -1299,8 +1299,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>beverage_supply</h3><span class="type">(array of object)</span>
+<header id="schema-key-sensors-beverage-supply">
+<a href="#schema-key-sensors-beverage-supply">beverage_supply</a><span class="type">(array of object)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -1309,8 +1309,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <h4>Nested array items</h4>
 <ul class="group">
 <li><section class="item">
-<header>
-<h3>value</h3><span class="type">(number)</span>
+<header id="schema-key-sensors-beverage-supply-value">
+<a href="#schema-key-sensors-beverage-supply-value">value</a><span class="type">(number)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -1320,8 +1320,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>unit</h3><span class="type">(string)</span>
+<header id="schema-key-sensors-beverage-supply-unit">
+<a href="#schema-key-sensors-beverage-supply-unit">unit</a><span class="type">(string)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -1333,8 +1333,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>location</h3><span class="type">(string)</span>
+<header id="schema-key-sensors-beverage-supply-location">
+<a href="#schema-key-sensors-beverage-supply-location">location</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -1347,8 +1347,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>name</h3><span class="type">(string)</span>
+<header id="schema-key-sensors-beverage-supply-name">
+<a href="#schema-key-sensors-beverage-supply-name">name</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -1357,8 +1357,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>description</h3><span class="type">(string)</span>
+<header id="schema-key-sensors-beverage-supply-description">
+<a href="#schema-key-sensors-beverage-supply-description">description</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -1370,8 +1370,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>power_consumption</h3><span class="type">(array of object)</span>
+<header id="schema-key-sensors-power-consumption">
+<a href="#schema-key-sensors-power-consumption">power_consumption</a><span class="type">(array of object)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -1380,8 +1380,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <h4>Nested array items</h4>
 <ul class="group">
 <li><section class="item">
-<header>
-<h3>value</h3><span class="type">(number)</span>
+<header id="schema-key-sensors-power-consumption-value">
+<a href="#schema-key-sensors-power-consumption-value">value</a><span class="type">(number)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -1391,8 +1391,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>unit</h3><span class="type">(string)</span>
+<header id="schema-key-sensors-power-consumption-unit">
+<a href="#schema-key-sensors-power-consumption-unit">unit</a><span class="type">(string)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -1404,8 +1404,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>location</h3><span class="type">(string)</span>
+<header id="schema-key-sensors-power-consumption-location">
+<a href="#schema-key-sensors-power-consumption-location">location</a><span class="type">(string)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -1419,8 +1419,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>name</h3><span class="type">(string)</span>
+<header id="schema-key-sensors-power-consumption-name">
+<a href="#schema-key-sensors-power-consumption-name">name</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -1429,8 +1429,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>description</h3><span class="type">(string)</span>
+<header id="schema-key-sensors-power-consumption-description">
+<a href="#schema-key-sensors-power-consumption-description">description</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -1442,8 +1442,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>wind</h3><span class="type">(array of object)</span>
+<header id="schema-key-sensors-wind">
+<a href="#schema-key-sensors-wind">wind</a><span class="type">(array of object)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -1452,8 +1452,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <h4>Nested array items</h4>
 <ul class="group">
 <li><section class="item">
-<header>
-<h3>properties</h3><span class="type">(object)</span>
+<header id="schema-key-sensors-wind-properties">
+<a href="#schema-key-sensors-wind-properties">properties</a><span class="type">(object)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -1463,8 +1463,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <h4>Nested object properties</h4>
 <ul class="group">
 <li><section class="item">
-<header>
-<h3>speed</h3><span class="type">(object)</span>
+<header id="schema-key-sensors-wind-properties-speed">
+<a href="#schema-key-sensors-wind-properties-speed">speed</a><span class="type">(object)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -1474,8 +1474,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <h4>Nested object properties</h4>
 <ul class="group">
 <li><section class="item">
-<header>
-<h3>value</h3><span class="type">(number)</span>
+<header id="schema-key-sensors-wind-properties-speed-value">
+<a href="#schema-key-sensors-wind-properties-speed-value">value</a><span class="type">(number)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -1485,8 +1485,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>unit</h3><span class="type">(string)</span>
+<header id="schema-key-sensors-wind-properties-speed-unit">
+<a href="#schema-key-sensors-wind-properties-speed-unit">unit</a><span class="type">(string)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -1501,8 +1501,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>gust</h3><span class="type">(object)</span>
+<header id="schema-key-sensors-wind-properties-gust">
+<a href="#schema-key-sensors-wind-properties-gust">gust</a><span class="type">(object)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -1512,8 +1512,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <h4>Nested object properties</h4>
 <ul class="group">
 <li><section class="item">
-<header>
-<h3>value</h3><span class="type">(number)</span>
+<header id="schema-key-sensors-wind-properties-gust-value">
+<a href="#schema-key-sensors-wind-properties-gust-value">value</a><span class="type">(number)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -1523,8 +1523,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>unit</h3><span class="type">(string)</span>
+<header id="schema-key-sensors-wind-properties-gust-unit">
+<a href="#schema-key-sensors-wind-properties-gust-unit">unit</a><span class="type">(string)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -1539,8 +1539,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>direction</h3><span class="type">(object)</span>
+<header id="schema-key-sensors-wind-properties-direction">
+<a href="#schema-key-sensors-wind-properties-direction">direction</a><span class="type">(object)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -1550,8 +1550,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <h4>Nested object properties</h4>
 <ul class="group">
 <li><section class="item">
-<header>
-<h3>value</h3><span class="type">(number)</span>
+<header id="schema-key-sensors-wind-properties-direction-value">
+<a href="#schema-key-sensors-wind-properties-direction-value">value</a><span class="type">(number)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -1561,8 +1561,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>unit</h3><span class="type">(string)</span>
+<header id="schema-key-sensors-wind-properties-direction-unit">
+<a href="#schema-key-sensors-wind-properties-direction-unit">unit</a><span class="type">(string)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -1577,8 +1577,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>elevation</h3><span class="type">(object)</span>
+<header id="schema-key-sensors-wind-properties-elevation">
+<a href="#schema-key-sensors-wind-properties-elevation">elevation</a><span class="type">(object)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -1588,8 +1588,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <h4>Nested object properties</h4>
 <ul class="group">
 <li><section class="item">
-<header>
-<h3>value</h3><span class="type">(number)</span>
+<header id="schema-key-sensors-wind-properties-elevation-value">
+<a href="#schema-key-sensors-wind-properties-elevation-value">value</a><span class="type">(number)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -1599,8 +1599,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>unit</h3><span class="type">(string)</span>
+<header id="schema-key-sensors-wind-properties-elevation-unit">
+<a href="#schema-key-sensors-wind-properties-elevation-unit">unit</a><span class="type">(string)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -1618,8 +1618,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>location</h3><span class="type">(string)</span>
+<header id="schema-key-sensors-wind-location">
+<a href="#schema-key-sensors-wind-location">location</a><span class="type">(string)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -1633,8 +1633,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>name</h3><span class="type">(string)</span>
+<header id="schema-key-sensors-wind-name">
+<a href="#schema-key-sensors-wind-name">name</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -1643,8 +1643,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>description</h3><span class="type">(string)</span>
+<header id="schema-key-sensors-wind-description">
+<a href="#schema-key-sensors-wind-description">description</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -1656,8 +1656,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>network_connections</h3><span class="type">(array of object)</span>
+<header id="schema-key-sensors-network-connections">
+<a href="#schema-key-sensors-network-connections">network_connections</a><span class="type">(array of object)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -1666,8 +1666,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <h4>Nested array items</h4>
 <ul class="group">
 <li><section class="item">
-<header>
-<h3>type</h3><span class="type">(string)</span>
+<header id="schema-key-sensors-network-connections-type">
+<a href="#schema-key-sensors-network-connections-type">type</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -1678,8 +1678,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>value</h3><span class="type">(number)</span>
+<header id="schema-key-sensors-network-connections-value">
+<a href="#schema-key-sensors-network-connections-value">value</a><span class="type">(number)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -1689,8 +1689,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>machines</h3><span class="type">(array of object)</span>
+<header id="schema-key-sensors-network-connections-machines">
+<a href="#schema-key-sensors-network-connections-machines">machines</a><span class="type">(array of object)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -1699,8 +1699,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <h4>Nested array items</h4>
 <ul class="group">
 <li><section class="item">
-<header>
-<h3>name</h3><span class="type">(string)</span>
+<header id="schema-key-sensors-network-connections-machines-name">
+<a href="#schema-key-sensors-network-connections-machines-name">name</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -1709,8 +1709,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>mac</h3><span class="type">(string)</span>
+<header id="schema-key-sensors-network-connections-machines-mac">
+<a href="#schema-key-sensors-network-connections-machines-mac">mac</a><span class="type">(string)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -1723,8 +1723,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>location</h3><span class="type">(string)</span>
+<header id="schema-key-sensors-network-connections-location">
+<a href="#schema-key-sensors-network-connections-location">location</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -1737,8 +1737,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>name</h3><span class="type">(string)</span>
+<header id="schema-key-sensors-network-connections-name">
+<a href="#schema-key-sensors-network-connections-name">name</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -1747,8 +1747,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>description</h3><span class="type">(string)</span>
+<header id="schema-key-sensors-network-connections-description">
+<a href="#schema-key-sensors-network-connections-description">description</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -1760,8 +1760,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>account_balance</h3><span class="type">(array of object)</span>
+<header id="schema-key-sensors-account-balance">
+<a href="#schema-key-sensors-account-balance">account_balance</a><span class="type">(array of object)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -1770,8 +1770,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <h4>Nested array items</h4>
 <ul class="group">
 <li><section class="item">
-<header>
-<h3>value</h3><span class="type">(number)</span>
+<header id="schema-key-sensors-account-balance-value">
+<a href="#schema-key-sensors-account-balance-value">value</a><span class="type">(number)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -1781,8 +1781,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>unit</h3><span class="type">(string)</span>
+<header id="schema-key-sensors-account-balance-unit">
+<a href="#schema-key-sensors-account-balance-unit">unit</a><span class="type">(string)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -1792,8 +1792,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>location</h3><span class="type">(string)</span>
+<header id="schema-key-sensors-account-balance-location">
+<a href="#schema-key-sensors-account-balance-location">location</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -1802,8 +1802,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>name</h3><span class="type">(string)</span>
+<header id="schema-key-sensors-account-balance-name">
+<a href="#schema-key-sensors-account-balance-name">name</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -1812,8 +1812,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>description</h3><span class="type">(string)</span>
+<header id="schema-key-sensors-account-balance-description">
+<a href="#schema-key-sensors-account-balance-description">description</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -1825,8 +1825,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>total_member_count</h3><span class="type">(array of object)</span>
+<header id="schema-key-sensors-total-member-count">
+<a href="#schema-key-sensors-total-member-count">total_member_count</a><span class="type">(array of object)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -1835,8 +1835,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <h4>Nested array items</h4>
 <ul class="group">
 <li><section class="item">
-<header>
-<h3>value</h3><span class="type">(number)</span>
+<header id="schema-key-sensors-total-member-count-value">
+<a href="#schema-key-sensors-total-member-count-value">value</a><span class="type">(number)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -1846,8 +1846,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>location</h3><span class="type">(string)</span>
+<header id="schema-key-sensors-total-member-count-location">
+<a href="#schema-key-sensors-total-member-count-location">location</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -1856,8 +1856,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>name</h3><span class="type">(string)</span>
+<header id="schema-key-sensors-total-member-count-name">
+<a href="#schema-key-sensors-total-member-count-name">name</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -1866,8 +1866,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>description</h3><span class="type">(string)</span>
+<header id="schema-key-sensors-total-member-count-description">
+<a href="#schema-key-sensors-total-member-count-description">description</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -1879,8 +1879,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>people_now_present</h3><span class="type">(array of object)</span>
+<header id="schema-key-sensors-people-now-present">
+<a href="#schema-key-sensors-people-now-present">people_now_present</a><span class="type">(array of object)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -1889,8 +1889,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <h4>Nested array items</h4>
 <ul class="group">
 <li><section class="item">
-<header>
-<h3>value</h3><span class="type">(number)</span>
+<header id="schema-key-sensors-people-now-present-value">
+<a href="#schema-key-sensors-people-now-present-value">value</a><span class="type">(number)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -1900,8 +1900,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>location</h3><span class="type">(string)</span>
+<header id="schema-key-sensors-people-now-present-location">
+<a href="#schema-key-sensors-people-now-present-location">location</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -1910,8 +1910,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>name</h3><span class="type">(string)</span>
+<header id="schema-key-sensors-people-now-present-name">
+<a href="#schema-key-sensors-people-now-present-name">name</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -1920,8 +1920,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>names</h3><span class="type">(array of string)</span>
+<header id="schema-key-sensors-people-now-present-names">
+<a href="#schema-key-sensors-people-now-present-names">names</a><span class="type">(array of string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -1934,8 +1934,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>description</h3><span class="type">(string)</span>
+<header id="schema-key-sensors-people-now-present-description">
+<a href="#schema-key-sensors-people-now-present-description">description</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -1947,8 +1947,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>network_traffic</h3><span class="type">(array of object)</span>
+<header id="schema-key-sensors-network-traffic">
+<a href="#schema-key-sensors-network-traffic">network_traffic</a><span class="type">(array of object)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -1959,8 +1959,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <h4>Nested array items</h4>
 <ul class="group">
 <li><section class="item">
-<header>
-<h3>properties</h3><span class="type">(object)</span>
+<header id="schema-key-sensors-network-traffic-properties">
+<a href="#schema-key-sensors-network-traffic-properties">properties</a><span class="type">(object)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -1969,8 +1969,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <h4>Nested object properties</h4>
 <ul class="group">
 <li><section class="item">
-<header>
-<h3>bits_per_second</h3><span class="type">(object)</span>
+<header id="schema-key-sensors-network-traffic-properties-bits-per-second">
+<a href="#schema-key-sensors-network-traffic-properties-bits-per-second">bits_per_second</a><span class="type">(object)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -1979,8 +1979,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <h4>Nested object properties</h4>
 <ul class="group">
 <li><section class="item">
-<header>
-<h3>value</h3><span class="type">(number)</span>
+<header id="schema-key-sensors-network-traffic-properties-bits-per-second-value">
+<a href="#schema-key-sensors-network-traffic-properties-bits-per-second-value">value</a><span class="type">(number)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -1990,8 +1990,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>maximum</h3><span class="type">(number)</span>
+<header id="schema-key-sensors-network-traffic-properties-bits-per-second-maximum">
+<a href="#schema-key-sensors-network-traffic-properties-bits-per-second-maximum">maximum</a><span class="type">(number)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -2003,8 +2003,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>packets_per_second</h3><span class="type">(object)</span>
+<header id="schema-key-sensors-network-traffic-properties-packets-per-second">
+<a href="#schema-key-sensors-network-traffic-properties-packets-per-second">packets_per_second</a><span class="type">(object)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -2013,8 +2013,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <h4>Nested object properties</h4>
 <ul class="group">
 <li><section class="item">
-<header>
-<h3>value</h3><span class="type">(number)</span>
+<header id="schema-key-sensors-network-traffic-properties-packets-per-second-value">
+<a href="#schema-key-sensors-network-traffic-properties-packets-per-second-value">value</a><span class="type">(number)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -2030,8 +2030,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>name</h3><span class="type">(string)</span>
+<header id="schema-key-sensors-network-traffic-name">
+<a href="#schema-key-sensors-network-traffic-name">name</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -2040,8 +2040,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>location</h3><span class="type">(string)</span>
+<header id="schema-key-sensors-network-traffic-location">
+<a href="#schema-key-sensors-network-traffic-location">location</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -2050,8 +2050,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>description</h3><span class="type">(string)</span>
+<header id="schema-key-sensors-network-traffic-description">
+<a href="#schema-key-sensors-network-traffic-description">description</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -2066,8 +2066,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>feeds</h3><span class="type">(object)</span>
+<header id="schema-key-feeds">
+<a href="#schema-key-feeds">feeds</a><span class="type">(object)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -2076,8 +2076,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <h4>Nested object properties</h4>
 <ul class="group">
 <li><section class="item">
-<header>
-<h3>blog</h3><span class="type">(object)</span>
+<header id="schema-key-feeds-blog">
+<a href="#schema-key-feeds-blog">blog</a><span class="type">(object)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -2086,8 +2086,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <h4>Nested object properties</h4>
 <ul class="group">
 <li><section class="item">
-<header>
-<h3>type</h3><span class="type">(string)</span>
+<header id="schema-key-feeds-blog-type">
+<a href="#schema-key-feeds-blog-type">type</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -2100,8 +2100,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>url</h3><span class="type">(string)</span>
+<header id="schema-key-feeds-blog-url">
+<a href="#schema-key-feeds-blog-url">url</a><span class="type">(string)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -2114,8 +2114,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>wiki</h3><span class="type">(object)</span>
+<header id="schema-key-feeds-wiki">
+<a href="#schema-key-feeds-wiki">wiki</a><span class="type">(object)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -2124,8 +2124,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <h4>Nested object properties</h4>
 <ul class="group">
 <li><section class="item">
-<header>
-<h3>type</h3><span class="type">(string)</span>
+<header id="schema-key-feeds-wiki-type">
+<a href="#schema-key-feeds-wiki-type">type</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -2138,8 +2138,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>url</h3><span class="type">(string)</span>
+<header id="schema-key-feeds-wiki-url">
+<a href="#schema-key-feeds-wiki-url">url</a><span class="type">(string)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -2152,8 +2152,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>calendar</h3><span class="type">(object)</span>
+<header id="schema-key-feeds-calendar">
+<a href="#schema-key-feeds-calendar">calendar</a><span class="type">(object)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -2162,8 +2162,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <h4>Nested object properties</h4>
 <ul class="group">
 <li><section class="item">
-<header>
-<h3>type</h3><span class="type">(string)</span>
+<header id="schema-key-feeds-calendar-type">
+<a href="#schema-key-feeds-calendar-type">type</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -2176,8 +2176,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>url</h3><span class="type">(string)</span>
+<header id="schema-key-feeds-calendar-url">
+<a href="#schema-key-feeds-calendar-url">url</a><span class="type">(string)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -2190,8 +2190,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>flickr</h3><span class="type">(object)</span>
+<header id="schema-key-feeds-flickr">
+<a href="#schema-key-feeds-flickr">flickr</a><span class="type">(object)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -2200,8 +2200,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <h4>Nested object properties</h4>
 <ul class="group">
 <li><section class="item">
-<header>
-<h3>type</h3><span class="type">(string)</span>
+<header id="schema-key-feeds-flickr-type">
+<a href="#schema-key-feeds-flickr-type">type</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -2214,8 +2214,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>url</h3><span class="type">(string)</span>
+<header id="schema-key-feeds-flickr-url">
+<a href="#schema-key-feeds-flickr-url">url</a><span class="type">(string)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -2231,8 +2231,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>projects</h3><span class="type">(array of string)</span>
+<header id="schema-key-projects">
+<a href="#schema-key-projects">projects</a><span class="type">(array of string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -2243,8 +2243,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>links</h3><span class="type">(array of object)</span>
+<header id="schema-key-links">
+<a href="#schema-key-links">links</a><span class="type">(array of object)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -2253,8 +2253,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <h4>Nested array items</h4>
 <ul class="group">
 <li><section class="item">
-<header>
-<h3>name</h3><span class="type">(string)</span>
+<header id="schema-key-links-name">
+<a href="#schema-key-links-name">name</a><span class="type">(string)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -2264,8 +2264,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>description</h3><span class="type">(string)</span>
+<header id="schema-key-links-description">
+<a href="#schema-key-links-description">description</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -2274,8 +2274,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>url</h3><span class="type">(string)</span>
+<header id="schema-key-links-url">
+<a href="#schema-key-links-url">url</a><span class="type">(string)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -2288,8 +2288,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>membership_plans</h3><span class="type">(array of object)</span>
+<header id="schema-key-membership-plans">
+<a href="#schema-key-membership-plans">membership_plans</a><span class="type">(array of object)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
@@ -2298,8 +2298,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <h4>Nested array items</h4>
 <ul class="group">
 <li><section class="item">
-<header>
-<h3>name</h3><span class="type">(string)</span>
+<header id="schema-key-membership-plans-name">
+<a href="#schema-key-membership-plans-name">name</a><span class="type">(string)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -2313,8 +2313,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>value</h3><span class="type">(number)</span>
+<header id="schema-key-membership-plans-value">
+<a href="#schema-key-membership-plans-value">value</a><span class="type">(number)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -2324,8 +2324,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>currency</h3><span class="type">(string)</span>
+<header id="schema-key-membership-plans-currency">
+<a href="#schema-key-membership-plans-currency">currency</a><span class="type">(string)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -2339,8 +2339,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>billing_interval</h3><span class="type">(string)</span>
+<header id="schema-key-membership-plans-billing-interval">
+<a href="#schema-key-membership-plans-billing-interval">billing_interval</a><span class="type">(string)</span>
 <span class="tag required">required</span>
 </header>
 <details class="togglable">
@@ -2352,8 +2352,8 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 </div></details>
 </section></li>
 <li><section class="item">
-<header>
-<h3>description</h3><span class="type">(string)</span>
+<header id="schema-key-membership-plans-description">
+<a href="#schema-key-membership-plans-description">description</a><span class="type">(string)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>

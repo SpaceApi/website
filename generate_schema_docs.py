@@ -4,13 +4,16 @@ import re
 import sys
 from typing import List
 
+from slugify import slugify
 
-def visit_generic(name: str, data, nullable: bool, required: bool):
-    print('<header>')
+
+def visit_generic(path: str, name: str, data, nullable: bool, required: bool):
+    slug = slugify('schema-key-' + path)
+    print(f'<header id="{slug}">')
     full_type = data['type']
     if full_type == 'array':
-        full_type += ' of %s' % data['items']['type']
-    print('<h3>%s</h3><span class="type">(%s)</span>' % (name, full_type))
+        full_type += f' of {data["items"]["type"]}'
+    print(f'<a href="#{slug}">{name}</a><span class="type">({full_type})</span>')
     if required:
         print('<span class="tag required">required</span>')
     if nullable:
@@ -20,29 +23,29 @@ def visit_generic(name: str, data, nullable: bool, required: bool):
     print('<summary>Details</summary>')
     print('<div>')
     if 'description' in data:
-        print('<p>%s</p>' % data['description'])
+        print(f'<p>{data["description"]}</p>')
     if 'enum' in data:
         print('<h4>Valid values</h4>')
-        print('<p><code>%s</code></p>' % '</code> | <code>'.join(data['enum']))
+        print(f'<p><code>{"</code> | <code>".join(data["enum"])}</code></p>')
     if 'examples' in data:
         print('<h4>Examples</h4>')
         print('<p>')
-        print(', '.join('<samp>%s</samp>' % e for e in data['examples']))
+        print(', '.join(f'<samp>{e}</samp>' for e in data['examples']))
         print('</p>')
     if 'minItems' in data:
         print('<h4>Minimum number of items</h4>')
-        print('<p>%s</p>' % data['minItems'])
+        print(f'<p>{data["minItems"]}</p>')
 
 
-def visit_object(name, data):
+def visit_object(path: str, name, data):
     assert 'properties' in data
     print('<h4>Nested object properties</h4>')
     print('<ul class="group">')
-    visit(data['properties'], data.get('required', []))
+    visit(path, data['properties'], data.get('required', []))
     print('</ul>')
 
 
-def visit_array(name, data):
+def visit_array(path: str, name, data):
     assert 'items' in data
     items = data['items']
     print('<h4>Nested array items</h4>')
@@ -53,7 +56,7 @@ def visit_array(name, data):
             print('<p><code>%s</code></p>' % '</code> | <code>'.join(items['enum']))
     elif items['type'] == 'object':
         print('<ul class="group">')
-        visit(items['properties'], items.get('required', []))
+        visit(path, items['properties'], items.get('required', []))
         print('</ul>')
     if 'contains' in data:
         print('<h4>Required item values</h4>')
@@ -66,19 +69,19 @@ def visit_array(name, data):
         print('<code>{}</code>.</p>'.format(data['contains']['const']))
 
 
-def visit_string(name, data):
+def visit_string(path: str, name, data):
     pass
 
 
-def visit_number(name, data):
+def visit_number(path: str, name, data):
     pass
 
 
-def visit_boolean(name, data):
+def visit_boolean(path: str, name, data):
     pass
 
 
-def visit(properties, required_fields: List[str]):
+def visit(path: str, properties, required_fields: List[str]):
     for k, v in properties.items():
         print('<li><section class="item">')
         nullable = False
@@ -89,17 +92,17 @@ def visit(properties, required_fields: List[str]):
             nullable = True
             v['type'].remove('null')
             v['type'] = v['type'][0]
-        visit_generic(k, v, nullable, k in required_fields)
+        visit_generic(f'{path}/{k}', k, v, nullable, k in required_fields)
         if v['type'] == 'object':
-            visit_object(k, v)
+            visit_object(f'{path}/{k}', k, v)
         elif v['type'] == 'string':
-            visit_string(k, v)
+            visit_string(f'{path}/{k}', k, v)
         elif v['type'] == 'array':
-            visit_array(k, v)
+            visit_array(f'{path}/{k}', k, v)
         elif v['type'] == 'number':
-            visit_number(k, v)
+            visit_number(f'{path}/{k}', k, v)
         elif v['type'] == 'boolean':
-            visit_boolean(k, v)
+            visit_boolean(f'{path}/{k}', k, v)
         else:
             print('Non object: %s' % v['type'], file=sys.stderr)
             sys.exit(1)
@@ -139,8 +142,10 @@ def process_version(path):
     print('Most types are not nullable. That means that they may not contain the value "null",')
     print('but they may be left away if they\'re not required.')
     print()
+    print('You can use the [SpaceAPI validator](/validator/) to verify that you implement the schema correctly.')
+    print()
     print('<ul class="group apidocs">')
-    visit(schema['properties'], schema.get('required', []))
+    visit('', schema['properties'], schema.get('required', []))
     print('</ul>')
     print('---')
     print('_discoverable: yes')
