@@ -1,6 +1,4 @@
 on:
-  push:
-    branches: [master]
   pull_request:
 
 name: CI
@@ -9,7 +7,6 @@ jobs:
   test:
     name: Build website
     runs-on: ubuntu-latest
-    if: github.ref != 'refs/heads/master'
     steps:
       - uses: actions/checkout@v2
       - name: Build Docker image
