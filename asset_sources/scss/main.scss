@@ -53,6 +53,14 @@ p {
     margin-bottom: 0.5em;
 }
 
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
 li {
     padding-bottom: 8px;
     p {
@@ -122,10 +130,6 @@ button {
     border: none;
     padding: 10px 40px;
     color: $altFontColor;
-    font-weight: bold;
-}
-
-strong {
     font-weight: bold;
 }
 
