@@ -1,0 +1,31 @@
+on:
+  push:
+    branches: [master]
+  schedule:
+    - cron: '30 3 * * 2'
+
+name: Publish
+
+jobs:
+  publish:
+    name: Publish Docker image
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/master'
+    steps:
+      - uses: actions/checkout@v2
+      - name: Extract branch name
+        shell: bash
+        run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
+        id: extract_branch
+      - name: Build Docker image
+        run: |
+          docker build \
+            --no-cache \
+            -t spaceapi/website:latest \
+            -t spaceapi/website:v3 \
+            -t spaceapi/website:${{ steps.extract_branch.outputs.branch }} \
+            .
+      - name: Push Docker image
+        run: |
+          docker login -u "${{ secrets.DOCKER_USERNAME }}" -p "${{ secrets.DOCKER_PASSWORD }}" && \
+          docker push -a spaceapi/website
