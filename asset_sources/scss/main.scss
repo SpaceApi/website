@@ -133,10 +133,24 @@ button {
     font-weight: bold;
 }
 
+/* Code styling */
+
 code, samp {
     font-family: monospace;
     font-size: 0.9em;
     background-color: #f0f0f8;
     padding: 4px;
     border-radius: 4px;
+}
+
+/* Code blocks */
+div.hll pre {
+    background-color: #fafafa;
+    border: 2px solid #f0f0f0;
+    border-radius: 8px;
+}
+
+/* Paragraphs following code blocks */
+div.hll + p {
+    margin-top: 8px;
 }
