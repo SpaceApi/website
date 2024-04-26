@@ -1,0 +1,22 @@
+_model: stuff
+---
+title: Member Matters
+---
+author: Jaimyn Mayer
+---
+description: This makerspace member portal software has built in support for serving a space api endpoint and includes dynamic data where possible.
+---
+category: operation
+---
+source_label: GitHub
+---
+source_url: http://github.com/membermatters/MemberMatters
+---
+download1_label: See GitHub
+---
+download1_url: http://github.com/membermatters/MemberMatters
+---
+space: Brisbane Makerspace
+---
+space_url: https://brisbanemaker.space
+---
