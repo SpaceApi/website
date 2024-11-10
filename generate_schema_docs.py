@@ -2,7 +2,7 @@ import collections
 import json
 import re
 import sys
-from typing import List
+from typing import Dict, List
 
 from slugify import slugify
 
@@ -23,7 +23,14 @@ def print_definition_list(attributes: collections.OrderedDict):
     print('</dl>')
 
 
-def visit_generic(path: str, name: str, data, nullable: bool, required: bool):
+def visit_generic(
+    path: str,
+    name: str,
+    data,
+    nullable: bool,
+    required: bool,
+    dependent_required_fields: List[str],
+):
     slug = slugify('schema-key-' + path)
     print(f'<header id="{slug}">')
     full_type = data['type']
@@ -46,6 +53,8 @@ def visit_generic(path: str, name: str, data, nullable: bool, required: bool):
         attributes['Valid values'] = f'<code>{"</code> | <code>".join(data["enum"])}</code>'
     if 'minItems' in data:
         attributes['Minimum number of items'] = data['minItems']
+    if len(dependent_required_fields) > 0:
+        attributes['Requires other fields'] = f'<code>{"</code>, <code>".join(dependent_required_fields)}</code>'
     if 'examples' in data:
         attributes['Examples'] = ', '.join(f'<samp>{e}</samp>' for e in data['examples'])
     print_definition_list(attributes)
@@ -61,7 +70,7 @@ def visit_object(path: str, name, data):
 
     print('<h4>Nested object properties</h4>')
     print('<ul class="group">')
-    visit(path, data['properties'], data.get('required', []))
+    visit(path, data['properties'], data.get('required', []), data.get('dependentRequired', {}))
     print('</ul>')
 
 
@@ -74,7 +83,7 @@ def visit_array(path: str, name, data):
     if items['type'] == 'object':
         print('<h4>Nested array items</h4>')
         print('<ul class="group">')
-        visit(path, items['properties'], items.get('required', []))
+        visit(path, items['properties'], items.get('required', []), items.get('dependentRequired', {}))
         print('</ul>')
     else:
         attributes['Nested array items'] = items['type']
@@ -103,7 +112,12 @@ def visit_boolean(path: str, name, data):
     pass
 
 
-def visit(path: str, properties, required_fields: List[str]):
+def visit(
+    path: str,
+    properties,
+    required_fields: List[str],
+    dependent_required: Dict[str, List[str]],
+):
     for k, v in properties.items():
         print('<li><section class="item">')
         nullable = False
@@ -114,7 +128,7 @@ def visit(path: str, properties, required_fields: List[str]):
             nullable = True
             v['type'].remove('null')
             v['type'] = v['type'][0]
-        visit_generic(f'{path}/{k}', k, v, nullable, k in required_fields)
+        visit_generic(f'{path}/{k}', k, v, nullable, k in required_fields, dependent_required.get(k, []))
         if v['type'] == 'object':
             visit_object(f'{path}/{k}', k, v)
         elif v['type'] == 'string':
@@ -167,7 +181,7 @@ def process_version(path):
     print('You can use the [SpaceAPI validator](/validator/) to verify that you implement the schema correctly.')
     print()
     print('<ul class="group apidocs">')
-    visit('', schema['properties'], schema.get('required', []))
+    visit('', schema['properties'], schema.get('required', []), schema.get('dependentRequired', {}))
     print('</ul>')
     print('---')
     print('_discoverable: yes')
