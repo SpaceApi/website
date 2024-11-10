@@ -87,4 +87,21 @@
         margin-top: 8px;
         padding-left: 8px;
     }
+
+    dl {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        column-gap: 4px;
+        row-gap: 8px;
+        margin: 8px 0;
+
+        dt {
+            grid-column: 1;
+            font-weight: bold;
+        }
+
+        dd {
+            grid-column: 2;
+        }
+    }
 }

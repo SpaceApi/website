@@ -7,6 +7,14 @@ from typing import List
 from slugify import slugify
 
 
+def print_definition_list(attributes: collections.OrderedDict):
+    print('<dl>')
+    for k, v in attributes.items():
+        print(f'<dt>{k}:</dt>')
+        print(f'<dd>{v}</dd>')
+    print('</dl>')
+
+
 def visit_generic(path: str, name: str, data, nullable: bool, required: bool):
     slug = slugify('schema-key-' + path)
     print(f'<header id="{slug}">')
@@ -39,6 +47,11 @@ def visit_generic(path: str, name: str, data, nullable: bool, required: bool):
 
 def visit_object(path: str, name, data):
     assert 'properties' in data
+    attributes = collections.OrderedDict()
+    if 'minProperties' in data:
+        attributes['Minimum number of properties'] = data['minProperties']
+    if len(attributes) > 0:
+        print_definition_list(attributes)
     print('<h4>Nested object properties</h4>')
     print('<ul class="group">')
     visit(path, data['properties'], data.get('required', []))
