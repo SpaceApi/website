@@ -8,6 +8,14 @@ from slugify import slugify
 
 
 def print_definition_list(attributes: collections.OrderedDict):
+    """
+    Print a definition list for the specified attributes.
+
+    If the attributes are empty, nothing will be printed.
+
+    """
+    if len(attributes) == 0:
+        return
     print('<dl>')
     for k, v in attributes.items():
         print(f'<dt>{k}:</dt>')
@@ -32,26 +40,25 @@ def visit_generic(path: str, name: str, data, nullable: bool, required: bool):
     print('<div>')
     if 'description' in data:
         print(f'<p>{data["description"]}</p>')
+
+    attributes = collections.OrderedDict()
     if 'enum' in data:
-        print('<h4>Valid values</h4>')
-        print(f'<p><code>{"</code> | <code>".join(data["enum"])}</code></p>')
-    if 'examples' in data:
-        print('<h4>Examples</h4>')
-        print('<p>')
-        print(', '.join(f'<samp>{e}</samp>' for e in data['examples']))
-        print('</p>')
+        attributes['Valid values'] = f'<code>{"</code> | <code>".join(data["enum"])}</code>'
     if 'minItems' in data:
-        print('<h4>Minimum number of items</h4>')
-        print(f'<p>{data["minItems"]}</p>')
+        attributes['Minimum number of items'] = data['minItems']
+    if 'examples' in data:
+        attributes['Examples'] = ', '.join(f'<samp>{e}</samp>' for e in data['examples'])
+    print_definition_list(attributes)
 
 
 def visit_object(path: str, name, data):
     assert 'properties' in data
+
     attributes = collections.OrderedDict()
     if 'minProperties' in data:
         attributes['Minimum number of properties'] = data['minProperties']
-    if len(attributes) > 0:
-        print_definition_list(attributes)
+    print_definition_list(attributes)
+
     print('<h4>Nested object properties</h4>')
     print('<ul class="group">')
     visit(path, data['properties'], data.get('required', []))
@@ -61,25 +68,27 @@ def visit_object(path: str, name, data):
 def visit_array(path: str, name, data):
     assert 'items' in data
     items = data['items']
-    print('<h4>Nested array items</h4>')
-    if items['type'] == 'string':
-        print('<span>string</span>')
-        if 'enum' in items:
-            print('<h5>Valid values</h5>')
-            print('<p><code>%s</code></p>' % '</code> | <code>'.join(items['enum']))
-    elif items['type'] == 'object':
+
+    attributes = collections.OrderedDict()
+
+    if items['type'] == 'object':
+        print('<h4>Nested array items</h4>')
         print('<ul class="group">')
         visit(path, items['properties'], items.get('required', []))
         print('</ul>')
+    else:
+        attributes['Nested array items'] = items['type']
+
     if 'contains' in data:
-        print('<h4>Required item values</h4>')
         # Ensure that we can handle this schema logic
         keys = set(data['contains'].keys())
         if keys != {'const'}:
             raise ValueError('Unspported "contains" variant(s): {}'.format(keys - {'const'}))
         # Generate docs
-        print('<p>The array must contain the value')
-        print('<code>{}</code>.</p>'.format(data['contains']['const']))
+        attributes['Required item values'] = \
+            f'<p>The array must contain the value <code>{data["contains"]["const"]}</code>.'
+
+    print_definition_list(attributes)
 
 
 def visit_string(path: str, name, data):
