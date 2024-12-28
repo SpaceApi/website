@@ -13,12 +13,11 @@ The directory is a curated list of places providing a JSON file based on the [Sc
 A standardized JSON file that can be used to expose information about hackerspaces, makerspaces, fablabs, chaostreffs and the like across the world to web apps or any other application.
 The specification uses [JSON Schema](https://json-schema.org/).
 
-The following example shows how it looks like (compatible with both version 0.13 and 14):
+The following example shows how it looks like (compatible with both version 14 and 15):
 
 ```json
 {
-  "api": "0.13",
-  "api_compatibility": ["14"],
+  "api_compatibility": ["14", "15"],
   "space": "Shackspace",
   "logo": "http://rescue.shackspace.de/images/logo_shack_brightbg_highres.png",
   "url": "http://shackspace.de",
