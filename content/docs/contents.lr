@@ -1,6 +1,6 @@
 _model: page
 ---
-title: Schema Documentation v14
+title: Schema Documentation v15
 ---
 body:
 
@@ -39,7 +39,7 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <dt>Nested array items:</dt>
 <dd>string</dd>
 <dt>Required item values:</dt>
-<dd><p>The array must contain the value <code>14</code>.</dd>
+<dd><p>The array must contain the value <code>15</code>.</dd>
 </dl>
 </div></details>
 </section></li>
@@ -79,12 +79,15 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <li><section class="item">
 <header id="schema-key-location">
 <a href="#schema-key-location">location</a><span class="type">(object)</span>
-<span class="tag required">required</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>Position data such as a postal address or geographic coordinates</p>
+<p>Position data such as a postal address or geographic coordinates. May be omitted for spaces without a fixed physical location.</p>
+<dl>
+<dt>Minimum number of properties:</dt>
+<dd>1</dd>
+</dl>
 <h4>Nested object properties</h4>
 <ul class="group">
 <li><section class="item">
@@ -100,23 +103,29 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <li><section class="item">
 <header id="schema-key-location-lat">
 <a href="#schema-key-location-lat">lat</a><span class="type">(number)</span>
-<span class="tag required">required</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
 <div>
 <p>Latitude of your space location, in degree with decimal places. Use positive values for locations north of the equator, negative values for locations south of equator.</p>
+<dl>
+<dt>Requires other fields:</dt>
+<dd><code>lon</code></dd>
+</dl>
 </div></details>
 </section></li>
 <li><section class="item">
 <header id="schema-key-location-lon">
 <a href="#schema-key-location-lon">lon</a><span class="type">(number)</span>
-<span class="tag required">required</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
 <div>
 <p>Longitude of your space location, in degree with decimal places. Use positive values for locations east of Greenwich, and negative values for locations west of Greenwich.</p>
+<dl>
+<dt>Requires other fields:</dt>
+<dd><code>lat</code></dd>
+</dl>
 </div></details>
 </section></li>
 <li><section class="item">
@@ -131,6 +140,94 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <dt>Examples:</dt>
 <dd><samp>Europe/Kyiv</samp>, <samp>Antarctica/Palmer</samp></dd>
 </dl>
+</div></details>
+</section></li>
+<li><section class="item">
+<header id="schema-key-location-country-code">
+<a href="#schema-key-location-country-code">country_code</a><span class="type">(string)</span>
+</header>
+<details class="togglable">
+<summary>Details</summary>
+<div>
+<p>Country code in ISO 3166 alpha-2 format</p>
+<dl>
+<dt>Examples:</dt>
+<dd><samp>CH</samp>, <samp>DE</samp>, <samp>UA</samp></dd>
+</dl>
+</div></details>
+</section></li>
+<li><section class="item">
+<header id="schema-key-location-hint">
+<a href="#schema-key-location-hint">hint</a><span class="type">(string)</span>
+</header>
+<details class="togglable">
+<summary>Details</summary>
+<div>
+<p>Information that can be used to describe how to access your space, if it is not trivial to find when standing at the address</p>
+<dl>
+<dt>Examples:</dt>
+<dd><samp>Ring the doorbell marked with HACKSPACE</samp>, <samp>Knock three times, say Shibboleet and follow the white rabbit</samp></dd>
+</dl>
+</div></details>
+</section></li>
+<li><section class="item">
+<header id="schema-key-location-areas">
+<a href="#schema-key-location-areas">areas</a><span class="type">(array of object)</span>
+</header>
+<details class="togglable">
+<summary>Details</summary>
+<div>
+<p>A list of areas in your space. Must include at least 1 area if defined.</p>
+<dl>
+<dt>Minimum number of items:</dt>
+<dd>1</dd>
+</dl>
+<h4>Nested array items</h4>
+<ul class="group">
+<li><section class="item">
+<header id="schema-key-location-areas-name">
+<a href="#schema-key-location-areas-name">name</a><span class="type">(string)</span>
+</header>
+<details class="togglable">
+<summary>Details</summary>
+<div>
+<p>The name of this area</p>
+<dl>
+<dt>Examples:</dt>
+<dd><samp>Hackerspace</samp>, <samp>Kitchen</samp>, <samp>Workshop</samp></dd>
+</dl>
+</div></details>
+</section></li>
+<li><section class="item">
+<header id="schema-key-location-areas-description">
+<a href="#schema-key-location-areas-description">description</a><span class="type">(string)</span>
+</header>
+<details class="togglable">
+<summary>Details</summary>
+<div>
+<p>A description of this area</p>
+<dl>
+<dt>Examples:</dt>
+<dd><samp>Our hackerspace area</samp>, <samp>Woodworking machines and power tools</samp></dd>
+</dl>
+</div></details>
+</section></li>
+<li><section class="item">
+<header id="schema-key-location-areas-square-meters">
+<a href="#schema-key-location-areas-square-meters">square_meters</a><span class="type">(number)</span>
+<span class="tag required">required</span>
+</header>
+<details class="togglable">
+<summary>Details</summary>
+<div>
+<p>The size of this area in square meters</p>
+<dl>
+<dt>Examples:</dt>
+<dd><samp>23.23</samp>, <samp>42</samp></dd>
+</dl>
+</div></details>
+</section></li>
+</ul>
 </div></details>
 </section></li>
 </ul>
@@ -202,12 +299,11 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <li><section class="item">
 <header id="schema-key-state-open">
 <a href="#schema-key-state-open">open</a><span class="type">(boolean)</span>
-<span class="tag nullable">nullable</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>A flag which indicates whether the space is currently open or closed. The state 'undefined' can be achieved by omitting this field. A missing 'open' property carries the semantics of a temporary unavailability of the state, whereas the absence of the 'state' property itself means the state is generally not implemented for this space. This field is also allowed to explicitly have the value null for backwards compatibility with older schema versions, but this is deprecated and will be removed in a future version.</p>
+<p>A flag which indicates whether the space is currently open or closed. The state 'undefined' can be achieved by omitting this field. A missing 'open' property carries the semantics of a temporary unavailability of the state, whereas the absence of the 'state' property itself means the state is generally not implemented for this space.</p>
 </div></details>
 </section></li>
 <li><section class="item">
@@ -217,7 +313,7 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>The Unix timestamp when the space status changed most recently</p>
+<p>The Unix timestamp (in seconds) when the space status changed most recently</p>
 </div></details>
 </section></li>
 <li><section class="item">
@@ -227,7 +323,7 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>The person who lastly changed the state e.g. opened or closed the space</p>
+<p>The person who lastly changed the state e.g. opened or closed the space.</p>
 </div></details>
 </section></li>
 <li><section class="item">
@@ -318,7 +414,7 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>Unix timestamp when the event occurred</p>
+<p>The Unix timestamp (in seconds) when the event occurred.</p>
 </div></details>
 </section></li>
 <li><section class="item">
@@ -342,7 +438,7 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>Contact information about your space</p>
+<p>Contact information about your space. You must define at least one which is in the list of allowed values of the issue_report_channels field.</p>
 <h4>Nested object properties</h4>
 <ul class="group">
 <li><section class="item">
@@ -428,7 +524,7 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>Email address which can be base64 encoded</p>
+<p>Email address which can be base64 encoded.</p>
 </div></details>
 </section></li>
 <li><section class="item">
@@ -535,7 +631,7 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>Facebook account URL</p>
+<p>Facebook account URL.</p>
 </div></details>
 </section></li>
 <li><section class="item">
@@ -555,7 +651,7 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>Foursquare ID, in the form <samp>4d8a9114d85f3704eab301dc</samp></p>
+<p>Foursquare ID, in the form <samp>4d8a9114d85f3704eab301dc</samp>.</p>
 </div></details>
 </section></li>
 <li><section class="item">
@@ -682,7 +778,7 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>The unit of the sensor value</p>
+<p>The unit of the sensor value.</p>
 <dl>
 <dt>Valid values:</dt>
 <dd><code>°C</code> | <code>°F</code> | <code>K</code> | <code>°De</code> | <code>°N</code> | <code>°R</code> | <code>°Ré</code> | <code>°Rø</code></dd>
@@ -724,6 +820,16 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <p>An extra field that you can use to attach some additional information to this sensor instance</p>
 </div></details>
 </section></li>
+<li><section class="item">
+<header id="schema-key-sensors-temperature-lastchange">
+<a href="#schema-key-sensors-temperature-lastchange">lastchange</a><span class="type">(number)</span>
+</header>
+<details class="togglable">
+<summary>Details</summary>
+<div>
+<p>The Unix timestamp (in seconds) when the sensor value changed most recently</p>
+</div></details>
+</section></li>
 </ul>
 </div></details>
 </section></li>
@@ -734,7 +840,7 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>Sensor type to indicate if a certain door is locked</p>
+<p>Sensor type to indicate if a certain door is locked.</p>
 <h4>Nested array items</h4>
 <ul class="group">
 <li><section class="item">
@@ -783,6 +889,16 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <p>An extra field that you can use to attach some additional information to this sensor instance</p>
 </div></details>
 </section></li>
+<li><section class="item">
+<header id="schema-key-sensors-door-locked-lastchange">
+<a href="#schema-key-sensors-door-locked-lastchange">lastchange</a><span class="type">(number)</span>
+</header>
+<details class="togglable">
+<summary>Details</summary>
+<div>
+<p>The Unix timestamp (in seconds) when the sensor value changed most recently</p>
+</div></details>
+</section></li>
 </ul>
 </div></details>
 </section></li>
@@ -815,10 +931,10 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>The unit of pressure used by your sensor<br>Note: The <code>hPA</code> unit is deprecated and should not be used anymore. Use the correct <code>hPa</code> unit instead.</p>
+<p>The unit of pressure used by your sensor</p>
 <dl>
 <dt>Valid values:</dt>
-<dd><code>hPa</code> | <code>hPA</code></dd>
+<dd><code>hPa</code></dd>
 </dl>
 </div></details>
 </section></li>
@@ -855,6 +971,16 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <summary>Details</summary>
 <div>
 <p>An extra field that you can use to attach some additional information to this sensor instance</p>
+</div></details>
+</section></li>
+<li><section class="item">
+<header id="schema-key-sensors-barometer-lastchange">
+<a href="#schema-key-sensors-barometer-lastchange">lastchange</a><span class="type">(number)</span>
+</header>
+<details class="togglable">
+<summary>Details</summary>
+<div>
+<p>The Unix timestamp (in seconds) when the sensor value changed most recently</p>
 </div></details>
 </section></li>
 </ul>
@@ -960,6 +1086,16 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <p>An extra field that you can use to attach some additional information to this sensor instance</p>
 </div></details>
 </section></li>
+<li><section class="item">
+<header id="schema-key-sensors-radiation-alpha-lastchange">
+<a href="#schema-key-sensors-radiation-alpha-lastchange">lastchange</a><span class="type">(number)</span>
+</header>
+<details class="togglable">
+<summary>Details</summary>
+<div>
+<p>The Unix timestamp (in seconds) when the sensor value changed most recently</p>
+</div></details>
+</section></li>
 </ul>
 </div></details>
 </section></li>
@@ -1051,6 +1187,16 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <summary>Details</summary>
 <div>
 <p>An extra field that you can use to attach some additional information to this sensor instance</p>
+</div></details>
+</section></li>
+<li><section class="item">
+<header id="schema-key-sensors-radiation-beta-lastchange">
+<a href="#schema-key-sensors-radiation-beta-lastchange">lastchange</a><span class="type">(number)</span>
+</header>
+<details class="togglable">
+<summary>Details</summary>
+<div>
+<p>The Unix timestamp (in seconds) when the sensor value changed most recently</p>
 </div></details>
 </section></li>
 </ul>
@@ -1146,6 +1292,16 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <p>An extra field that you can use to attach some additional information to this sensor instance</p>
 </div></details>
 </section></li>
+<li><section class="item">
+<header id="schema-key-sensors-radiation-gamma-lastchange">
+<a href="#schema-key-sensors-radiation-gamma-lastchange">lastchange</a><span class="type">(number)</span>
+</header>
+<details class="togglable">
+<summary>Details</summary>
+<div>
+<p>The Unix timestamp (in seconds) when the sensor value changed most recently</p>
+</div></details>
+</section></li>
 </ul>
 </div></details>
 </section></li>
@@ -1239,6 +1395,16 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <p>An extra field that you can use to attach some additional information to this sensor instance</p>
 </div></details>
 </section></li>
+<li><section class="item">
+<header id="schema-key-sensors-radiation-beta-gamma-lastchange">
+<a href="#schema-key-sensors-radiation-beta-gamma-lastchange">lastchange</a><span class="type">(number)</span>
+</header>
+<details class="togglable">
+<summary>Details</summary>
+<div>
+<p>The Unix timestamp (in seconds) when the sensor value changed most recently</p>
+</div></details>
+</section></li>
 </ul>
 </div></details>
 </section></li>
@@ -1274,7 +1440,7 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>The unit of the sensor value. You should always define the unit though if the sensor is a flag of a boolean type then you can of course omit it.</p>
+<p>The humidity unit</p>
 <dl>
 <dt>Valid values:</dt>
 <dd><code>%</code></dd>
@@ -1314,6 +1480,16 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <summary>Details</summary>
 <div>
 <p>An extra field that you can use to attach some additional information to this sensor instance</p>
+</div></details>
+</section></li>
+<li><section class="item">
+<header id="schema-key-sensors-humidity-lastchange">
+<a href="#schema-key-sensors-humidity-lastchange">lastchange</a><span class="type">(number)</span>
+</header>
+<details class="togglable">
+<summary>Details</summary>
+<div>
+<p>The Unix timestamp (in seconds) when the sensor value changed most recently</p>
 </div></details>
 </section></li>
 </ul>
@@ -1389,6 +1565,16 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <p>An extra field that you can use to attach some additional information to this sensor instance</p>
 </div></details>
 </section></li>
+<li><section class="item">
+<header id="schema-key-sensors-beverage-supply-lastchange">
+<a href="#schema-key-sensors-beverage-supply-lastchange">lastchange</a><span class="type">(number)</span>
+</header>
+<details class="togglable">
+<summary>Details</summary>
+<div>
+<p>The Unix timestamp (in seconds) when the sensor value changed most recently</p>
+</div></details>
+</section></li>
 </ul>
 </div></details>
 </section></li>
@@ -1421,10 +1607,10 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>The unit of the sensor value. You should always define the unit though if the sensor is a flag of a boolean type then you can of course omit it.</p>
+<p>The power unit</p>
 <dl>
 <dt>Valid values:</dt>
-<dd><code>mW</code> | <code>W</code> | <code>VA</code></dd>
+<dd><code>W</code> | <code>VA</code></dd>
 </dl>
 </div></details>
 </section></li>
@@ -1461,6 +1647,100 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <summary>Details</summary>
 <div>
 <p>An extra field that you can use to attach some additional information to this sensor instance</p>
+</div></details>
+</section></li>
+<li><section class="item">
+<header id="schema-key-sensors-power-consumption-lastchange">
+<a href="#schema-key-sensors-power-consumption-lastchange">lastchange</a><span class="type">(number)</span>
+</header>
+<details class="togglable">
+<summary>Details</summary>
+<div>
+<p>The Unix timestamp (in seconds) when the sensor value changed most recently</p>
+</div></details>
+</section></li>
+</ul>
+</div></details>
+</section></li>
+<li><section class="item">
+<header id="schema-key-sensors-power-generation">
+<a href="#schema-key-sensors-power-generation">power_generation</a><span class="type">(array of object)</span>
+</header>
+<details class="togglable">
+<summary>Details</summary>
+<div>
+<p>The power generation of a specific device or of your whole space</p>
+<h4>Nested array items</h4>
+<ul class="group">
+<li><section class="item">
+<header id="schema-key-sensors-power-generation-value">
+<a href="#schema-key-sensors-power-generation-value">value</a><span class="type">(number)</span>
+<span class="tag required">required</span>
+</header>
+<details class="togglable">
+<summary>Details</summary>
+<div>
+<p>The sensor value</p>
+</div></details>
+</section></li>
+<li><section class="item">
+<header id="schema-key-sensors-power-generation-unit">
+<a href="#schema-key-sensors-power-generation-unit">unit</a><span class="type">(string)</span>
+<span class="tag required">required</span>
+</header>
+<details class="togglable">
+<summary>Details</summary>
+<div>
+<p>The unit of the sensor value.</p>
+<dl>
+<dt>Valid values:</dt>
+<dd><code>W</code> | <code>VA</code></dd>
+</dl>
+</div></details>
+</section></li>
+<li><section class="item">
+<header id="schema-key-sensors-power-generation-location">
+<a href="#schema-key-sensors-power-generation-location">location</a><span class="type">(string)</span>
+<span class="tag required">required</span>
+</header>
+<details class="togglable">
+<summary>Details</summary>
+<div>
+<p>The location of your sensor</p>
+<dl>
+<dt>Examples:</dt>
+<dd><samp>Room 1</samp>, <samp>Lab</samp></dd>
+</dl>
+</div></details>
+</section></li>
+<li><section class="item">
+<header id="schema-key-sensors-power-generation-name">
+<a href="#schema-key-sensors-power-generation-name">name</a><span class="type">(string)</span>
+</header>
+<details class="togglable">
+<summary>Details</summary>
+<div>
+<p>This field is an additional field to give your sensor a name. This can be useful if you have multiple sensors in the same location.</p>
+</div></details>
+</section></li>
+<li><section class="item">
+<header id="schema-key-sensors-power-generation-description">
+<a href="#schema-key-sensors-power-generation-description">description</a><span class="type">(string)</span>
+</header>
+<details class="togglable">
+<summary>Details</summary>
+<div>
+<p>An extra field that you can use to attach some additional information to this sensor instance</p>
+</div></details>
+</section></li>
+<li><section class="item">
+<header id="schema-key-sensors-power-generation-lastchange">
+<a href="#schema-key-sensors-power-generation-lastchange">lastchange</a><span class="type">(number)</span>
+</header>
+<details class="togglable">
+<summary>Details</summary>
+<div>
+<p>The Unix timestamp (in seconds) when the sensor value changed most recently</p>
 </div></details>
 </section></li>
 </ul>
@@ -1517,7 +1797,7 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>The unit of the sensor value. You should always define the unit though if the sensor is a flag of a boolean type then you can of course omit it.</p>
+<p>The wind speed unit</p>
 <dl>
 <dt>Valid values:</dt>
 <dd><code>m/s</code> | <code>km/h</code> | <code>kn</code></dd>
@@ -1557,7 +1837,7 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>The unit of the sensor value. You should always define the unit though if the sensor is a flag of a boolean type then you can of course omit it.</p>
+<p>The gust speed unit</p>
 <dl>
 <dt>Valid values:</dt>
 <dd><code>m/s</code> | <code>km/h</code> | <code>kn</code></dd>
@@ -1597,7 +1877,7 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>The unit of the sensor value. You should always define the unit though if the sensor is a flag of a boolean type then you can of course omit it.</p>
+<p>The direction unit</p>
 <dl>
 <dt>Valid values:</dt>
 <dd><code>°</code></dd>
@@ -1637,7 +1917,7 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>The unit of the sensor value. You should always define the unit though if the sensor is a flag of a boolean type then you can of course omit it.</p>
+<p>The elevation unit</p>
 <dl>
 <dt>Valid values:</dt>
 <dd><code>m</code></dd>
@@ -1683,6 +1963,16 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <summary>Details</summary>
 <div>
 <p>An extra field that you can use to attach some additional information to this sensor instance</p>
+</div></details>
+</section></li>
+<li><section class="item">
+<header id="schema-key-sensors-wind-lastchange">
+<a href="#schema-key-sensors-wind-lastchange">lastchange</a><span class="type">(number)</span>
+</header>
+<details class="togglable">
+<summary>Details</summary>
+<div>
+<p>The Unix timestamp (in seconds) when the sensor value changed most recently</p>
 </div></details>
 </section></li>
 </ul>
@@ -1791,6 +2081,16 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <p>An extra field that you can use to attach some additional information to this sensor instance</p>
 </div></details>
 </section></li>
+<li><section class="item">
+<header id="schema-key-sensors-network-connections-lastchange">
+<a href="#schema-key-sensors-network-connections-lastchange">lastchange</a><span class="type">(number)</span>
+</header>
+<details class="togglable">
+<summary>Details</summary>
+<div>
+<p>The Unix timestamp (in seconds) when the sensor value changed most recently</p>
+</div></details>
+</section></li>
 </ul>
 </div></details>
 </section></li>
@@ -1856,6 +2156,16 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <p>An extra field that you can use to attach some additional information to this sensor instance</p>
 </div></details>
 </section></li>
+<li><section class="item">
+<header id="schema-key-sensors-account-balance-lastchange">
+<a href="#schema-key-sensors-account-balance-lastchange">lastchange</a><span class="type">(number)</span>
+</header>
+<details class="togglable">
+<summary>Details</summary>
+<div>
+<p>The Unix timestamp (in seconds) when the sensor value changed most recently</p>
+</div></details>
+</section></li>
 </ul>
 </div></details>
 </section></li>
@@ -1908,6 +2218,16 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <summary>Details</summary>
 <div>
 <p>An extra field that you can use to attach some additional information to this sensor instance</p>
+</div></details>
+</section></li>
+<li><section class="item">
+<header id="schema-key-sensors-total-member-count-lastchange">
+<a href="#schema-key-sensors-total-member-count-lastchange">lastchange</a><span class="type">(number)</span>
+</header>
+<details class="togglable">
+<summary>Details</summary>
+<div>
+<p>The Unix timestamp (in seconds) when the sensor value changed most recently</p>
 </div></details>
 </section></li>
 </ul>
@@ -1980,6 +2300,16 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <summary>Details</summary>
 <div>
 <p>An extra field that you can use to attach some additional information to this sensor instance</p>
+</div></details>
+</section></li>
+<li><section class="item">
+<header id="schema-key-sensors-people-now-present-lastchange">
+<a href="#schema-key-sensors-people-now-present-lastchange">lastchange</a><span class="type">(number)</span>
+</header>
+<details class="togglable">
+<summary>Details</summary>
+<div>
+<p>The Unix timestamp (in seconds) when the sensor value changed most recently</p>
 </div></details>
 </section></li>
 </ul>
@@ -2098,6 +2428,16 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <summary>Details</summary>
 <div>
 <p>An extra field that you can use to attach some additional information to this sensor instance</p>
+</div></details>
+</section></li>
+<li><section class="item">
+<header id="schema-key-sensors-network-traffic-lastchange">
+<a href="#schema-key-sensors-network-traffic-lastchange">lastchange</a><span class="type">(number)</span>
+</header>
+<details class="togglable">
+<summary>Details</summary>
+<div>
+<p>The Unix timestamp (in seconds) when the sensor value changed most recently</p>
 </div></details>
 </section></li>
 </ul>
@@ -2303,7 +2643,7 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>The link name</p>
+<p>The link name.</p>
 </div></details>
 </section></li>
 <li><section class="item">
@@ -2324,7 +2664,7 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>The URL</p>
+<p>The URL.</p>
 </div></details>
 </section></li>
 </ul>
@@ -2392,7 +2732,7 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <p>How often is the membership billed? If you select other, please specify in the description what your billing interval is.</p>
 <dl>
 <dt>Valid values:</dt>
-<dd><code>yearly</code> | <code>monthly</code> | <code>weekly</code> | <code>daily</code> | <code>hourly</code> | <code>other</code></dd>
+<dd><code>yearly</code> | <code>quarterly</code> | <code>monthly</code> | <code>weekly</code> | <code>daily</code> | <code>hourly</code> | <code>other</code></dd>
 </dl>
 </div></details>
 </section></li>
@@ -2403,7 +2743,40 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>A free form string</p>
+<p>A free form string.</p>
+</div></details>
+</section></li>
+</ul>
+</div></details>
+</section></li>
+<li><section class="item">
+<header id="schema-key-linked-spaces">
+<a href="#schema-key-linked-spaces">linked_spaces</a><span class="type">(array of object)</span>
+</header>
+<details class="togglable">
+<summary>Details</summary>
+<div>
+<p>A list of spaces you know and feel connected too.</p>
+<h4>Nested array items</h4>
+<ul class="group">
+<li><section class="item">
+<header id="schema-key-linked-spaces-endpoint">
+<a href="#schema-key-linked-spaces-endpoint">endpoint</a><span class="type">(string)</span>
+</header>
+<details class="togglable">
+<summary>Details</summary>
+<div>
+<p>The SpaceAPI endpoint of the space</p>
+</div></details>
+</section></li>
+<li><section class="item">
+<header id="schema-key-linked-spaces-website">
+<a href="#schema-key-linked-spaces-website">website</a><span class="type">(string)</span>
+</header>
+<details class="togglable">
+<summary>Details</summary>
+<div>
+<p>The website of the space</p>
 </div></details>
 </section></li>
 </ul>
