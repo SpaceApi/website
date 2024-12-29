@@ -18,8 +18,17 @@ The [SpaceAPI validator](/validator) validates URLs or files. Please note that i
 
 ### HTTP and CORS
 
-Your server should be reachable via HTTPS to prevent websites having problems with [mixed content warnings](https://developer.mozilla.org/en-US/docs/Web/Security/Mixed_content).
-You should also provide [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) and [Content-type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Type) headers so that JavaScript based web applications can query your endpoint directly.
+Your server should
+ * Be reachable via HTTPS to prevent websites having problems
+   with [mixed content
+   warnings](https://developer.mozilla.org/en-US/docs/Web/Security/Mixed_content).
+
+ * Set the `Access-Control-Allow-Origin`
+[CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) header to `*`
+ * Set the
+   [`Content-Type`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Type)
+   to `application/json; charset=utf-8` so that JavaScript based web
+   applications can query your endpoint directly.
 
 ### Stuff you can use
 
