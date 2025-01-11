@@ -438,7 +438,7 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <details class="togglable">
 <summary>Details</summary>
 <div>
-<p>Contact information about your space. You must define at least one which is in the list of allowed values of the issue_report_channels field.</p>
+<p>Contact information about your space</p>
 <h4>Nested object properties</h4>
 <ul class="group">
 <li><section class="item">
@@ -823,6 +823,90 @@ You can use the [SpaceAPI validator](/validator/) to verify that you implement t
 <li><section class="item">
 <header id="schema-key-sensors-temperature-lastchange">
 <a href="#schema-key-sensors-temperature-lastchange">lastchange</a><span class="type">(number)</span>
+</header>
+<details class="togglable">
+<summary>Details</summary>
+<div>
+<p>The Unix timestamp (in seconds) when the sensor value changed most recently</p>
+</div></details>
+</section></li>
+</ul>
+</div></details>
+</section></li>
+<li><section class="item">
+<header id="schema-key-sensors-carbondioxide">
+<a href="#schema-key-sensors-carbondioxide">carbondioxide</a><span class="type">(array of object)</span>
+</header>
+<details class="togglable">
+<summary>Details</summary>
+<div>
+<p>CO2 sensor</p>
+<h4>Nested array items</h4>
+<ul class="group">
+<li><section class="item">
+<header id="schema-key-sensors-carbondioxide-value">
+<a href="#schema-key-sensors-carbondioxide-value">value</a><span class="type">(number)</span>
+<span class="tag required">required</span>
+</header>
+<details class="togglable">
+<summary>Details</summary>
+<div>
+<p>The sensor value</p>
+</div></details>
+</section></li>
+<li><section class="item">
+<header id="schema-key-sensors-carbondioxide-unit">
+<a href="#schema-key-sensors-carbondioxide-unit">unit</a><span class="type">(string)</span>
+<span class="tag required">required</span>
+</header>
+<details class="togglable">
+<summary>Details</summary>
+<div>
+<p>The unit of the sensor value.</p>
+<dl>
+<dt>Valid values:</dt>
+<dd><code>ppm</code> | <code>vol%</code></dd>
+</dl>
+</div></details>
+</section></li>
+<li><section class="item">
+<header id="schema-key-sensors-carbondioxide-location">
+<a href="#schema-key-sensors-carbondioxide-location">location</a><span class="type">(string)</span>
+<span class="tag required">required</span>
+</header>
+<details class="togglable">
+<summary>Details</summary>
+<div>
+<p>The location of your sensor</p>
+<dl>
+<dt>Examples:</dt>
+<dd><samp>Outside</samp>, <samp>Inside</samp>, <samp>Ceiling</samp>, <samp>Room 1</samp></dd>
+</dl>
+</div></details>
+</section></li>
+<li><section class="item">
+<header id="schema-key-sensors-carbondioxide-name">
+<a href="#schema-key-sensors-carbondioxide-name">name</a><span class="type">(string)</span>
+</header>
+<details class="togglable">
+<summary>Details</summary>
+<div>
+<p>This field is an additional field to give your sensor a name. This can be useful if you have multiple sensors in the same location.</p>
+</div></details>
+</section></li>
+<li><section class="item">
+<header id="schema-key-sensors-carbondioxide-description">
+<a href="#schema-key-sensors-carbondioxide-description">description</a><span class="type">(string)</span>
+</header>
+<details class="togglable">
+<summary>Details</summary>
+<div>
+<p>An extra field that you can use to attach some additional information to this sensor instance</p>
+</div></details>
+</section></li>
+<li><section class="item">
+<header id="schema-key-sensors-carbondioxide-lastchange">
+<a href="#schema-key-sensors-carbondioxide-lastchange">lastchange</a><span class="type">(number)</span>
 </header>
 <details class="togglable">
 <summary>Details</summary>
