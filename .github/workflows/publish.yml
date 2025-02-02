@@ -1,6 +1,6 @@
 on:
   push:
-    branches: [master, chore-ghcr]  # TODO: remove chore-ghcr before merging
+    branches: [master]
   schedule:
     - cron: '30 3 * * 2'
 
