@@ -1,6 +1,6 @@
 on:
   push:
-    branches: [master]
+    branches: [master, chore-ghcr]  # TODO: remove chore-ghcr before merging
   schedule:
     - cron: '30 3 * * 2'
 
@@ -16,11 +16,17 @@ jobs:
         run: |
           docker build \
             --no-cache \
-            -t spaceapi/website:latest \
-            -t spaceapi/website:v3 \
-            -t spaceapi/website:master \
+            -t ghcr.io/spaceapi/website:latest \
+            -t ghcr.io/spaceapi/website:v3 \
+            -t ghcr.io/spaceapi/website:master \
+            --label "org.opencontainers.image.source=$GITHUB_SERVER_URL/$GITHUB_REPOSITORY" \
             .
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
       - name: Push Docker image
         run: |
-          docker login -u "${{ secrets.DOCKER_USERNAME }}" -p "${{ secrets.DOCKER_PASSWORD }}" && \
-          docker push -a spaceapi/website
+          docker push -a ghcr.io/spaceapi/website
