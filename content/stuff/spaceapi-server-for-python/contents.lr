@@ -6,7 +6,7 @@ author: s3lph
 ---
 author_url: https://chaos.social/@s3lph
 ---
-category: server
+category: operation
 ---
 description: A lightweight SpaceAPI endpoint server written in Python.
 ---
@@ -16,8 +16,8 @@ space_url: https://ccc-basel.ch/
 ---
 download1_label: Releases
 ---
-download1_url: https://gitlab.com/s3lph/spaceapi-server/-/releases
+download1_url: https://git.kabelsalat.ch/s3lph/spaceapi-server/packages
 ---
-source_label: Gitlab
+source_label: Git
 ---
-source_url: https://gitlab.com/s3lph/spaceapi-server
+source_url: https://git.kabelsalat.ch/s3lph/spaceapi-server
