@@ -1,6 +1,6 @@
 _model: stuff
 ---
-title: SpaceAPI Endpoint Server
+title: SpaceAPI Endpoint Server in Go with Docker image
 ---
 author: pliski
 ---
@@ -9,7 +9,7 @@ author_url: https://pli.ski
 category: operation
 ---
 description: SpaceAPI-Endpoint provides a REST API to update your SpaceAPI informations from any device or platform.
-Written in Go. provides also a prebuild Docker image ready to deploy.
+Written in Go, provides also a prebuild Docker image ready to deploy, has a companion HomeAssistant integration.
 ---
 space: q30.space
 ---
@@ -18,6 +18,10 @@ space_url: https://q30.space/
 download1_label: Github Registry
 ---
 download1_url: https://ghcr.io/q30-space/spaceapi-endpoint:latest
+---
+download2_label: HomeAssistant Integration
+---
+download2_url: https://github.com/q30-space/ha-spaceapi-endpoint-client
 ---
 source_label: GitHub
 ---
