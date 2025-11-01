@@ -1,4 +1,4 @@
-FROM python:3.9 as builder
+FROM python:3.14 AS builder
 
 ENV LANG=en_US.utf8
 
@@ -11,7 +11,7 @@ COPY . /code
 RUN cd /code && lektor build -f scsscompile --output-path /code/output
 
 # Move generated data to separate alpine-based image
-FROM nginx:1.19-alpine as server
+FROM nginx:1.29-alpine as server
 
 RUN apk --update --no-cache add curl
 HEALTHCHECK CMD curl --fail http://localhost:8080 || exit 1
